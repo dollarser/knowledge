@@ -43,10 +43,10 @@ def main():
  redirects=json.loads((ROOT/'redirects.json').read_text()) if (ROOT/'redirects.json').exists() else {}
  for old,new in redirects.items():
   assert re.fullmatch('[a-z0-9]+(?:-[a-z0-9]+)*',old) and old not in slugs
-  assert new in slugs or new=='@index','Redirect target must be a reviewed article or index'
-  route='index/' if new=='@index' else f'notes/{new}/'
+  assert new in slugs,'Redirect target must be a reviewed article'
+  route=f'notes/{new}/'
   target=f'{BASE}{route}';canonical=f'{URL}{route}'
-  label='全部知识索引' if new=='@index' else '本场完整知识文档'
+  label='本场完整知识文档'
   write(f'notes/{old}/index.html',f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url={e(target)}"><link rel="canonical" href="{e(canonical)}"><title>{label}</title></head><body><p>请前往<a href="{e(target)}">{label}</a>。</p></body></html>')
  write('404.html',shell('页面未找到','请回到知识库查找笔记。',f'<section class="article"><h1>这篇笔记还没有找到</h1><p><a class="cta" href="{BASE}">回到知识库</a></p></section>'))
  write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{URL}{p}</loc></url>' for p in ['','index/',*[f"notes/{a['slug']}/" for a in articles]])+'</urlset>')
