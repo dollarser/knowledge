@@ -5,13 +5,17 @@ import markdown
 from markdown.extensions.toc import slugify_unicode
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'dist';BASE='/knowledge/';URL='https://blog.sunlingzhang.com/knowledge/';DOWNLOAD='https://github.com/dollarser/helix-agent/releases'
 def e(x):return html.escape(str(x),quote=True)
+def article_order(article):
+ # Use the livestream date and numeric daily session, independent of insertion order.
+ session=re.search(r'第(\d+)场',article['title'])
+ return (article['date'],int(session.group(1)) if session else 0,article['slug'])
 def shell(title,description,body,path='',search=False):
  return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · 知识笔记</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{URL}{path}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23172c38'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='65' fill='%23fffefa'%3E知%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="{BASE}assets/site.css"></head><body><header><nav class="wrap" aria-label="主导航"><a class="brand" href="{BASE}">知识笔记<small>NOTES INTO PRACTICE</small></a><div class="links"><a href="{BASE}index/">全部知识索引</a><a href="https://blog.sunlingzhang.com/">返回博客</a><a href="https://github.com/dollarser/knowledge">GitHub</a><a class="cta" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">下载 Helix 安卓客户端 ↗</a></div></nav></header><main class="wrap">{body}</main><footer class="wrap">持续积累，保留依据。AI 辅助整理，发布前校订。 · <a href="{BASE}index/">全部知识索引</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a></footer>{f'<script src="{BASE}assets/search.js" defer></script>' if search else ''}</body></html>'''
 def platform():return f'''<aside class="platform" aria-label="Helix 安卓客户端下载"><div><span class="eyebrow">FROM NOTES TO PRACTICE</span><h2>把想法带到安卓上实践</h2><p>体验作者开发的 Helix 安卓客户端，在发布页选择版本下载。</p></div><a class="cta" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">下载 Helix 安卓客户端 ↗</a></aside>'''
 def write(path,text):
  p=OUT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
 def main():
- articles=json.loads((ROOT/'articles.json').read_text());slugs=set()
+ articles=sorted(json.loads((ROOT/'articles.json').read_text()),key=article_order,reverse=True);slugs=set()
  for a in articles:
   assert re.fullmatch('[a-z0-9]+(?:-[a-z0-9]+)*',a['slug']) and a['slug'] not in slugs
   assert a['reviewed'] is True,'Only explicitly reviewed articles can be published'
@@ -37,7 +41,6 @@ def main():
  buttons=''.join(f'<button type="button" data-filter="{e(c)}" aria-pressed="{str(c=="全部").lower()}">{e(c)}</button>' for c in ['全部',*categories])
  body=f'''<section class="hero"><div><span class="eyebrow">A GROWING KNOWLEDGE GARDEN</span><h1>把讨论里的洞见，<br>留下来，接着用。</h1><p class="intro">从 AI 应用、工程实践到商业讨论。围绕具体问题整理知识，让每个结论都带着条件、分歧与来源。</p></div><div class="aside"><strong>按主题积累，回到原文核对。</strong>一场直播，一篇知识文档。按主题分章，留下完整案例、操作过程、工具用法与经营经验。</div></section><section aria-label="知识笔记"><div class="toolbar"><div class="filters" aria-label="分类筛选">{buttons}</div><label><span class="meta">搜索笔记 </span><input id="search" type="search" placeholder="搜索标题、主题或标签" aria-label="搜索知识笔记"></label></div><div class="section-label"><span>知识笔记 / KNOWLEDGE NOTES</span><span id="count" aria-live="polite">{len(articles)} 篇笔记</span></div><div class="grid">{''.join(cards)}</div><p class="empty" id="empty" hidden>没有找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
  write('index.html',shell('把讨论里的洞见留下来','持续积累 AI 应用、工程实践与商业讨论中的知识，保留条件、分歧与来源。',body,search=True))
- index_entries.sort(key=lambda pair:(pair[0]['date'],pair[0]['title']),reverse=True)
  index_body=f'''<section class="index-page"><h1>全部知识索引</h1><div class="index-list">{''.join(item for _,item in index_entries)}</div></section>{platform()}'''
  write('index/index.html',shell('全部知识索引','所有已发布知识文档的链接与简短摘要。',index_body,'index/'))
  redirects=json.loads((ROOT/'redirects.json').read_text()) if (ROOT/'redirects.json').exists() else {}
