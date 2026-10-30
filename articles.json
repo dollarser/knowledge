@@ -298,5 +298,25 @@
     "date": "2026-10-08",
     "reviewed": true,
     "source": "企智AI落地派10月8日晚两段对话，经用户授权合篇，不标当天场次"
+  },
+  {
+    "slug": "live-20261006-night",
+    "title": "2026-10-06 · 夜间直播知识",
+    "description": "小额FDE获客交付、企业AI需求、视频运营与模拟受众、模具招生和架构监控工具的具体经验。",
+    "category": "直播知识",
+    "tags": [],
+    "date": "2026-10-06",
+    "reviewed": true,
+    "source": "企智AI落地派历史对话；用户授权按日期编辑命名，不标场次"
+  },
+  {
+    "slug": "live-20261007-fragment",
+    "title": "2026-10-07 · 直播片段知识",
+    "description": "架构监控建议Agent的使用目标、小规模试用招募与Windows尚未验证的产品经验。",
+    "category": "直播知识",
+    "tags": [],
+    "date": "2026-10-07",
+    "reviewed": true,
+    "source": "企智AI落地派历史对话；用户授权按日期编辑命名，不标场次"
   }
 ]
