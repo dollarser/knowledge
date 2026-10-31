@@ -39,7 +39,7 @@ def main():
   body=f'''<article class="article"><a class="back" href="{BASE}">← 全部知识笔记</a><p class="eyebrow">{e(a['category'])} / {e(a['date'])}</p><h1>{e(a['title'])}</h1><p class="lead">{e(a['description'])}</p><div>{tags}</div><div class="source">来源说明：{e(a['source'])}。<br>本文为经过整理的知识笔记；具体内容与适用条件以正文为准。</div><div class="prose">{prose}</div>{platform()}</article>'''
   write(path+'index.html',shell(a['title'],a['description'],body,path))
  buttons=''.join(f'<button type="button" data-filter="{e(c)}" aria-pressed="{str(c=="全部").lower()}">{e(c)}</button>' for c in ['全部',*categories])
- body=f'''<section class="hero"><div><span class="eyebrow">A GROWING KNOWLEDGE GARDEN</span><h1>把讨论里的洞见，<br>留下来，接着用。</h1><p class="intro">从 AI 应用、工程实践到商业讨论。围绕具体问题整理知识，让每个结论都带着条件、分歧与来源。</p></div><div class="aside"><strong>按主题积累，回到原文核对。</strong>一场直播，一篇知识文档。按主题分章，留下完整案例、操作过程、工具用法与经营经验。</div></section><section aria-label="知识笔记"><div class="toolbar"><div class="filters" aria-label="分类筛选">{buttons}</div><label><span class="meta">搜索笔记 </span><input id="search" type="search" placeholder="搜索标题、主题或标签" aria-label="搜索知识笔记"></label></div><div class="section-label"><span>知识笔记 / KNOWLEDGE NOTES</span><span id="count" aria-live="polite">{len(articles)} 篇笔记</span></div><div class="grid">{''.join(cards)}</div><p class="empty" id="empty" hidden>没有找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
+ body=f'''<section class="hero"><div><span class="eyebrow">A GROWING KNOWLEDGE GARDEN</span><h1>把讨论里的洞见，<br>留下来，接着用。</h1><p class="intro">从 AI 应用、工程实践到商业讨论。围绕具体问题整理知识，让每个结论都带着条件、分歧与来源。</p></div><div class="aside"><strong>按主题积累，回到原文核对。</strong>按直播或连贯讨论整理知识文档。按主题分章，留下完整案例、操作过程、工具用法与经营经验。</div></section><section aria-label="知识笔记"><div class="toolbar"><div class="filters" aria-label="分类筛选">{buttons}</div><label><span class="meta">搜索笔记 </span><input id="search" type="search" placeholder="搜索标题、主题或标签" aria-label="搜索知识笔记"></label></div><div class="section-label"><span>知识笔记 / KNOWLEDGE NOTES</span><span id="count" aria-live="polite">{len(articles)} 篇笔记</span></div><div class="grid">{''.join(cards)}</div><p class="empty" id="empty" hidden>没有找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
  write('index.html',shell('把讨论里的洞见留下来','持续积累 AI 应用、工程实践与商业讨论中的知识，保留条件、分歧与来源。',body,search=True))
  index_body=f'''<section class="index-page"><h1>全部知识索引</h1><div class="index-list">{''.join(item for _,item in index_entries)}</div></section>{platform()}'''
  write('index/index.html',shell('全部知识索引','所有已发布知识文档的链接与简短摘要。',index_body,'index/'))
@@ -49,7 +49,7 @@ def main():
   assert new in slugs,'Redirect target must be a reviewed article'
   route=f'notes/{new}/'
   target=f'{BASE}{route}';canonical=f'{URL}{route}'
-  label='本场完整知识文档'
+  label='完整知识文档'
   write(f'notes/{old}/index.html',f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url={e(target)}"><link rel="canonical" href="{e(canonical)}"><title>{label}</title></head><body><p>请前往<a href="{e(target)}">{label}</a>。</p></body></html>')
  write('404.html',shell('页面未找到','请回到知识库查找笔记。',f'<section class="article"><h1>这篇笔记还没有找到</h1><p><a class="cta" href="{BASE}">回到知识库</a></p></section>'))
  write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{URL}{p}</loc></url>' for p in ['','index/',*[f"notes/{a['slug']}/" for a in articles]])+'</urlset>')
