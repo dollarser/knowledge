@@ -959,7 +959,7 @@ WebBuddy/Verse、Gorillabot/Gorkobot/37GrokBot、FollowToy、Image2与“香蕉�
 
 后段明确提到的工具还包括**DeepSeek Harness、Hermes、MiniMax API、阿里云百炼、MCP、智谱语音转文本、得到大脑**。DeepSeek Harness在研发工作流中被完整说出，不能只理解为DeepSeek基础模型；Hermes是参与者自述部署到自己服务器、再连接飞书和微信的方案。MiniMax和百炼则解释了“本地安装”产品仍可能依赖付费云API。CLIP被推荐用于理解画面和情绪的自动剪辑研究，现场尚未试验。GitHub上的口播、OCR、地图和算法项目没有唯一仓库，许可与可商用范围还不能确认。
 
-另外，OPC一点、千问办公、百度搭子、Cloud Code、树林同学、Kiki、创建/创见学院、奇博士/极博士/奇克劳、GrokBot、Open Source5.5、Körper、Muse、Q、Today.ai、CC Server、C站3.5/3.0、Mini H3、Don't be silence/serious、Tree、David等名称存在近音或身份歧义。正文保留各自被讨论的用途，但不将相似名字自动对应成产品官网。GrokBot“20刀”没有给计费周期，个人记忆硬件“400美元+20美元软件”也没有软件收费周期，都不宜直接拿来计算月费。
+另外，OPC一点、千问办公、百度搭子、Claude Code、树林同学、Kiki、创建/创见学院、奇博士/极博士/奇克劳、GrokBot、Open Source5.5、Körper、Muse、Q、Today.ai、CC Server、C站3.5/3.0、Mini H3、Don't be silence/serious、Tree、David等名称存在近音或身份歧义。正文保留各自被讨论的用途，但不将相似名字自动对应成产品官网。GrokBot“20刀”没有给计费周期，个人记忆硬件“400美元+20美元软件”也没有软件收费周期，都不宜直接拿来计算月费。
 
 还有几组业内判断适合作为研究问题，而不是现成结论：
 
