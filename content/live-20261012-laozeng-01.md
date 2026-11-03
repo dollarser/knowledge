@@ -72,18 +72,20 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    subgraph 员工的奖励思维陷阱
-        Work[十年深耕/忠心耿耿/任劳任怨] --> Expect[期待组织将晋升作为对苦劳的奖励]
-        Expect --> Disappoint[遭遇空降或年轻人上位/心态爆炸破防]
+    subgraph Trap["员工的奖励思维陷阱"]
+        Work["十年深耕 / 忠心耿耿 / 任劳任怨"] --> Expect["期待组织将晋升作为对苦劳的奖励"]
+        Expect --> Disappoint["遭遇空降或年轻人上位 / 心态爆炸破防"]
     end
 
-    subgraph 领袖的排兵布阵阵眼法则
-        StrategicShift[公司进入新战略周期: 出海/转型/破局] --> BattlePlan[设计全新排兵布阵与战法]
-        BattlePlan --> HubDemand[确立核心阵眼特质: 需特定战略穿透力]
+    subgraph HubRule["领袖的排兵布阵阵眼法则"]
+        StrategicShift["公司进入新战略周期: 出海 / 转型 / 破局"] --> BattlePlan["设计全新战法与排兵布阵架构"]
+        BattlePlan --> HubDemand["确立核心阵眼特质: 需特定战略穿透力"]
         HubDemand --> Compare{阵眼人选匹配评估}
-        Compare -- 资深老骨干: 历史战功赫赫/但属性匹配旧阵型 --> Retain[给高薪/给奖金/留任核心守家-2]
-        Compare -- 新特质干将/空降兵: 具备新战役阵眼穿透力 --> Appoint[任命为部门负责人/新战役阵眼-1]
+        Compare -- 资深老骨干 (旧战法匹配) --> Retain["高薪高奖金安抚 / 留任核心守家盘"]
+        Compare -- 新特质干将 (新战役穿透) --> Appoint["任命为部门负责人 / 确立新战局阵眼"]
     end
+
+    Trap ==>|认知降维击穿 · 跃升领导者视角| HubRule
 ```
 
 ### 3. 老骨干跃迁破局之道：主动成为新阵型的战略阵眼

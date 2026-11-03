@@ -87,13 +87,15 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph RealFDE["真正的 FDE (顶级复合操盘手)"]
-        Top["上能通天: 商业诊断/向上一把手管理/战略开方"]
-        Mid["中能通神: 摆平跨部门山头利益/化解落地阻力"]
-        Bottom["下能接地: 扎实工程底座/模型稳定性控制/系统对接"]
+        Top["上能通天: 商业诊断 / 向上一把手管理 / 战略开方"]
+        Mid["中能通神: 摆平跨部门山头利益 / 化解落地阻力"]
+        Bottom["下能接地: 扎实工程底座 / 模型稳定性控制 / 系统对接"]
+        Top --> Mid --> Bottom
     end
     subgraph FakeFDE["国内企业伪 FDE (旧瓶装新酒)"]
-        Old["传统现场驻场/实施工程师换皮/低薪高负荷/无话语权背锅"]
+        Old["传统现场驻场 / 实施工程师换皮 / 低薪高负荷 / 无话语权背锅"]
     end
+    RealFDE -.->|本质对比 · 降维碾压| FakeFDE
 ```
 
 ### 2. 售前顾问与行业线 PM 的“出道即巅峰”死穴
@@ -129,13 +131,14 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph Traditional["传统守旧中层 (必被淘汰)"]
-        Wall["人为筑起部门墙 / 阻断信息流通 / 守着地盘寻租"] --> Sluggish["组织反应迟钝 / AI系统无法触达数据"]
-        Sluggish --> Fire["阻碍公司进化 / 被当作组织结石坚决切除"]
+        Wall["人为筑起部门墙<br/>阻断信息流通 / 守着地盘寻租"] --> Sluggish["组织反应迟钝<br/>AI系统无法触达业务数据"]
+        Sluggish --> Fire["阻碍公司整体进化<br/>被当作组织结石坚决切除"]
     end
     subgraph Modern["现代超级协作者 (核心资产)"]
-        Flow["主动拆除部门墙 / 设计零摩擦工作流"] --> Orchestrator["管流程 + 管人 + 管AI Agent"]
-        Orchestrator --> Leverage["大幅放大组织人效 / 成为高维商业决策不可或缺的掌舵者"]
+        Flow["主动拆除部门墙<br/>设计零摩擦业务工作流"] --> Orchestrator["三位一体管理<br/>管流程 + 管人 + 管AI Agent"]
+        Orchestrator --> Leverage["大幅放大组织人效<br/>成为高维商业决策掌舵者"]
     end
+    Traditional ==>|组织进化与范式替换| Modern
 ```
 
 ---

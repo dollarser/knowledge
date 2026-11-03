@@ -52,15 +52,17 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Idea[业务想法 / Prompt / 软件 Demo] -->|AI 时代复制边际成本趋近于 0| NoMoat[非商业护城河]
-    subgraph 真正的商业护城河
-        F1[资金垫资能力: 垫付数百万国企算力账期]
-        F2[国资/政企商务渠道准入与供应商白名单]
-        F3[标准化 SOP: 确保零基础小白按流程能稳定盈利]
+    Idea["业务想法 / Prompt / 软件 Demo"] -->|边际复制成本趋近于 0| NoMoat["非商业护城河 (易被抄袭)"]
+    
+    subgraph MoatAssets["不可复制的产业护城河三大支柱"]
+        F1["支柱一: 资金垫资能力 (垫付数百万国企算力账期)"]
+        F2["支柱二: 政企与国资商务渠道准入与供应商白名单"]
+        F3["支柱三: 标准化SOP (确保零基础人员按流程稳定交付)"]
+        F1 --> F2 --> F3
     end
-    F1 --> Moat[不可复制的产业护城河]
-    F2 --> Moat
-    F3 --> Moat
+    
+    NoMoat ==>|高阶能力跨越| MoatAssets
+    MoatAssets ==> RealMoat["构建企业级抗周期商业护城河"]
 ```
 
 ### 3.1 投资机构的多项目“赛马跑测”机制

@@ -61,12 +61,13 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph Genius["顶尖算法天才 (极端小众)"]
-        Top["全球Top 3学术天赋 / NeurIPS顶会 / 百万美元买断底座训练"]
+        Top["全球Top 3学术天赋 / NeurIPS顶会<br/>百万美元买断底座训练"]
     end
     subgraph Regular["大众工程师与业务骨干 (最优生态位)"]
-        Work["掌握一线业务场景痛点"] --> Orchestration["编排长链稳定工作流 / 控成本 / 降幻觉"]
+        Work["掌握一线业务场景痛点"] --> Orchestration["编排长链稳定工作流<br/>控成本 / 降幻觉"]
         Orchestration --> Moat["交付可稳定落地的企业级降本方案"]
     end
+    Genius -.->|不可复制 · 避开底座内卷| Regular
 ```
 
 ---
@@ -134,13 +135,14 @@ flowchart TD
     subgraph Toxic["致命误区: 盲目依赖AI代脑"]
         NoSense["从业者缺乏一线业务判断力"] --> Prompt["输入空洞提示词"]
         Prompt --> Hallucination["AI用华丽黑话生成伪方案"]
-        Hallucination --> Disaster["失误与短板放大3-5倍 / 被老板识破打入冷宫"]
+        Hallucination --> Disaster["失误与短板放大3-5倍<br/>被老板识破打入冷宫"]
     end
     subgraph Master["正确姿势: 业务框架约束AI"]
         Context["深入一线提炼精准业务框架与边界"] --> Guide["用专业框架约束AI发散与提效"]
         Guide --> Review["严格业务校验与去伪存真"]
-        Review --> Win["产出高质量实战方案 / 获得高层高度认可"]
+        Review --> Win["产出高质量实战方案<br/>获得高层高度认可"]
     end
+    Toxic ==>|认知击穿 · 正确范式跃迁| Master
 ```
 
 ---

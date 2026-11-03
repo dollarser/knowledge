@@ -34,20 +34,20 @@
 
 ```mermaid
 flowchart TD
-    subgraph 虚伪心理防御链
-        Trap1[新业务4个月毫无产出] --> Trap2[遭遇老板严厉问责]
-        Trap2 --> Trap3[寻找外部替罪羊: 归咎同事造假哄老板]
-        Trap3 --> Trap4[给自己贴道德金字招牌: 我太老实实在所以吃亏]
-        Trap4 --> Trap5[陷入自怨自艾与虚耗瘫痪]
+    subgraph Trap["虚伪心理防御链 (受害者叙事)"]
+        Trap1["新业务4个月毫无商业产出"] --> Trap2["遭遇老板严厉质询问责"]
+        Trap2 --> Trap3["归咎外部替罪羊: 同事搞假数据哄老板"]
+        Trap3 --> Trap4["自我道德标榜: 我太实在所以吃亏"]
+        Trap4 --> Trap5["陷入自怨自艾与能力虚耗瘫痪"]
     end
     
-    subgraph 老曾穿透与破局链
-        Truth1[无视他人道德: 别人作假与你的业务产出零相关] --> Truth2[承认能力边界: 擅长1到N放大/缺乏0到1创新]
-        Truth2 --> Truth3[卸载受害者叙事: 停止怨天尤人]
-        Truth3 --> Truth4[回归商业结果: 寻找新探索破局抓手]
+    subgraph Truth["老曾穿透与破局链 (结果责任制)"]
+        Truth1["无视他人道德: 别人造假与你零产出无关"] --> Truth2["承认能力边界: 擅长1到N放大 / 缺乏0到1创新"]
+        Truth2 --> Truth3["卸载受害者叙事: 彻底停止怨天尤人"]
+        Truth3 --> Truth4["回归商业结果: 寻找新探索破局抓手"]
     end
     
-    Trap4 -.->|老曾降维击穿| Truth1
+    Trap ==>|老曾降维击穿 · 认知重建| Truth
 ```
 
 ---
@@ -84,19 +84,21 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    subgraph 黑暗森林商业博弈
-        Big["商业巨头 / 大厂"] --> Threat{"发现新兴萌芽团队"}
-        Threat --> Logic1["无法判定是否善意: 猜疑链"]
-        Threat --> Logic2["惧怕未知创新爆发: 技术爆炸"]
+    subgraph BigForest["黑暗森林商业博弈"]
+        Big["商业巨头 / 行业大厂"] --> Threat{"发现新兴萌芽团队"}
+        Threat --> Logic1["猜疑链: 无法判定是否善意"]
+        Threat --> Logic2["技术爆炸: 惧怕未知颠覆性创新"]
         Logic1 & Logic2 ==> Action["消灭在萌芽期: 巨资收购 / 强势绞杀"]
     end
     
-    subgraph 职场淘汰赛
+    subgraph Elimination["职场生存压力逐级传导"]
         Action --> BossMind["老板极致危机感: 两个月后公司就要死"]
         BossMind --> VP["传导至高管VP层: 极致竞争意识"]
-        VP --> Mid["传导至中层经理: 拒绝庸碌"]
+        VP --> Mid["传导至中层经理: 拒绝庸碌平庸"]
         Mid --> Worker["传导至一线员工: 弱肉强食淘汰赛"]
     end
+    
+    BigForest ==>|外部残酷危机逐级传导| Elimination
 ```
 
 ### 2. 职场淘汰赛真相：赢家垄断叙事权

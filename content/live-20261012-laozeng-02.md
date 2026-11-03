@@ -32,21 +32,23 @@
 
 ```mermaid
 flowchart TD
-    VPSeat[空缺关键高管位: 业务线VP/一把手] --> Contenders[三大战将陷入争夺死局]
+    VPSeat["空缺关键高管位: 业务线一把手"] --> Deadlock["三大战将陷入争夺死局"]
     
-    subgraph 三大战将博弈
-        Hero1[老大: 业务最强/功高盖主]
-        Hero2[老二: 资历最深/把持资源]
-        Hero3[老三: 新锐立功/互相攻伐]
+    subgraph Contenders["三大战将互相掣肘"]
+        Hero1["老大: 业务最强 / 功高盖主"]
+        Hero2["老二: 资历最深 / 把持存量资源"]
+        Hero3["老三: 新锐立功 / 互相攻伐"]
+        Hero1 --> Hero2 --> Hero3
     end
     
-    Hero1 -.->|提拔老大| Rebel1[老二老三带客户出走/团队分裂]
-    Hero2 -.->|提拔老二| Rebel2[老大当场反叛/业务崩盘]
+    Deadlock --> Contenders
     
-    VPSeat ==>|老板权力平衡算计| DarkHorse[破格提拔老四: 资历稍浅/不争不抢/绝对忠诚]
-    DarkHorse --> Balance1[老四政治根基浅/对老板100%依附]
-    DarkHorse --> Balance2[三大战将互相制衡/无从反叛]
-    DarkHorse --> Control[老板以老四为傀儡缓冲垫/实现绝对掌控]
+    Contenders -.->|若提拔老大或老二| Crisis["团队分裂 / 核心客户与骨干带队出走"]
+    
+    VPSeat ==>|老板权力平衡终极算计| DarkHorse["破格提拔老四: 资历尚浅 / 不争不抢 / 绝对忠诚"]
+    DarkHorse --> Balance1["老四政治根基浅，对老板100%依附"]
+    Balance1 --> Balance2["三大战将心理平衡，互相制衡无从反叛"]
+    Balance2 --> Control["老板以老四为缓冲垫，实现全盘绝对掌控"]
 ```
 
 ---

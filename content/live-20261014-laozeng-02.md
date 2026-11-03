@@ -81,17 +81,24 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    BossNotice[高管谈话: 动员平调出海/画大饼] --> Perception{中层认知分水岭}
-    Perception -- 组织幼稚病: 误以为是平级商量 --> Reject[抗拒外派/要求留在华东原职]
-    Reject --> Trap1[本土编制早已被新主管替换]
-    Trap1 --> Trap2[被扣上抗命帽子/迅速架空边缘化]
+    BossNotice["高管谈话: 动员平调出海 / 画饼大盘"] --> Perception{中层认知分水岭}
+    
+    Perception -- 组织幼稚病: 误以为是平级商量 --> Reject["抗拒外派 / 执意死守原部门"]
+    Reject --> Trap1["本土编制早已被新主管替换"]
+    Trap1 --> Trap2["被扣上不服从大局帽子 / 迅速架空边缘化"]
 
-    Perception -- 清醒博弈: 识别既定组织事实 --> Accept[顺应大局接受外派]
-    Accept --> Negotiate[借机向上锁死谈判筹码]
-    Negotiate --> Asset1[明确海外战功考核标准与宽限期]
-    Negotiate --> Asset2[白纸黑字锁定外派津贴/期权/晋升回流承诺]
-    Negotiate --> Asset3[要人权财权: 组建海外独立班底]
-    Asset3 --> Win[打下海外战功/镀金跃迁跃升VP]
+    Perception -- 清醒博弈: 顺应既定组织事实 --> Accept["顺应大局接受外派出海"]
+    Accept --> Negotiate["借机向上索取核心谈判筹码"]
+    
+    subgraph Leverage["向上锁死三大核心资产"]
+        Asset1["筹码一: 明确海外战功考核标准与宽限期"]
+        Asset2["筹码二: 白纸黑字锁定津贴/期权/晋升回流承诺"]
+        Asset3["筹码三: 索取人权与财权，组建海外独立班底"]
+        Asset1 --> Asset2 --> Asset3
+    end
+    
+    Negotiate --> Leverage
+    Leverage --> Win["打下海外战功 / 镀金跃迁晋升VP一把手"]
 ```
 
 ### 3. 出海谈判破局法则：绝不赤身肉搏，必须锁死“三大安全垫”
