@@ -83,19 +83,19 @@ flowchart TD
   走你的路让你无路可走，要么迅速像素级仿制以规模优势绞杀，要么巨资收购控股变为附庸，绝不给潜在技术爆炸任何反噬大厂的机会！
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph 黑暗森林商业博弈
-        Big[商业巨头/大厂] --> Threat{发现新兴萌芽团队}
-        Threat --> Logic1[无法判定是否善意: 猜疑链]
-        Threat --> Logic2[惧怕未知创新爆发: 技术爆炸]
-        Logic1 & Logic2 ==> Action[消灭在萌芽期: 巨资收购/强势绞杀]
+        Big["商业巨头 / 大厂"] --> Threat{"发现新兴萌芽团队"}
+        Threat --> Logic1["无法判定是否善意: 猜疑链"]
+        Threat --> Logic2["惧怕未知创新爆发: 技术爆炸"]
+        Logic1 & Logic2 ==> Action["消灭在萌芽期: 巨资收购 / 强势绞杀"]
     end
     
     subgraph 职场淘汰赛
-        Action --> BossMind[老板极致危机感: 两个月后公司就要死]
-        BossMind --> VP[传导至高管VP层: 极致竞争意识]
-        VP --> Mid[传导至中层经理: 拒绝庸碌]
-        Mid --> Worker[传导至一线员工: 弱肉强食淘汰赛]
+        Action --> BossMind["老板极致危机感: 两个月后公司就要死"]
+        BossMind --> VP["传导至高管VP层: 极致竞争意识"]
+        VP --> Mid["传导至中层经理: 拒绝庸碌"]
+        Mid --> Worker["传导至一线员工: 弱肉强食淘汰赛"]
     end
 ```
 
