@@ -57,6 +57,7 @@ def main():
   cards.append(f'''<article class="card" data-card data-category="{e(a['category'])}" data-search="{e(search)}"><div class="meta">{e(a['category'])} · {e(a['date'])}</div><h2><a href="{BASE}{path}">{e(a['title'])}</a></h2><p>{e(a['description'])}</p><div>{tags}</div><a class="read" href="{BASE}{path}">阅读笔记 →</a></article>''')
   source_text=(ROOT/'content'/f"{a['slug']}.md").read_text()
   # The page shell owns the title; render the body once, with stable chapter anchors.
+  source_text=re.sub(r'\A---\n.*?\n---\s*', '', source_text, flags=re.S)
   source_text=re.sub(r'\A# [^\n]+\n', '', source_text, count=1)
   md=markdown.Markdown(extensions=['tables','fenced_code','toc'],extension_configs={'toc':{'slugify':slugify_unicode,'toc_depth':'2'}})
   prose=md.convert(source_text)
