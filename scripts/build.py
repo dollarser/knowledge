@@ -32,7 +32,7 @@ def reading_page(articles):
   if len(ids)==1:
    sections.append('<div class="channel-header" style="margin:45px 0 20px;border-bottom:2px solid var(--accent);padding-bottom:10px;"><span class="eyebrow">CHANNEL 01 / AI DELIVERY & BUSINESS</span><h2 style="font-size:28px;margin:8px 0 6px;">🏢 企智AI落地派 · 实战交付与商业经营（6 大专题）</h2><p class="lead" style="margin:0;color:var(--muted);">涵盖大模型选型微调、AI自动化工作流、真实接单交付、算力配置与客户获客运营。</p></div>')
   elif is_laozeng and sum(1 for x in ids if x.startswith('laozeng-'))==1:
-   sections.append('<div class="channel-header" style="margin:60px 0 20px;border-bottom:2px solid var(--accent);padding-bottom:10px;"><span class="eyebrow">CHANNEL 02 / WORKPLACE POWER DYNAMICS</span><h2 style="font-size:28px;margin:8px 0 6px;">♟️ 产品老曾 · 职场升迁与组织博弈全景（4 大专题）</h2><p class="lead" style="margin:0;color:var(--muted);">解密大厂高管更迭、总监晋升、空降高管速胜、突发红利利益分水与人机协同组织突围。</p></div>')
+   sections.append('<div class="channel-header" style="margin:60px 0 20px;border-bottom:2px solid var(--accent);padding-bottom:10px;"><span class="eyebrow">CHANNEL 02 / WORKPLACE POWER DYNAMICS</span><h2 style="font-size:28px;margin:8px 0 6px;">♟️ 产品老曾 · 职场升迁与组织博弈全景（4 大专题）</h2><p class="lead" style="margin:0;color:var(--muted);">从具体连麦案例理解晋升、团队协作、责任回报与AI工具的实际用途。</p></div>')
   sections.append(f'<section class="reading-section" id="{e(key)}"><h2>{e(topic["title"])}</h2><p>{e(topic["description"])}</p><ul class="reading-list">{"".join(entries)}</ul></section>')
  assert covered==set(by_slug),'Every reviewed article needs a reading path'
  cases=[]
