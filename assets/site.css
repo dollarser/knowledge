@@ -5,3 +5,32 @@
 .reading-page .lead{color:var(--muted)}.reading-jumps{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 36px}.reading-jumps a{border:1px solid var(--line);border-radius:5px;padding:6px 12px;background:var(--card);font-size:14px}.reading-jumps a:hover{border-color:var(--accent);color:var(--accent)}.reading-section{margin:40px 0;scroll-margin-top:24px}.reading-section>h2{font-size:27px;margin-bottom:8px}.reading-section>p,.case-entry>p{color:var(--muted)}.reading-list{padding-left:24px}.reading-list li{padding:12px 0;border-bottom:1px solid var(--line)}.reading-list a{color:var(--accent);font-weight:650}.reading-list p{margin:4px 0;color:var(--muted);font-size:15px}.case-entry{margin:28px 0}.case-entry h3{margin-bottom:8px}.links{flex-wrap:wrap}
 pre.mermaid{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px;text-align:center;overflow-x:auto;margin:28px 0;white-space:pre}pre.mermaid>svg{max-width:100%;height:auto;display:inline-block;margin:0 auto}.prose blockquote{margin:20px 0;padding:14px 20px;border-left:4px solid var(--accent);background:var(--card);border-radius:0 6px 6px 0;color:var(--ink);font-size:15px}.prose blockquote p{margin:6px 0}.prose blockquote p:first-child{margin-top:0}.prose blockquote p:last-child{margin-bottom:0}
 details.index-channel-fold summary::-webkit-details-marker,details.index-channel-fold summary::marker{display:none}details.index-channel-fold summary:hover{background:rgba(0,0,0,0.015)}details.index-channel-fold:not([open]) .fold-pill::after{content:"点击展开 ▾"}details.index-channel-fold[open] .fold-pill::after{content:"收起列表 ▴"}details.index-channel-fold[open] .fold-pill{background:var(--ink);color:#fff;border-color:var(--ink)}.nav-helix{color:#ea580c!important;font-weight:700!important;padding:4px 12px;border:1.5px solid #ea580c!important;border-radius:18px;background:rgba(234,88,12,0.08)!important;display:inline-flex;align-items:center;transition:all .2s;text-decoration:none}.nav-helix:hover{background:#ea580c!important;color:#fff!important}.platform a,.platform-helix{color:#ea580c!important;text-decoration:underline;font-weight:700!important}.platform a:hover,.platform-helix:hover{color:#c2410c!important}@media(max-width:700px){.links .nav-helix{padding:4px 9px;font-size:12px}}
+
+/* Multi-Channel Portal & Separation Styles */
+.portal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:32px 0 50px}
+.portal-card{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:32px 26px;position:relative;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:all .25s ease}
+.portal-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+.portal-card .channel-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:1px;padding:4px 10px;border-radius:20px;margin-bottom:16px;width:fit-content}
+.portal-card.qizhi .channel-badge{background:rgba(14,116,144,0.12);color:#0e7490}
+.portal-card.laozeng .channel-badge{background:rgba(109,40,217,0.12);color:#6d28d9}
+.portal-card.wangcen .channel-badge{background:rgba(194,65,12,0.12);color:#c2410c}
+.portal-card h2{font-size:23px;line-height:1.4;margin:0 0 10px;letter-spacing:-0.5px}
+.portal-card p.desc{font-size:14px;color:var(--muted);line-height:1.7;margin:0 0 20px;flex-grow:1}
+.portal-card .stats{font-size:13px;font-weight:700;color:var(--ink);padding:10px 0;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);margin-bottom:20px;display:flex;justify-content:space-between}
+.portal-card .enter-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 18px;border-radius:6px;font-weight:650;font-size:14px;text-align:center;transition:all .2s;text-decoration:none}
+.portal-card.qizhi .enter-btn{background:#0e7490;color:#fff}
+.portal-card.qizhi .enter-btn:hover{background:#155e75}
+.portal-card.laozeng .enter-btn{background:#6d28d9;color:#fff}
+.portal-card.laozeng .enter-btn:hover{background:#5b21b6}
+.portal-card.wangcen .enter-btn{background:#c2410c;color:#fff}
+.portal-card.wangcen .enter-btn:hover{background:#9a3412}
+
+/* Header channel nav */
+.channel-switch{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,0.04);padding:4px 10px;border-radius:20px;font-size:13px;font-weight:600}
+.channel-switch a{color:var(--muted);padding:2px 8px;border-radius:12px;transition:all .2s}
+.channel-switch a:hover{color:var(--ink)}
+.channel-switch a.active{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+
+@media(max-width:900px){
+  .portal-grid{grid-template-columns:1fr;gap:20px}
+}
