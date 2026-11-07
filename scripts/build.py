@@ -88,11 +88,10 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         links_html = f'''
         <a href="{BASE}{c['id']}/index/">全部笔记</a>
         <a href="{BASE}{c['id']}/reading/">专题阅读</a>
-        <a href="{BASE}" style="color:var(--muted);font-weight:600;">知识库总入口</a>
-        <a href="https://blog.sunlingzhang.com/">返回博客</a>
+        <a href="https://blog.sunlingzhang.com/">作者博客</a>
         <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 移动端 ↗</a>
         '''
-        footer_links = f'''<a href="{BASE}{c['id']}/index/">{c['name']}索引</a> · <a href="{BASE}">知识库总入口</a> · <a href="https://blog.sunlingzhang.com/">博客主页</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
+        footer_links = f'''<a href="{BASE}{c['id']}/index/">{c['name']}索引</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
     else:
         brand_html = f'''<a class="brand" href="{BASE}">知识笔记<small>NOTES INTO PRACTICE</small></a>'''
         links_html = f'''
@@ -101,17 +100,20 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         <a href="{BASE}wangcen/">🛍️ 王岑投资</a>
         <a href="{BASE}index/">全站索引</a>
         <a href="{BASE}reading/">全部专题</a>
-        <a href="https://blog.sunlingzhang.com/">返回博客</a>
+        <a href="https://blog.sunlingzhang.com/">作者博客</a>
         <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 移动端 ↗</a>
         '''
-        footer_links = f'''<a href="{BASE}index/">全站索引</a> · <a href="{BASE}reading/">全部专题</a> · <a href="https://blog.sunlingzhang.com/">博客主页</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
+        footer_links = f'''<a href="{BASE}index/">全站索引</a> · <a href="{BASE}reading/">全部专题</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
 
     return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · 知识笔记</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{canonical}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23172c38'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='65' fill='%23fffefa'%3E知%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="{BASE}assets/site.css?v=20261107"></head><body><header><nav class="wrap" aria-label="主导航">{brand_html}<div class="links">{links_html}</div></nav></header><main class="wrap">{body}</main><footer class="wrap">持续积累，保留依据。AI 辅助整理，发布前校订。 · {footer_links}</footer>{f'<script src="{BASE}assets/search.js" defer></script>' if search else ''}{'<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"neutral",securityLevel:"loose",flowchart:{htmlLabels:true,curve:"basis"}});</script>' if has_mermaid else ''}</body></html>'''
 
-def render_article_prose(source_path: Path):
+def render_article_prose(source_path: Path, channel_id: str = None):
     source_text = source_path.read_text(encoding='utf-8')
     assert not any(x in source_text for x in ['/Users/', '127.0.0.1', 'localhost:', 'speaker_id', 'transcription.raw', 'sk-proj-']), f'Private artifact in {source_path.name}'
     
+    if channel_id:
+        source_text = re.sub(r'/knowledge/notes/([a-z0-9-]+)/', rf'{BASE}{channel_id}/notes/\1/', source_text)
+
     source_text = re.sub(r'\A---\n.*?\n---\s*', '', source_text, flags=re.S)
     source_text = re.sub(r'\A# [^\n]+\n', '', source_text, count=1)
     source_text = re.sub(r'([^\n\s])\n([-*] |\d+\. )', r'\1\n\n\2', source_text)
@@ -216,7 +218,7 @@ def main():
             c_index_entries.append(f'''<article class="index-entry" data-card><h2><a href="{BASE}{art_path}">{e(a['title'])}</a></h2><p>{e(a['description'])}</p><div style="margin-top:6px;"><span class="meta">{e(a['date'])}</span></div></article>''')
             
             # Render individual article page in channel
-            prose, has_mermaid = render_article_prose(ROOT / 'content' / f"{a['slug']}.md")
+            prose, has_mermaid = render_article_prose(ROOT / 'content' / f"{a['slug']}.md", channel_id=cid)
             art_body = f'''<article class="article"><a class="back" href="{BASE}{cid}/">← 返回{cinfo['name']}专栏</a><p class="eyebrow">{cinfo['eyebrow']} · {e(a['date'])}</p><h1>{e(a['title'])}</h1><p class="lead">{e(a['description'])}</p><div>{tags_html}</div><div class="prose">{prose}</div>{platform()}</article>'''
             write(f"{art_path}index.html", shell(a['title'], a['description'], art_body, art_path, has_mermaid=has_mermaid, channel=cid))
             
