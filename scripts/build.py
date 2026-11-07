@@ -85,20 +85,14 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         c = CHANNELS[channel]
         brand_html = f'''<a class="brand" href="{BASE}{c['id']}/">{c['name']}<small>{c['tagline'].upper()}</small></a>'''
         
-        switch_items = []
-        for cid, info in CHANNELS.items():
-            act = ' active' if cid == channel else ''
-            switch_items.append(f'''<a class="{act}" href="{BASE}{cid}/">{info['icon']} {info['name']}</a>''')
-        
         links_html = f'''
-        <div class="channel-switch" title="切换不同直播间专栏">{"".join(switch_items)}</div>
-        <a href="{BASE}{c['id']}/index/">本专栏索引</a>
+        <a href="{BASE}{c['id']}/index/">全部笔记</a>
         <a href="{BASE}{c['id']}/reading/">专题阅读</a>
-        <a href="{BASE}" style="color:var(--muted);font-weight:600;">知识库主站</a>
+        <a href="{BASE}" style="color:var(--muted);font-weight:600;">知识库总入口</a>
         <a href="https://blog.sunlingzhang.com/">返回博客</a>
         <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 移动端 ↗</a>
         '''
-        footer_links = f'''<a href="{BASE}{c['id']}/index/">{c['name']}索引</a> · <a href="{BASE}">知识库主站</a> · <a href="https://blog.sunlingzhang.com/">博客主页</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
+        footer_links = f'''<a href="{BASE}{c['id']}/index/">{c['name']}索引</a> · <a href="{BASE}">知识库总入口</a> · <a href="https://blog.sunlingzhang.com/">博客主页</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
     else:
         brand_html = f'''<a class="brand" href="{BASE}">知识笔记<small>NOTES INTO PRACTICE</small></a>'''
         links_html = f'''
