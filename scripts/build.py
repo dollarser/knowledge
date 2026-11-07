@@ -75,7 +75,7 @@ def write(path, text):
     p.write_text(text, encoding='utf-8')
 
 def platform():
-    return f'''<aside class="platform" aria-label="相关开源工具"><div><span class="meta">相关工程实践</span><p>作者自研移动端实验工具：<a class="platform-helix" style="color:#ea580c;font-weight:700;text-decoration:underline;" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 开源项目 ↗</a></p></div></aside>'''
+    return f'''<aside class="platform" aria-label="相关开源工具"><div><span class="meta">相关工程实践</span><p>作者自研移动端实验工具：<a class="platform-helix" style="color:#ea580c;font-weight:700;text-decoration:underline;" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 开源蒸馏工具（安卓） ↗</a></p></div></aside>'''
 
 def shell(title, description, body, rel_path='', search=False, has_mermaid=False, channel=None):
     canonical = f"{SITE_URL}{rel_path}"
@@ -89,7 +89,7 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         <a href="{BASE}{c['id']}/">专栏主页</a>
         <a href="{BASE}{c['id']}/reading/">专题阅读</a>
         <a href="https://blog.sunlingzhang.com/">作者博客</a>
-        <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 移动端 ↗</a>
+        <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 开源蒸馏工具（安卓） ↗</a>
         '''
         footer_links = f'''<a href="{BASE}{c['id']}/">{c['name']}</a> · <a href="{BASE}{c['id']}/reading/">专题阅读</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
     else:
@@ -101,7 +101,7 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         <a href="{BASE}index/">全站索引</a>
         <a href="{BASE}reading/">全部专题</a>
         <a href="https://blog.sunlingzhang.com/">作者博客</a>
-        <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 移动端 ↗</a>
+        <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 开源蒸馏工具（安卓） ↗</a>
         '''
         footer_links = f'''<a href="{BASE}index/">全站索引</a> · <a href="{BASE}reading/">全部专题</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
 
