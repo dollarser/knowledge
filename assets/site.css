@@ -31,6 +31,20 @@ details.index-channel-fold summary::-webkit-details-marker,details.index-channel
 .channel-switch a:hover{color:var(--ink)}
 .channel-switch a.active{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,0.08)}
 
+/* View Toggle: Card Grid vs Vertical List */
+.view-toggle-wrap{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:6px;background:var(--card);overflow:hidden}
+.view-btn{padding:5px 12px;border:none!important;border-radius:0!important;background:transparent;color:var(--muted);font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:5px;cursor:pointer;transition:all .15s}
+.view-btn:hover{color:var(--ink)}
+.view-btn.active{background:var(--ink)!important;color:#fff!important}
+
+.grid.view-list{display:flex;flex-direction:column;gap:12px}
+.grid.view-list .card{padding:18px 22px;border-radius:6px;transition:all .15s ease}
+.grid.view-list .card:hover{transform:translateX(4px);border-color:var(--accent)}
+.grid.view-list .card .card-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.grid.view-list .card h2{font-size:19px;line-height:1.4;margin:0 0 6px}
+.grid.view-list .card p{font-size:14px;line-height:1.6;margin:0 0 10px;color:var(--muted)}
+.grid.view-list .card .read{display:none}
+
 @media(max-width:900px){
   .portal-grid{grid-template-columns:1fr;gap:20px}
 }

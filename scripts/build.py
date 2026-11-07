@@ -86,12 +86,12 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         brand_html = f'''<a class="brand" href="{BASE}{c['id']}/">{c['name']}<small>{c['tagline'].upper()}</small></a>'''
         
         links_html = f'''
-        <a href="{BASE}{c['id']}/index/">全部笔记</a>
+        <a href="{BASE}{c['id']}/">专栏主页</a>
         <a href="{BASE}{c['id']}/reading/">专题阅读</a>
         <a href="https://blog.sunlingzhang.com/">作者博客</a>
         <a class="nav-helix" href="{DOWNLOAD}" target="_blank" rel="noopener noreferrer">Helix 移动端 ↗</a>
         '''
-        footer_links = f'''<a href="{BASE}{c['id']}/index/">{c['name']}索引</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
+        footer_links = f'''<a href="{BASE}{c['id']}/">{c['name']}</a> · <a href="{BASE}{c['id']}/reading/">专题阅读</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
     else:
         brand_html = f'''<a class="brand" href="{BASE}">知识笔记<small>NOTES INTO PRACTICE</small></a>'''
         links_html = f'''
@@ -105,7 +105,7 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         '''
         footer_links = f'''<a href="{BASE}index/">全站索引</a> · <a href="{BASE}reading/">全部专题</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
 
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · 知识笔记</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{canonical}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23172c38'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='65' fill='%23fffefa'%3E知%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="{BASE}assets/site.css?v=20261107"></head><body><header><nav class="wrap" aria-label="主导航">{brand_html}<div class="links">{links_html}</div></nav></header><main class="wrap">{body}</main><footer class="wrap">持续积累，保留依据。AI 辅助整理，发布前校订。 · {footer_links}</footer>{f'<script src="{BASE}assets/search.js" defer></script>' if search else ''}{'<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"neutral",securityLevel:"loose",flowchart:{htmlLabels:true,curve:"basis"}});</script>' if has_mermaid else ''}</body></html>'''
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · 知识笔记</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{canonical}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23172c38'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='65' fill='%23fffefa'%3E知%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="{BASE}assets/site.css?v=20261108"></head><body><header><nav class="wrap" aria-label="主导航">{brand_html}<div class="links">{links_html}</div></nav></header><main class="wrap">{body}</main><footer class="wrap">持续积累，保留依据。AI 辅助整理，发布前校订。 · {footer_links}</footer>{f'<script src="{BASE}assets/search.js?v=20261108" defer></script>' if search else ''}{'<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"neutral",securityLevel:"loose",flowchart:{htmlLabels:true,curve:"basis"}});</script>' if has_mermaid else ''}</body></html>'''
 
 def render_article_prose(source_path: Path, channel_id: str = None):
     source_text = source_path.read_text(encoding='utf-8')
@@ -214,8 +214,7 @@ def main():
             tags_html = ''.join(f'<span class="pill">{e(t)}</span>' for t in a['tags'])
             search_str = ' '.join([a['title'], a['description'], a['category'], *a['tags']]).lower()
             
-            c_cards.append(f'''<article class="card" data-card data-category="{e(a['category'])}" data-search="{e(search_str)}"><div class="meta">{e(a['category'])} · {e(a['date'])}</div><h2><a href="{BASE}{art_path}">{e(a['title'])}</a></h2><p>{e(a['description'])}</p><div>{tags_html}</div><a class="read" href="{BASE}{art_path}">阅读完整笔记 →</a></article>''')
-            c_index_entries.append(f'''<article class="index-entry" data-card><h2><a href="{BASE}{art_path}">{e(a['title'])}</a></h2><p>{e(a['description'])}</p><div style="margin-top:6px;"><span class="meta">{e(a['date'])}</span></div></article>''')
+            c_cards.append(f'''<article class="card" data-card data-category="{e(a['category'])}" data-search="{e(search_str)}"><div class="card-top"><span class="meta">{e(a['category'])} · {e(a['date'])}</span></div><h2><a href="{BASE}{art_path}">{e(a['title'])}</a></h2><p>{e(a['description'])}</p><div class="tags">{tags_html}</div><a class="read" href="{BASE}{art_path}">阅读完整笔记 →</a></article>''')
             
             # Render individual article page in channel
             prose, has_mermaid = render_article_prose(ROOT / 'content' / f"{a['slug']}.md", channel_id=cid)
@@ -229,12 +228,12 @@ def main():
 
         # Channel Home Page
         c_hero = f'''<section class="hero"><div><span class="eyebrow">{cinfo['eyebrow']}</span><h1>{cinfo['hero_title']}</h1><p class="intro">{cinfo['hero_lead']}</p></div><div class="aside"><strong>{cinfo['aside_title']}</strong>{cinfo['aside_desc']}</div></section>'''
-        c_toolbar = f'''<section aria-label="{cinfo['name']}笔记"><div class="toolbar"><div class="filters"><span style="font-weight:700;font-size:14px;color:var(--ink);">{cinfo['icon']} {cinfo['name']} ({len(c_arts)} 篇)</span></div><label><span class="meta">搜索专栏笔记 </span><input id="search" type="search" placeholder="搜索本专栏标题、标签或内容" aria-label="搜索专栏笔记"></label></div><div class="section-label"><span>{cinfo['eyebrow']}</span><span id="count" aria-live="polite">{len(c_arts)} 篇笔记</span></div><div class="grid">{''.join(c_cards)}</div><p class="empty" id="empty" hidden>本专栏未找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
+        c_toolbar = f'''<section aria-label="{cinfo['name']}笔记"><div class="toolbar"><div class="filters"><span style="font-weight:700;font-size:14px;color:var(--ink);">{cinfo['icon']} {cinfo['name']} ({len(c_arts)} 篇)</span></div><label><span class="meta">搜索专栏笔记 </span><input id="search" type="search" placeholder="搜索本专栏标题、标签或内容" aria-label="搜索专栏笔记"></label></div><div class="section-label"><span>{cinfo['eyebrow']}</span><div style="display:inline-flex;align-items:center;gap:14px;"><span id="count" aria-live="polite">{len(c_arts)} 篇笔记</span><div class="view-toggle-wrap" role="group" aria-label="排版视图"><button type="button" id="btn-view-card" class="view-btn active" aria-pressed="true" title="卡片视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg> 卡片</button><button type="button" id="btn-view-list" class="view-btn" aria-pressed="false" title="列表视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg> 列表</button></div></div></div><div class="grid">{''.join(c_cards)}</div><p class="empty" id="empty" hidden>本专栏未找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
         write(f"{cid}/index.html", shell(f"{cinfo['name']} · 专栏首页", cinfo['desc'], f"{c_hero}{c_toolbar}", f"{cid}/", search=True, channel=cid))
 
-        # Channel Index Page
-        c_index_body = f'''<section class="index-page"><a class="back" href="{BASE}{cid}/">← 返回{cinfo['name']}专栏首页</a><p class="eyebrow">{cinfo['eyebrow']}</p><h1>{cinfo['name']} · 完整知识索引</h1><p class="lead" style="color:var(--muted);margin-bottom:26px;">共收录 {len(c_arts)} 篇完整直播全息研报，按时间倒序归档排列。</p><div class="index-list">{''.join(c_index_entries)}</div></section>{platform()}'''
-        write(f"{cid}/index/index.html", shell(f"{cinfo['name']}索引", cinfo['desc'], c_index_body, f"{cid}/index/", channel=cid))
+        # Channel Index Page (Redirect to Channel Home)
+        c_index_redirect = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url={BASE}{cid}/"><link rel="canonical" href="{SITE_URL}{cid}/"><title>正在重定向至{cinfo['name']}专栏首页...</title></head><body><p>正在前往专栏首页：<a href="{BASE}{cid}/">{cinfo['name']}专栏</a></p></body></html>'''
+        write(f"{cid}/index/index.html", c_index_redirect)
 
         # Channel Reading Paths Page
         build_channel_reading(cid, c_arts, all_articles_map, reading_data)
@@ -330,7 +329,7 @@ def main():
     
     sitemap_urls = ['', 'index/', 'reading/']
     for cid in CHANNELS:
-        sitemap_urls.extend([f"{cid}/", f"{cid}/index/", f"{cid}/reading/"])
+        sitemap_urls.extend([f"{cid}/", f"{cid}/reading/"])
         for a in channel_articles_map[cid]:
             sitemap_urls.append(f"{cid}/notes/{a['slug']}/")
 
