@@ -57,6 +57,20 @@ CHANNELS = {
         'hero_lead': '二十余年消费投资实战：穿透加盟流水泡沫、死守单店保本红线、防范早期股权掠夺、在存量周期中做透现金流。',
         'aside_title': '算透每一分账，守住现金流。',
         'aside_desc': '聚焦万店供应链虚胖脱水、文旅轻资产套利、下沉市场地推与拒绝盲目打低价价格战的投资哲学。'
+    },
+    'daowen': {
+        'id': 'daowen',
+        'category': '刀文AI商业',
+        'name': '刀文AI商业',
+        'eyebrow': 'CHANNEL 04 / AI BUSINESS & MONETIZATION',
+        'icon': '⚡',
+        'color': '#2563eb',
+        'tagline': 'AI商业落地与变现闭环',
+        'desc': '聚焦AI个人与团队商业化变现、公域流量矩阵、私域高客单转化与实体赋能的实战经验库。',
+        'hero_title': 'AI商业变现实战，<br>穿透流量、转化与交付闭环。',
+        'hero_lead': '还原刀文直播实战连麦：从公域短视频矩阵获客、私域高客单转化到轻量化团队交付的真实路径。',
+        'aside_title': '重在商业闭环与现金流。',
+        'aside_desc': '不谈空中楼阁，只记录流量获取、产品包装、报价转化与规模化放大的实操心法。'
     }
 }
 
@@ -98,6 +112,7 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         <a href="{BASE}qizhi/">🏢 企智AI</a>
         <a href="{BASE}laozeng/">♟️ 老曾职场</a>
         <a href="{BASE}wangcen/">🛍️ 王岑投资</a>
+        <a href="{BASE}daowen/">⚡ 刀文商业</a>
         <a href="{BASE}index/">全站索引</a>
         <a href="{BASE}reading/">全部专题</a>
         <a href="https://blog.sunlingzhang.com/">作者博客</a>
@@ -131,11 +146,13 @@ def build_channel_reading(channel_id: str, channel_articles, all_articles_map, r
     
     # filter topics for this channel
     if channel_id == 'qizhi':
-        topics = [t for t in reading_data['topics'] if not t['id'].startswith('laozeng-') and not t['id'].startswith('wangcen-')]
+        topics = [t for t in reading_data['topics'] if not t['id'].startswith('laozeng-') and not t['id'].startswith('wangcen-') and not t['id'].startswith('daowen-')]
     elif channel_id == 'laozeng':
         topics = [t for t in reading_data['topics'] if t['id'].startswith('laozeng-')]
-    else:
+    elif channel_id == 'wangcen':
         topics = [t for t in reading_data['topics'] if t['id'].startswith('wangcen-')]
+    else:
+        topics = [t for t in reading_data['topics'] if t['id'].startswith('daowen-')]
 
     sections = []
     jumps = []
@@ -271,18 +288,18 @@ def main():
         </div>
         ''')
 
-    hub_hero = f'''<section class="hero"><div><span class="eyebrow">KNOWLEDGE REPOSITORY · MULTI-CHANNEL</span><h1>把讨论里的洞见，<br>留下来，接着用。</h1><p class="intro">按照不同的主播与实战领域，严格设立三个完全独立的知识专栏。独立地址归档，专注各自的商业与技术底层。</p></div><div class="aside"><strong>专栏独立归集，杜绝混合混乱。</strong>每个直播间专栏拥有专属网址、专属索引与专题体系，满足垂直深度的学习检索需求。</div></section>'''
+    hub_hero = f'''<section class="hero"><div><span class="eyebrow">KNOWLEDGE REPOSITORY · MULTI-CHANNEL</span><h1>把讨论里的洞见，<br>留下来，接着用。</h1><p class="intro">按照不同的主播与实战领域，严格设立四个完全独立的知识专栏。独立地址归档，专注各自的商业与技术底层。</p></div><div class="aside"><strong>专栏独立归集，杜绝混合混乱。</strong>每个直播间专栏拥有专属网址、专属索引与专题体系，满足垂直深度的学习检索需求。</div></section>'''
     hub_body = f'''
     {hub_hero}
     <section aria-label="直播间知识专栏">
-      <div class="section-label"><span>独立直播间专栏 / INDEPENDENT CHANNELS</span><span>3 大垂直专栏 · 共 {len(articles)} 篇笔记</span></div>
+      <div class="section-label"><span>独立直播间专栏 / INDEPENDENT CHANNELS</span><span>4 大垂直专栏 · 共 {len(articles)} 篇笔记</span></div>
       <div class="portal-grid">{''.join(portal_cards)}</div>
       <div class="section-label" style="margin-top:40px;"><span>各专栏最新动态 / LATEST UPDATES</span><span>实时同步</span></div>
       {''.join(recent_sections)}
     </section>
     {platform()}
     '''
-    write("index.html", shell("知识笔记 · 专栏总入口", "按照企智AI落地、产品老曾职场博弈、王岑消费投资三大独立专栏，分别归集高价值直播全息蒸馏研报。", hub_body))
+    write("index.html", shell("知识笔记 · 专栏总入口", "按照企智AI落地、产品老曾职场博弈、王岑消费投资、刀文AI商业四大独立专栏，分别归集高价值直播全息蒸馏研报。", hub_body))
 
     # 3. Global Index Page (/knowledge/index/)
     channel_index_blocks = []
@@ -303,7 +320,7 @@ def main():
         </details>
         ''')
 
-    global_index_body = f'''<section class="index-page"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;"><h1>全部知识索引</h1><div class="index-toggle-all" style="display:flex;gap:10px;"><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=true)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部展开</button><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=false)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部折叠</button></div></div><p class="lead" style="color:var(--muted);margin-bottom:26px;">全站共收录 3 大独立专栏、{len(articles)} 篇完整研报。点击各专栏可折叠查看，点击标题直接直达对应专栏地址。</p>{''.join(channel_index_blocks)}</section>{platform()}'''
+    global_index_body = f'''<section class="index-page"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;"><h1>全部知识索引</h1><div class="index-toggle-all" style="display:flex;gap:10px;"><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=true)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部展开</button><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=false)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部折叠</button></div></div><p class="lead" style="color:var(--muted);margin-bottom:26px;">全站共收录 4 大独立专栏、{len(articles)} 篇完整研报。点击各专栏可折叠查看，点击标题直接直达对应专栏地址。</p>{''.join(channel_index_blocks)}</section>{platform()}'''
     write("index/index.html", shell("全部知识索引", "所有已发布知识文档的链接与简短摘要。", global_index_body, "index/"))
 
     # 4. Global Reading Page (/knowledge/reading/)
