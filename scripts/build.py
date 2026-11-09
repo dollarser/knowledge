@@ -11,8 +11,8 @@ from markdown.extensions.toc import slugify_unicode
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'dist'
-BASE = '/knowledge/'
-SITE_URL = 'https://blog.sunlingzhang.com/knowledge/'
+BASE = '/'
+SITE_URL = 'https://hilex.me/'
 DOWNLOAD = 'https://github.com/dollarser/helix-agent/releases'
 
 CHANNELS = {
@@ -352,6 +352,7 @@ def main():
 
     sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE_URL}{p}</loc></url>' for p in sitemap_urls) + '</urlset>'
     write('sitemap.xml', sitemap_xml)
+    write('CNAME', 'hilex.me\n')
 
     print(f"Built multi-channel site successfully with {len(articles)} reviewed articles across {len(CHANNELS)} channels at {OUT}")
 

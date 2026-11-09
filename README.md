@@ -1,6 +1,6 @@
 # 知识笔记
 
-公开知识库：<https://blog.sunlingzhang.com/knowledge/>。
+公开知识库：<https://hilex.me/>。
 
 从 AI 应用、工程实践与讨论中积累可复用的知识。下载作者开发的 [Helix 安卓客户端](https://github.com/dollarser/helix-agent/releases)。
 
