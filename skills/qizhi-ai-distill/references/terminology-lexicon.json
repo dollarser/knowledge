@@ -1,0 +1,1659 @@
+{
+  "schema_version": 2,
+  "version": "3.0.0",
+  "updated_at": "2026-11-11",
+  "usage_policy": {
+    "mode": "candidate_only",
+    "automatic_replacement": false,
+    "approval": "Per occurrence: original context + evidence + explicit review correction, then regenerate derived artifacts.",
+    "facts_file": "model-facts.json",
+    "legacy_fields": "standard and misnomers retained for compatibility; candidate labels, not proven equivalents."
+  },
+  "entries": [
+    {
+      "id": "entity-001",
+      "standard": "GPT-6 Astra",
+      "misnomers": [
+        "Astra",
+        "GPT6 Astra",
+        "GPT-6 Astra",
+        "阿斯特拉",
+        "GPT Astra"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-001"
+      }
+    },
+    {
+      "id": "entity-002",
+      "standard": "GPT-6.1 Sol",
+      "misnomers": [
+        "Soul 6.1",
+        "Sol 6.1",
+        "GPT-6.1 Sol",
+        "GPT6.1 Sol",
+        "Sol6.1",
+        "Soul6.1",
+        "GPT 6.1",
+        "GPT-6.1"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-002"
+      }
+    },
+    {
+      "id": "entity-003",
+      "standard": "WorkBuddy",
+      "misnomers": [
+        "Workbody",
+        "workbody",
+        "Work body",
+        "我个巴迪",
+        "Work Buddy",
+        "WorkBuddy"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-003"
+      }
+    },
+    {
+      "id": "entity-004",
+      "standard": "Seedance",
+      "misnomers": [
+        "Candice",
+        "Cense",
+        "Cdance",
+        "C-dance",
+        "C dance",
+        "西单士",
+        "CDS",
+        "Cinema 2.5",
+        "Cinema2.5",
+        "Candice2.0",
+        "Candice2.5",
+        "Cdance2.0",
+        "Cdance2.5",
+        "CDNS",
+        "Cetus 2.5",
+        "Cetus2.5",
+        "C-dance 2.5",
+        "C-dance 3.0",
+        "C Dance2.5",
+        "C Dance 2.5",
+        "C-Dance 2.5",
+        "CDance2.5"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-004"
+      }
+    },
+    {
+      "id": "entity-005",
+      "standard": "LiblibAI (哩布哩布)",
+      "misnomers": [
+        "利普",
+        "荔浦"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-005"
+      },
+      "disambiguation": "LibTV是视频创作产品，不应校成LiblibAI；LibreTV也不能按近音认定为本实体。结合图像模型社区或视频画布语境确认。"
+    },
+    {
+      "id": "entity-006",
+      "standard": "RunningHub",
+      "misnomers": [
+        "RunningCap",
+        "Running Cup",
+        "running hub"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-006"
+      }
+    },
+    {
+      "id": "entity-007",
+      "standard": "MiniMax H3",
+      "misnomers": [
+        "minimax h3",
+        "Minimax H3",
+        "mini H3",
+        "Mini H3",
+        "H3视频模型",
+        "H3",
+        "h3"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-007"
+      }
+    },
+    {
+      "id": "entity-008",
+      "standard": "DeepSeek Harness (DSH)",
+      "misnomers": [
+        "DSH",
+        "DeepSeek Cardenas",
+        "DeepSeek HANIS"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-008"
+      }
+    },
+    {
+      "id": "entity-009",
+      "standard": "LangGraph",
+      "misnomers": [
+        "long graph",
+        "LongGraph",
+        "浪图",
+        "Naggraph",
+        "naggraph"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-009"
+      }
+    },
+    {
+      "id": "entity-010",
+      "standard": "xAI Grok (GrokBot)",
+      "misnomers": [
+        "Grokbot",
+        "GrokBot",
+        "Grok bot"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-010"
+      }
+    },
+    {
+      "id": "entity-011",
+      "standard": "Dola",
+      "misnomers": [
+        "Dolla"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-011"
+      }
+    },
+    {
+      "id": "entity-012",
+      "standard": "Claude Code",
+      "misnomers": [
+        "Cloud Code",
+        "CloudCode",
+        "cloud code"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-012"
+      }
+    },
+    {
+      "id": "entity-013",
+      "standard": "Claude API",
+      "misnomers": [
+        "Cloud API"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-013"
+      }
+    },
+    {
+      "id": "entity-014",
+      "standard": "BytePlus",
+      "misnomers": [
+        "ByPlus",
+        "By Plus"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-014"
+      }
+    },
+    {
+      "id": "entity-015",
+      "standard": "AI编程工具（Cursor / Codex，具体对象待确认）",
+      "misnomers": [
+        "code叉",
+        "Codex叉",
+        "code x"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-015"
+      }
+    },
+    {
+      "id": "entity-016",
+      "standard": "TRAE",
+      "misnomers": [
+        "Tree",
+        "TreeWork",
+        "特雷"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-016"
+      }
+    },
+    {
+      "id": "entity-017",
+      "standard": "ComfyUI",
+      "misnomers": [
+        "康菲微",
+        "康复 UI",
+        "康飞UI",
+        "康复UI",
+        "confui",
+        "ConfUI"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-017"
+      }
+    },
+    {
+      "id": "entity-018",
+      "standard": "n8n",
+      "misnomers": [
+        "N八N",
+        "N8N",
+        "n八n"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-018"
+      }
+    },
+    {
+      "id": "entity-019",
+      "standard": "Plaud NotePin / NoteBot",
+      "misnomers": [
+        "牛逼boss",
+        "NP Boss",
+        "Notepin"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-019"
+      }
+    },
+    {
+      "id": "entity-020",
+      "standard": "RPA 嗅探 / 自动化外挂",
+      "misnomers": [
+        "秀探",
+        "秀碳"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-020"
+      }
+    },
+    {
+      "id": "entity-021",
+      "standard": "CapCut",
+      "misnomers": [
+        "CutChat",
+        "cutchat",
+        "Cut Chat",
+        "ClipCat",
+        "ClipCut",
+        "clip cat",
+        "clipcut",
+        "clipcat"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-021"
+      }
+    },
+    {
+      "id": "entity-022",
+      "standard": "Unreal Engine 5 (UE5)",
+      "misnomers": [
+        "有易五",
+        "有易5",
+        "有易",
+        "虚幻五",
+        "虚幻5",
+        "UE5",
+        "ue5"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-022"
+      }
+    },
+    {
+      "id": "entity-023",
+      "standard": "工品一号 (VIPMRO)",
+      "misnomers": [
+        "公屏一号",
+        "公平一号",
+        "工品1号",
+        "公平1号"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-023"
+      }
+    },
+    {
+      "id": "entity-024",
+      "standard": "Cisco (思科)",
+      "misnomers": [
+        "斯科",
+        "四科"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-024"
+      }
+    },
+    {
+      "id": "entity-025",
+      "standard": "Claude Opus 5.5",
+      "misnomers": [
+        "Opus 5.5",
+        "Opus5.5",
+        "Opass 5.5",
+        "Opera 5.5",
+        "Claude 5.5",
+        "Cloud 5.5",
+        "Open 5.5",
+        "Office 5.5"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-025"
+      }
+    },
+    {
+      "id": "entity-026",
+      "standard": "GLM-5.3 / GLM-5.3-Flash",
+      "misnomers": [
+        "智谱 5.3",
+        "智谱5.3",
+        "GLM5.3",
+        "GLM 5.3"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-026"
+      }
+    },
+    {
+      "id": "entity-027",
+      "standard": "LangSmith",
+      "misnomers": [
+        "longsmith",
+        "longcha",
+        "longcha/longsmith",
+        "朗密斯",
+        "龙茶",
+        "龙链",
+        "Langchain Smith"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-027"
+      }
+    },
+    {
+      "id": "entity-028",
+      "standard": "CC Switch",
+      "misnomers": [
+        "CtSwitch",
+        "ctswitch",
+        "CTSwitch",
+        "CCSwitch"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-028"
+      }
+    },
+    {
+      "id": "entity-029",
+      "standard": "MynaBot",
+      "misnomers": [
+        "Myna.bot",
+        "MYNA点Bot",
+        "Manabot",
+        "MonaBot",
+        "Mindset",
+        "百灵",
+        "mynabot.cn",
+        "sourman",
+        "sorry man"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-029"
+      }
+    },
+    {
+      "id": "entity-030",
+      "standard": "JEV",
+      "misnomers": [
+        "GEV",
+        "gev",
+        "Jev",
+        "jev",
+        "杰夫模型",
+        "吉夫模型"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-030"
+      }
+    },
+    {
+      "id": "entity-031",
+      "standard": "MoneyPrinterTurbo",
+      "misnomers": [
+        "money money print tube",
+        "money printer turbo",
+        "MoneyPrinterTurbo",
+        "MoneyPrinter",
+        "印钞机"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-031"
+      }
+    },
+    {
+      "id": "entity-032",
+      "standard": "CodeBuddy",
+      "misnomers": [
+        "CodeBuddy",
+        "Code Buddy",
+        "code buddy",
+        "codebuddy",
+        "混元CodeBuddy"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-032"
+      }
+    },
+    {
+      "id": "entity-033",
+      "standard": "Alibaba Cloud Code",
+      "misnomers": [
+        "阿里Code国际版",
+        "阿里Code",
+        "通义灵码国际版",
+        "Open Code",
+        "open code"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-033"
+      }
+    },
+    {
+      "id": "entity-034",
+      "standard": "GlowVideo",
+      "misnomers": [
+        "Glow",
+        "glow",
+        "Glow视频",
+        "GlowVideo",
+        "glow video"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-034"
+      }
+    },
+    {
+      "id": "entity-035",
+      "standard": "Harness²",
+      "misnomers": [
+        "HoneyScript",
+        "Honest Tool",
+        "Harnes Square",
+        "哈密斯平方",
+        "Harness Square",
+        "Harness2"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-035"
+      }
+    },
+    {
+      "id": "entity-036",
+      "standard": "Qwen 3.8 / Qwen 3.5",
+      "misnomers": [
+        "千问3点8",
+        "千问三点八",
+        "千问3点5",
+        "千问三点五"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-036"
+      }
+    },
+    {
+      "id": "entity-037",
+      "standard": "LangChain",
+      "misnomers": [
+        "long chain",
+        "LongChain",
+        "longchain",
+        "龙链"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-037"
+      }
+    },
+    {
+      "id": "entity-038",
+      "standard": "Hermes Agent",
+      "misnomers": [
+        "Harmless",
+        "Hormis Agent",
+        "Hermes",
+        "hermes"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-038"
+      }
+    },
+    {
+      "id": "entity-039",
+      "standard": "GrillMe",
+      "misnomers": [
+        "Grill",
+        "GrillMe",
+        "Breal",
+        "BrealMe",
+        "J-R-I-L-L",
+        "Gorilla Me",
+        "grow me"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-039"
+      }
+    },
+    {
+      "id": "entity-040",
+      "standard": "Tongyi Wanx (通义万相)",
+      "misnomers": [
+        "万象",
+        "阿里万象",
+        "通义万象",
+        "Wanx"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-040"
+      }
+    },
+    {
+      "id": "entity-041",
+      "standard": "RS-485",
+      "misnomers": [
+        "RJ485",
+        "rj485",
+        "RJ-485"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-041"
+      }
+    },
+    {
+      "id": "entity-042",
+      "standard": "OpenHands",
+      "misnomers": [
+        "OpenHands",
+        "openhands",
+        "OpenDevin"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-042"
+      }
+    },
+    {
+      "id": "entity-043",
+      "standard": "FastGPT",
+      "misnomers": [
+        "FastGPT",
+        "fastgpt"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-043"
+      }
+    },
+    {
+      "id": "entity-044",
+      "standard": "Vidu",
+      "misnomers": [
+        "微度",
+        "V I D U",
+        "VIDU",
+        "Vidu Q4"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-044"
+      }
+    },
+    {
+      "id": "entity-045",
+      "standard": "Dola AI",
+      "misnomers": [
+        "Dola",
+        "Dola AI",
+        "抖音国际版Dola"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-045"
+      }
+    },
+    {
+      "id": "entity-046",
+      "standard": "NVIDIA DGX",
+      "misnomers": [
+        "DGX",
+        "DDG叉",
+        "D叉G"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-046"
+      }
+    },
+    {
+      "id": "entity-047",
+      "standard": "微信小V",
+      "misnomers": [
+        "微信小V",
+        "小V"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-047"
+      }
+    },
+    {
+      "id": "entity-048",
+      "standard": "ESP32 / ESP32-C3 / ESP32-S3",
+      "misnomers": [
+        "ESP32",
+        "esp32",
+        "ES三二",
+        "ESP32-C3",
+        "ESP32-S3",
+        "C3",
+        "S3"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-048"
+      }
+    },
+    {
+      "id": "entity-049",
+      "standard": "Remotion",
+      "misnomers": [
+        "Remotion Studio",
+        "Remotion",
+        "remotion"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-049"
+      }
+    },
+    {
+      "id": "entity-050",
+      "standard": "Baidu Comate",
+      "misnomers": [
+        "度友",
+        "Comate",
+        "文心快码"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-050"
+      }
+    },
+    {
+      "id": "entity-051",
+      "standard": "REA (Reverse Engineer Anything)",
+      "misnomers": [
+        "REA",
+        "R E A",
+        "rea",
+        "Reverse Engineer Anything"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-051"
+      }
+    },
+    {
+      "id": "entity-052",
+      "standard": "Meta Muse (Muse Code / Muse Spark)",
+      "misnomers": [
+        "Muse",
+        "Muse Code",
+        "Muse Spark",
+        "Meta Muse",
+        "慕斯",
+        "mate Muse"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-052"
+      }
+    },
+    {
+      "id": "entity-053",
+      "standard": "TeleAgent (中国电信星辰智能体)",
+      "misnomers": [
+        "泰勒agent",
+        "泰勒Agent",
+        "泰勒智能体",
+        "新成智能体",
+        "电信智新成智能体",
+        "电信新成",
+        "TeleAgent",
+        "Teleagent",
+        "星辰智能体"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-053"
+      }
+    },
+    {
+      "id": "entity-054",
+      "standard": "xAI Grok / Grokbot",
+      "misnomers": [
+        "Googlebot",
+        "GroupBot",
+        "Grokbot",
+        "GrokBot",
+        "Grok bot",
+        "郭克bot",
+        "格罗克bot",
+        "Grok"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-054"
+      }
+    },
+    {
+      "id": "entity-055",
+      "standard": "微信 AI 小V (WeChat AI Xiaov)",
+      "misnomers": [
+        "AI小微",
+        "微信小微",
+        "AI 小微",
+        "微信小V",
+        "AI小V",
+        "小V"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-055"
+      }
+    },
+    {
+      "id": "entity-056",
+      "standard": "ima.copilot (腾讯 ima 知识库)",
+      "misnomers": [
+        "IMA",
+        "ima",
+        "爱玛",
+        "艾玛",
+        "IMA知识库",
+        "腾讯ima",
+        "ima.copilot"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-056"
+      }
+    },
+    {
+      "id": "entity-057",
+      "standard": "RSI (Recursive Self-Improvement / 递归自我递进学习)",
+      "misnomers": [
+        "RPL",
+        "RSI",
+        "自我递进",
+        "物理AI自我迭代",
+        "自我迭代学习"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-057"
+      }
+    },
+    {
+      "id": "entity-058",
+      "standard": "GEO (Generative Engine Optimization / 生成式引擎优化)",
+      "misnomers": [
+        "GU",
+        "GEU",
+        "G U",
+        "GO",
+        "生成式引擎优化",
+        "AI搜索优化"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-058"
+      }
+    },
+    {
+      "id": "entity-059",
+      "standard": "OpenTory (塔瑞 / 工业老旧系统极简智能体)",
+      "misnomers": [
+        "塔瑞",
+        "泰瑞",
+        "Open Tory",
+        "OpenTory",
+        "工控智能体"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-059"
+      }
+    },
+    {
+      "id": "entity-060",
+      "standard": "SillyTavern (酒馆 WebUI / 角色扮演交互前端)",
+      "misnomers": [
+        "酒馆",
+        "酒馆WebUI",
+        "酒管",
+        "酒官",
+        "Silly Tavern"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-060"
+      }
+    },
+    {
+      "id": "entity-061",
+      "standard": "New-API / Sub-API (大模型中转聚合管理系统)",
+      "misnomers": [
+        "六API",
+        "三八lo",
+        "SAP R",
+        "new API",
+        "New-API",
+        "Sub-API"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-061"
+      }
+    },
+    {
+      "id": "entity-062",
+      "standard": "谷朊粉 (Vital Wheat Gluten / 活性小麦面筋粉)",
+      "misnomers": [
+        "骨原粉",
+        "古原粉",
+        "谷原粉",
+        "骨胶原粉",
+        "面筋粉"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-062"
+      }
+    },
+    {
+      "id": "entity-063",
+      "standard": "桑叶提取物 / DNJ (1-脱氧野尻霉素 / 药食同源控糖成分)",
+      "misnomers": [
+        "桑月提取物",
+        "桑树提取物",
+        "三叶提取物",
+        "DNJ",
+        "脱氧野尻霉素"
+      ],
+      "context_required": true,
+      "verification_status": "verified",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-063"
+      }
+    },
+    {
+      "id": "entity-064",
+      "standard": "酷特智能 / KTOS",
+      "misnomers": [
+        "库特智能",
+        "沃特智能",
+        "库特公司",
+        "库特A T R S"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-064"
+      }
+    },
+    {
+      "id": "entity-065",
+      "standard": "dsh-superagent",
+      "misnomers": [
+        "dsh-superagent",
+        "dsh-superagent-prototype"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-065"
+      }
+    },
+    {
+      "id": "entity-066",
+      "standard": "IBM Forward Deployed Units (FDUs)",
+      "misnomers": [
+        "FDU",
+        "FDUs",
+        "IBM FDE/FDU"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-066"
+      }
+    },
+    {
+      "id": "entity-067",
+      "standard": "Adaptive Innovations",
+      "misnomers": [
+        "Adaptive"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-067"
+      }
+    },
+    {
+      "id": "entity-068",
+      "standard": "Windsor.ai",
+      "misnomers": [
+        "Winsor.ai",
+        "Windsor"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-068"
+      }
+    },
+    {
+      "id": "entity-069",
+      "standard": "Amazon Textract",
+      "misnomers": [
+        "AWSTessxtra",
+        "AWS Textract"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-069"
+      }
+    },
+    {
+      "id": "entity-070",
+      "standard": "AionLabs: Aion 3.5",
+      "misnomers": [
+        "AION-3.5",
+        "AI/no-LABS",
+        "aion",
+        "labs3.5"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-070"
+      }
+    },
+    {
+      "id": "entity-071",
+      "standard": "ChatHub",
+      "misnomers": [
+        "ChatHub网站DG"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-071"
+      }
+    },
+    {
+      "id": "entity-072",
+      "standard": "LibTV",
+      "misnomers": [
+        "LibtV",
+        "libtv",
+        "LabTV"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-072"
+      }
+    },
+    {
+      "id": "entity-073",
+      "standard": "销帮帮",
+      "misnomers": [
+        "肖邦邦"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-073"
+      }
+    },
+    {
+      "id": "entity-074",
+      "standard": "PentAGI",
+      "misnomers": [
+        "pentAGI"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-074"
+      }
+    },
+    {
+      "id": "entity-075",
+      "standard": "auth.md",
+      "misnomers": [
+        "Azuris.md",
+        "azure’s.md"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-075"
+      }
+    },
+    {
+      "id": "entity-076",
+      "standard": "NVIDIA GeForce RTX 5090",
+      "misnomers": [],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-076"
+      }
+    },
+    {
+      "id": "entity-077",
+      "standard": "ERPNext",
+      "misnomers": [
+        "ERP Next",
+        "EAP Next"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-077"
+      }
+    },
+    {
+      "id": "entity-078",
+      "standard": "NVIDIA DGX Spark",
+      "misnomers": [
+        "DJX",
+        "Django（仅在本地AI盒且后文明确Spark时）"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-078"
+      }
+    },
+    {
+      "id": "entity-079",
+      "standard": "Genie 3 / Project Genie",
+      "misnomers": [
+        "杰尼三",
+        "杰尼（仅在世界模型与Ultra网页体验语境）"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-079"
+      }
+    },
+    {
+      "id": "entity-080",
+      "standard": "3D Gaussian Splatting（3D高斯泼溅）",
+      "misnomers": [
+        "高斯波件",
+        "高斯破件",
+        "高斯泼溅"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-080"
+      }
+    },
+    {
+      "id": "entity-081",
+      "standard": "Deepgram",
+      "misnomers": [],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-081"
+      }
+    },
+    {
+      "id": "entity-082",
+      "standard": "PaddleOCR",
+      "misnomers": [
+        "Paddle OCR"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-082"
+      }
+    },
+    {
+      "id": "entity-083",
+      "standard": "Docling",
+      "misnomers": [],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-083"
+      }
+    },
+    {
+      "id": "entity-084",
+      "standard": "黑湖小工单",
+      "misnomers": [
+        "黑虎小工单"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-084"
+      }
+    },
+    {
+      "id": "entity-085",
+      "standard": "BOM（物料清单）",
+      "misnomers": [
+        "报幕",
+        "爆米"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-085"
+      }
+    },
+    {
+      "id": "entity-086",
+      "standard": "MarkItDown",
+      "misnomers": [
+        "Microsoft MarkDown"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-086"
+      }
+    },
+    {
+      "id": "entity-087",
+      "standard": "Mem0",
+      "misnomers": [
+        "MEM0"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-087"
+      }
+    },
+    {
+      "id": "entity-088",
+      "standard": "Langfuse",
+      "misnomers": [
+        "Lungfish",
+        "LangFis"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-088"
+      }
+    },
+    {
+      "id": "entity-089",
+      "standard": "KTransformers",
+      "misnomers": [
+        "K transformer"
+      ],
+      "context_required": true,
+      "verification_status": "official_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-089"
+      }
+    },
+    {
+      "id": "entity-090",
+      "standard": "Anthropic Courses（Skilljar课程站）",
+      "misnomers": [
+        "Skilljar官方Claude课",
+        "CloudCode官方课程"
+      ],
+      "context_required": true,
+      "verification_status": "official_indexed_identity_confirmed_context_required",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-090"
+      }
+    },
+    {
+      "id": "entity-091",
+      "standard": "OpenClaw",
+      "misnomers": [
+        "OpenClaw",
+        "Open Claw"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-091"
+      }
+    },
+    {
+      "id": "entity-092",
+      "standard": "Dify",
+      "misnomers": [
+        "Dify",
+        "dify"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-092"
+      }
+    },
+    {
+      "id": "entity-093",
+      "standard": "Open WebUI",
+      "misnomers": [
+        "Open WebUI",
+        "OpenWebUI"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-093"
+      }
+    },
+    {
+      "id": "entity-094",
+      "standard": "Meldwork",
+      "misnomers": [
+        "Meldwork",
+        "meldwork"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-094"
+      }
+    },
+    {
+      "id": "entity-095",
+      "standard": "Pi Agent / Pi toolkit",
+      "misnomers": [
+        "Pi Agent",
+        "Pi toolkit",
+        "pi-mono",
+        "pi"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-095"
+      }
+    },
+    {
+      "id": "entity-096",
+      "standard": "Milvus",
+      "misnomers": [
+        "Milvus",
+        "milvus"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-096"
+      }
+    },
+    {
+      "id": "entity-097",
+      "standard": "pgvector",
+      "misnomers": [
+        "pgvector",
+        "PGVector"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-097"
+      }
+    },
+    {
+      "id": "entity-098",
+      "standard": "Pinecone",
+      "misnomers": [
+        "Pinecone",
+        "pinecone"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-098"
+      }
+    }
+  ]
+}
