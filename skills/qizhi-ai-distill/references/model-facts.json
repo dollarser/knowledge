@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-19",
   "provenance": {
     "origin": "Existing official research, confirmed by user in this chat; migrated without new factual verification.",
     "source_documents": [
@@ -1449,6 +1449,96 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-11",
       "verification_scope": "产品身份及基本用途；不证明含混口述对应关系、历史价格或经营效果。"
+    },
+    {
+      "id": "entity-099",
+      "name": "FDE (Forward Deployed Engineer)",
+      "research_assertions": {
+        "vendor": "Palantir 首创，AI 企服圈广泛采用",
+        "category": "现场部署工程师 / 驻场交付架构师",
+        "note": "指深入客户业务现场，利用AI智能体与工作流为客户打通定制化业务流程的复合型交付角色；直播中极易被ASR误听为 FDI、FD1、FDA 或简写为 FD。"
+      },
+      "official_sources": [
+        "https://www.palantir.com/careers/forward-deployed-software-engineer/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-19",
+      "verification_scope": "产品与岗位定义；不证明任何个别外包团队交付质量。"
+    },
+    {
+      "id": "entity-100",
+      "name": "OPC (One Person Company)",
+      "research_assertions": {
+        "vendor": "全球公司法概念及AI时代超级个体创业范式",
+        "category": "一人公司 / 超级个体智能体企业",
+        "note": "由Sam Altman等倡导的AI时代一人十亿美元公司构想，指单个创业者依托大量AI Agent与自动化工作流支撑起业务闭环；普通话口播中常被ASR误识为 OBC 或 OPB。"
+      },
+      "official_sources": [
+        "https://en.wikipedia.org/wiki/One-person_company"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-19",
+      "verification_scope": "商业术语规范；不代表一人公司必然成功。"
+    },
+    {
+      "id": "entity-101",
+      "name": "GEM (Generative Engine Marketing)",
+      "research_assertions": {
+        "vendor": "生成式AI与对话式搜索商业化体系",
+        "category": "生成式引擎营销 / AI对话付费推荐广告",
+        "note": "对应传统搜索时代的SEM，指在AI生成答案、智能体推荐和决策对比场景中，通过付费赞助进行原生品牌植入的商业化模式；常与自然免费流量的GEO（生成式引擎优化）并提，ASR易误识为 JM、GEN 或与 GU/GEO 混淆。"
+      },
+      "official_sources": [
+        "https://tencent.com/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-19",
+      "verification_scope": "行业营销新概念规范；需依各平台真实商业化策略确认。"
+    },
+    {
+      "id": "entity-102",
+      "name": "ByteDance Seed (字节跳动语音大模型)",
+      "research_assertions": {
+        "vendor": "字节跳动 (ByteDance)",
+        "category": "原生多模态流式语音大模型",
+        "note": "豆包APP语音通话底层驱动的原生语音大模型（包含Seed-ASR与Seed-TTS技术体系），具备极低延迟、流式全双工与自然打断能力；主播口播中常音译为 C特、四德 或简单口称为 Seed。"
+      },
+      "official_sources": [
+        "https://www.volcengine.com/product/seed"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-19",
+      "verification_scope": "模型底座与归属确认；第三方逆向接口稳定性不在保证之列。"
+    },
+    {
+      "id": "entity-103",
+      "name": "Coze (扣子)",
+      "research_assertions": {
+        "vendor": "字节跳动 (ByteDance)",
+        "category": "一站式 AI Agent 智能体与工作流开发平台",
+        "note": "字节跳动旗下智能体开发工具（国内版域名 coze.cn），支持插件、工作流编排及多端发布；口播中常被ASR听成 扣扣子、抠子。"
+      },
+      "official_sources": [
+        "https://www.coze.cn/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-19",
+      "verification_scope": "官方平台身份；企业版与社区版功能需据实核实。"
+    },
+    {
+      "id": "entity-104",
+      "name": "微泡泡",
+      "research_assertions": {
+        "vendor": "第三方工具开发者",
+        "category": "Android 消息悬浮气泡通知与辅助快捷回复工具",
+        "note": "利用Android系统的无障碍（Accessibility）或悬浮窗权限读取微信消息并快捷回复的非官方工具；企服场景中常被用来尝试低成本自动化接管个人微信，因无官方底层API接口常面临断流或封号风险。"
+      },
+      "official_sources": [
+        "https://apkpure.com/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-19",
+      "verification_scope": "工具类型及非官方接口事实，提示安全与风控限制。"
     }
   ]
 }

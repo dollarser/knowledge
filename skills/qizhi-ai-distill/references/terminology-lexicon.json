@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": "3.0.0",
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-19",
   "usage_policy": {
     "mode": "candidate_only",
     "automatic_replacement": false,
@@ -58,7 +58,10 @@
         "Work body",
         "我个巴迪",
         "Work Buddy",
-        "WorkBuddy"
+        "WorkBuddy",
+        "沃克巴蒂",
+        "沃克巴的",
+        "Moco Body"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
@@ -1653,6 +1656,113 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-098"
+      }
+    },
+    {
+      "id": "entity-099",
+      "standard": "FDE (Forward Deployed Engineer / 现场部署工程师)",
+      "misnomers": [
+        "FDI",
+        "FD1",
+        "FDA",
+        "FD",
+        "现场开发工程师",
+        "现场交付工程师"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-099"
+      }
+    },
+    {
+      "id": "entity-100",
+      "standard": "OPC (One Person Company / 一人公司)",
+      "misnomers": [
+        "OBC",
+        "OPB",
+        "一人公司",
+        "超级个体",
+        "O P C"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-100"
+      }
+    },
+    {
+      "id": "entity-101",
+      "standard": "GEM (Generative Engine Marketing / 生成式引擎营销)",
+      "misnomers": [
+        "JM",
+        "GEN",
+        "生成式引擎营销",
+        "AI搜索营销",
+        "G E M"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-101"
+      }
+    },
+    {
+      "id": "entity-102",
+      "standard": "ByteDance Seed (字节跳动语音大模型)",
+      "misnomers": [
+        "C特",
+        "四德",
+        "Seed模型",
+        "Seed-ASR",
+        "Seed语音",
+        "Seed底模"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-102"
+      }
+    },
+    {
+      "id": "entity-103",
+      "standard": "Coze (扣子 / 字节跳动 AI Agent 平台)",
+      "misnomers": [
+        "扣扣子",
+        "抠子",
+        "扣子企业版",
+        "Coze.cn"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-103"
+      }
+    },
+    {
+      "id": "entity-104",
+      "standard": "微泡泡 (微信悬浮通知与辅助回复工具)",
+      "misnomers": [
+        "微泡",
+        "微信泡泡",
+        "微泡泡app"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-104"
       }
     }
   ]

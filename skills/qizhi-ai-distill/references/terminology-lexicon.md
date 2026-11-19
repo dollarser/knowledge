@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | GPT-6 Astra | Astra, GPT6 Astra, GPT-6 Astra, 阿斯特拉, GPT Astra | `entity-001` |
 | GPT-6.1 Sol | Soul 6.1, Sol 6.1, GPT-6.1 Sol, GPT6.1 Sol, Sol6.1, Soul6.1, GPT 6.1, GPT-6.1 | `entity-002` |
-| WorkBuddy | Workbody, workbody, Work body, 我个巴迪, Work Buddy, WorkBuddy | `entity-003` |
+| WorkBuddy | Workbody, workbody, Work body, 我个巴迪, Work Buddy, WorkBuddy, 沃克巴蒂, 沃克巴的, Moco Body | `entity-003` |
 | Seedance | Candice, Cense, Cdance, C-dance, C dance, 西单士, CDS, Cinema 2.5, Cinema2.5, Candice2.0, Candice2.5, Cdance2.0, Cdance2.5, CDNS, Cetus 2.5, Cetus2.5, C-dance 2.5, C-dance 3.0, C Dance2.5, C Dance 2.5, C-Dance 2.5, CDance2.5 | `entity-004` |
 | LiblibAI (哩布哩布) | 利普, 荔浦 | `entity-005` |
 | RunningHub | RunningCap, Running Cup, running hub | `entity-006` |
@@ -104,6 +104,12 @@
 | Milvus | Milvus, milvus | `entity-096` |
 | pgvector | pgvector, PGVector | `entity-097` |
 | Pinecone | Pinecone, pinecone | `entity-098` |
+| FDE (Forward Deployed Engineer / 现场部署工程师) | FDI, FD1, FDA, FD, 现场开发工程师, 现场交付工程师 | `entity-099` |
+| OPC (One Person Company / 一人公司) | OBC, OPB, 一人公司, 超级个体, O P C | `entity-100` |
+| GEM (Generative Engine Marketing / 生成式引擎营销) | JM, GEN, 生成式引擎营销, AI搜索营销, G E M | `entity-101` |
+| ByteDance Seed (字节跳动语音大模型) | C特, 四德, Seed模型, Seed-ASR, Seed语音, Seed底模 | `entity-102` |
+| Coze (扣子 / 字节跳动 AI Agent 平台) | 扣扣子, 抠子, 扣子企业版, Coze.cn | `entity-103` |
+| 微泡泡 (微信悬浮通知与辅助回复工具) | 微泡, 微信泡泡, 微泡泡app | `entity-104` |
 
 不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。
 背景解释和延伸建议只进入正文及台账，不回写为参与者原话。

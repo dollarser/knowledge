@@ -1047,3 +1047,69 @@
 - note：官方提供语义、向量及全文等检索能力；直播中名称不清的20美元服务不能据此自动认作Pinecone。
 - 官方来源："https://docs.pinecone.io/guides/get-started/overview"
 
+## FDE (Forward Deployed Engineer)
+
+- ID：`entity-099`
+- 调研时间：2026-11-19
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：Palantir 首创，AI 企服圈广泛采用
+- category：现场部署工程师 / 驻场交付架构师
+- note：指深入客户业务现场，利用AI智能体与工作流为客户打通定制化业务流程的复合型交付角色；直播中极易被ASR误听为 FDI、FD1、FDA 或简写为 FD。
+- 官方来源："https://www.palantir.com/careers/forward-deployed-software-engineer/"
+
+## OPC (One Person Company)
+
+- ID：`entity-100`
+- 调研时间：2026-11-19
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：全球公司法概念及AI时代超级个体创业范式
+- category：一人公司 / 超级个体智能体企业
+- note：由Sam Altman等倡导的AI时代一人十亿美元公司构想，指单个创业者依托大量AI Agent与自动化工作流支撑起业务闭环；普通话口播中常被ASR误识为 OBC 或 OPB。
+- 官方来源："https://en.wikipedia.org/wiki/One-person_company"
+
+## GEM (Generative Engine Marketing)
+
+- ID：`entity-101`
+- 调研时间：2026-11-19
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：生成式AI与对话式搜索商业化体系
+- category：生成式引擎营销 / AI对话付费推荐广告
+- note：对应传统搜索时代的SEM，指在AI生成答案、智能体推荐和决策对比场景中，通过付费赞助进行原生品牌植入的商业化模式；常与自然免费流量的GEO（生成式引擎优化）并提，ASR易误识为 JM、GEN 或与 GU/GEO 混淆。
+- 官方来源："https://tencent.com/"
+
+## ByteDance Seed (字节跳动语音大模型)
+
+- ID：`entity-102`
+- 调研时间：2026-11-19
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：字节跳动 (ByteDance)
+- category：原生多模态流式语音大模型
+- note：豆包APP语音通话底层驱动的原生语音大模型（包含Seed-ASR与Seed-TTS技术体系），具备极低延迟、流式全双工与自然打断能力；主播口播中常音译为 C特、四德 或简单口称为 Seed。
+- 官方来源："https://www.volcengine.com/product/seed"
+
+## Coze (扣子)
+
+- ID：`entity-103`
+- 调研时间：2026-11-19
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：字节跳动 (ByteDance)
+- category：一站式 AI Agent 智能体与工作流开发平台
+- note：字节跳动旗下智能体开发工具（国内版域名 coze.cn），支持插件、工作流编排及多端发布；口播中常被ASR听成 扣扣子、抠子。
+- 官方来源："https://www.coze.cn/"
+
+## 微泡泡
+
+- ID：`entity-104`
+- 调研时间：2026-11-19
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：第三方工具开发者
+- category：Android 消息悬浮气泡通知与辅助快捷回复工具
+- note：利用Android系统的无障碍（Accessibility）或悬浮窗权限读取微信消息并快捷回复的非官方工具；企服场景中常被用来尝试低成本自动化接管个人微信，因无官方底层API接口常面临断流或封号风险。
+- 官方来源："https://apkpure.com/"
+
