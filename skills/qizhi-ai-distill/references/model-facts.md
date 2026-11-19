@@ -118,16 +118,6 @@
 - category：多Agent图状态编排框架
 - note：LangChain官方开发的多智能体图状态工作流框架
 
-## xAI Grok (GrokBot)
-
-- ID：`entity-010`
-- 调研时间：2026-11-03T05:35:00+08:00
-- 来源记录：pending_original_research_links
-
-- vendor：xAI
-- category：大模型与智能检索助理
-- note：马斯克旗下xAI大模型与社交机器人
-
 ## Dola
 
 - ID：`entity-011`
@@ -700,16 +690,16 @@
 - 官方来源："https://github.com/deepseek-ai/dsh-superagent-prototype"
 - 官方来源："https://raw.githubusercontent.com/deepseek-ai/dsh-superagent-prototype/main/README.md"
 
-## IBM Forward Deployed Units (FDUs)
+## FDE (Forward Deployed Engineer)
 
 - ID：`entity-066`
-- 调研时间：2026-11-10
-- 来源记录：official_identity_and_bounded_purpose_checked
+- 调研时间：2026-11-19
+- 来源记录：official_identity_and_scope_verified
 
-- vendor：IBM Consulting
-- category：AI 项目交付组织模式
-- note：FDU 是小型交付团队而非单个人。IBM 将其描述为由人指导专业 Agent 执行编码、评估、测试、文档的模式；文章中六人组织对应此背景，但具体角色和项目成效须回到当场口述。
-- 官方来源："https://newsroom.ibm.com/2026-05-14-A-New-Way-to-Make-AI-Actually-Work-in-the-Real-World"
+- vendor：Palantir 首创，AI 企服与 Agent 交付圈普遍采用
+- category：现场部署工程师 / 驻场交付架构师
+- note：指深入客户业务现场，负责将大模型能力、智能体与低代码工作流落地到客户具体业务场景的复合型工程师。此前曾误将 IBM 的小型交付组织（FDU）作为主体收录，现已依据直播真实讨论纠偏统一为 FDE。直播中主播频繁针对“企服团队盲目推行 FDE 导致重交付、非标沟通拉锯和倒闭潮”进行深度剖析。ASR极易误识为 FDI、FD1、FDA 或简写为 FD。
+- 官方来源："https://www.palantir.com/careers/forward-deployed-software-engineer/"
 
 ## Adaptive Innovations
 
@@ -1046,17 +1036,6 @@
 - category：AI应用检索服务
 - note：官方提供语义、向量及全文等检索能力；直播中名称不清的20美元服务不能据此自动认作Pinecone。
 - 官方来源："https://docs.pinecone.io/guides/get-started/overview"
-
-## FDE (Forward Deployed Engineer)
-
-- ID：`entity-099`
-- 调研时间：2026-11-19
-- 来源记录：official_identity_and_scope_verified
-
-- vendor：Palantir 首创，AI 企服圈广泛采用
-- category：现场部署工程师 / 驻场交付架构师
-- note：指深入客户业务现场，利用AI智能体与工作流为客户打通定制化业务流程的复合型交付角色；直播中极易被ASR误听为 FDI、FD1、FDA 或简写为 FD。
-- 官方来源："https://www.palantir.com/careers/forward-deployed-software-engineer/"
 
 ## OPC (One Person Company)
 

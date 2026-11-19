@@ -193,22 +193,6 @@
       }
     },
     {
-      "id": "entity-010",
-      "standard": "xAI Grok (GrokBot)",
-      "misnomers": [
-        "Grokbot",
-        "GrokBot",
-        "Grok bot"
-      ],
-      "context_required": true,
-      "verification_status": "candidate_requires_per_occurrence_confirmation",
-      "auto_apply": false,
-      "facts_ref": {
-        "file": "model-facts.json",
-        "entity_id": "entity-010"
-      }
-    },
-    {
       "id": "entity-011",
       "standard": "Dola",
       "misnomers": [
@@ -959,13 +943,13 @@
       "standard": "xAI Grok / Grokbot",
       "misnomers": [
         "Googlebot",
-        "GroupBot",
-        "Grokbot",
-        "GrokBot",
+        "Grok",
         "Grok bot",
-        "郭克bot",
+        "GrokBot",
+        "Grokbot",
+        "GroupBot",
         "格罗克bot",
-        "Grok"
+        "郭克bot"
       ],
       "context_required": true,
       "verification_status": "verified",
@@ -1176,11 +1160,18 @@
     },
     {
       "id": "entity-066",
-      "standard": "IBM Forward Deployed Units (FDUs)",
+      "standard": "FDE (Forward Deployed Engineer / 现场部署工程师)",
       "misnomers": [
+        "FDE",
+        "FDI",
+        "FD1",
+        "FDA",
+        "FD",
         "FDU",
         "FDUs",
-        "IBM FDE/FDU"
+        "IBM FDE/FDU",
+        "现场开发工程师",
+        "现场交付工程师"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
@@ -1656,25 +1647,6 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-098"
-      }
-    },
-    {
-      "id": "entity-099",
-      "standard": "FDE (Forward Deployed Engineer / 现场部署工程师)",
-      "misnomers": [
-        "FDI",
-        "FD1",
-        "FDA",
-        "FD",
-        "现场开发工程师",
-        "现场交付工程师"
-      ],
-      "context_required": true,
-      "verification_status": "candidate_requires_per_occurrence_confirmation",
-      "auto_apply": false,
-      "facts_ref": {
-        "file": "model-facts.json",
-        "entity_id": "entity-099"
       }
     },
     {

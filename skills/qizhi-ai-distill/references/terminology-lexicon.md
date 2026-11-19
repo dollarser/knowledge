@@ -15,7 +15,6 @@
 | MiniMax H3 | minimax h3, Minimax H3, mini H3, Mini H3, H3视频模型, H3, h3 | `entity-007` |
 | DeepSeek Harness (DSH) | DSH, DeepSeek Cardenas, DeepSeek HANIS | `entity-008` |
 | LangGraph | long graph, LongGraph, 浪图, Naggraph, naggraph | `entity-009` |
-| xAI Grok (GrokBot) | Grokbot, GrokBot, Grok bot | `entity-010` |
 | Dola | Dolla | `entity-011` |
 | Claude Code | Cloud Code, CloudCode, cloud code | `entity-012` |
 | Claude API | Cloud API | `entity-013` |
@@ -59,7 +58,7 @@
 | REA (Reverse Engineer Anything) | REA, R E A, rea, Reverse Engineer Anything | `entity-051` |
 | Meta Muse (Muse Code / Muse Spark) | Muse, Muse Code, Muse Spark, Meta Muse, 慕斯, mate Muse | `entity-052` |
 | TeleAgent (中国电信星辰智能体) | 泰勒agent, 泰勒Agent, 泰勒智能体, 新成智能体, 电信智新成智能体, 电信新成, TeleAgent, Teleagent, 星辰智能体 | `entity-053` |
-| xAI Grok / Grokbot | Googlebot, GroupBot, Grokbot, GrokBot, Grok bot, 郭克bot, 格罗克bot, Grok | `entity-054` |
+| xAI Grok / Grokbot | Googlebot, Grok, Grok bot, GrokBot, Grokbot, GroupBot, 格罗克bot, 郭克bot | `entity-054` |
 | 微信 AI 小V (WeChat AI Xiaov) | AI小微, 微信小微, AI 小微, 微信小V, AI小V, 小V | `entity-055` |
 | ima.copilot (腾讯 ima 知识库) | IMA, ima, 爱玛, 艾玛, IMA知识库, 腾讯ima, ima.copilot | `entity-056` |
 | RSI (Recursive Self-Improvement / 递归自我递进学习) | RPL, RSI, 自我递进, 物理AI自我迭代, 自我迭代学习 | `entity-057` |
@@ -71,7 +70,7 @@
 | 桑叶提取物 / DNJ (1-脱氧野尻霉素 / 药食同源控糖成分) | 桑月提取物, 桑树提取物, 三叶提取物, DNJ, 脱氧野尻霉素 | `entity-063` |
 | 酷特智能 / KTOS | 库特智能, 沃特智能, 库特公司, 库特A T R S | `entity-064` |
 | dsh-superagent | dsh-superagent, dsh-superagent-prototype | `entity-065` |
-| IBM Forward Deployed Units (FDUs) | FDU, FDUs, IBM FDE/FDU | `entity-066` |
+| FDE (Forward Deployed Engineer / 现场部署工程师) | FDE, FDI, FD1, FDA, FD, FDU, FDUs, IBM FDE/FDU, 现场开发工程师, 现场交付工程师 | `entity-066` |
 | Adaptive Innovations | Adaptive | `entity-067` |
 | Windsor.ai | Winsor.ai, Windsor | `entity-068` |
 | Amazon Textract | AWSTessxtra, AWS Textract | `entity-069` |
@@ -104,7 +103,6 @@
 | Milvus | Milvus, milvus | `entity-096` |
 | pgvector | pgvector, PGVector | `entity-097` |
 | Pinecone | Pinecone, pinecone | `entity-098` |
-| FDE (Forward Deployed Engineer / 现场部署工程师) | FDI, FD1, FDA, FD, 现场开发工程师, 现场交付工程师 | `entity-099` |
 | OPC (One Person Company / 一人公司) | OBC, OPB, 一人公司, 超级个体, O P C | `entity-100` |
 | GEM (Generative Engine Marketing / 生成式引擎营销) | JM, GEN, 生成式引擎营销, AI搜索营销, G E M | `entity-101` |
 | ByteDance Seed (字节跳动语音大模型) | C特, 四德, Seed模型, Seed-ASR, Seed语音, Seed底模 | `entity-102` |

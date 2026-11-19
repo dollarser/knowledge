@@ -174,19 +174,6 @@
       "comparison_status": "Inherited positioning/superlatives are research wording, not a new benchmark verification."
     },
     {
-      "id": "entity-010",
-      "name": "xAI Grok (GrokBot)",
-      "research_assertions": {
-        "vendor": "xAI",
-        "category": "大模型与智能检索助理",
-        "note": "马斯克旗下xAI大模型与社交机器人"
-      },
-      "official_sources": [],
-      "source_attachment_status": "pending_original_research_links",
-      "last_research_at": "2026-11-03T05:35:00+08:00",
-      "comparison_status": "Inherited positioning/superlatives are research wording, not a new benchmark verification."
-    },
-    {
       "id": "entity-011",
       "name": "Dola",
       "research_assertions": {
@@ -973,18 +960,18 @@
     },
     {
       "id": "entity-066",
-      "name": "IBM Forward Deployed Units (FDUs)",
+      "name": "FDE (Forward Deployed Engineer)",
       "research_assertions": {
-        "vendor": "IBM Consulting",
-        "category": "AI 项目交付组织模式",
-        "note": "FDU 是小型交付团队而非单个人。IBM 将其描述为由人指导专业 Agent 执行编码、评估、测试、文档的模式；文章中六人组织对应此背景，但具体角色和项目成效须回到当场口述。"
+        "vendor": "Palantir 首创，AI 企服与 Agent 交付圈普遍采用",
+        "category": "现场部署工程师 / 驻场交付架构师",
+        "note": "指深入客户业务现场，负责将大模型能力、智能体与低代码工作流落地到客户具体业务场景的复合型工程师。此前曾误将 IBM 的小型交付组织（FDU）作为主体收录，现已依据直播真实讨论纠偏统一为 FDE。直播中主播频繁针对“企服团队盲目推行 FDE 导致重交付、非标沟通拉锯和倒闭潮”进行深度剖析。ASR极易误识为 FDI、FD1、FDA 或简写为 FD。"
       },
       "official_sources": [
-        "https://newsroom.ibm.com/2026-05-14-A-New-Way-to-Make-AI-Actually-Work-in-the-Real-World"
+        "https://www.palantir.com/careers/forward-deployed-software-engineer/"
       ],
-      "last_research_at": "2026-11-10",
-      "source_attachment_status": "official_identity_and_bounded_purpose_checked",
-      "verification_scope": "仅核名称、对象与本条所列基本用途；不认证口述收益、历史价格、现场实现或未核规格。逐处结合原文确认身份，不自动替换。"
+      "last_research_at": "2026-11-19",
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "verification_scope": "通用岗位定义与行业交付模式；纠偏此前的特定 FDU 狭隘收录。"
     },
     {
       "id": "entity-067",
@@ -1449,21 +1436,6 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-11",
       "verification_scope": "产品身份及基本用途；不证明含混口述对应关系、历史价格或经营效果。"
-    },
-    {
-      "id": "entity-099",
-      "name": "FDE (Forward Deployed Engineer)",
-      "research_assertions": {
-        "vendor": "Palantir 首创，AI 企服圈广泛采用",
-        "category": "现场部署工程师 / 驻场交付架构师",
-        "note": "指深入客户业务现场，利用AI智能体与工作流为客户打通定制化业务流程的复合型交付角色；直播中极易被ASR误听为 FDI、FD1、FDA 或简写为 FD。"
-      },
-      "official_sources": [
-        "https://www.palantir.com/careers/forward-deployed-software-engineer/"
-      ],
-      "source_attachment_status": "official_identity_and_scope_verified",
-      "last_research_at": "2026-11-19",
-      "verification_scope": "产品与岗位定义；不证明任何个别外包团队交付质量。"
     },
     {
       "id": "entity-100",
