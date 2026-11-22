@@ -1181,3 +1181,14 @@
 - note：本地优先的开源多智能体统一工作台（Multi-Agent AI Workspace），提供单屏控制面板无缝接入Claude Code、Codex、Hermes Agent等多种智能体运行时，支持多智能体协同对话、文件系统直接操作与可视化审核门禁；易被口播拼读误识为一口Studio或EKKO。
 - 官方来源："https://github.com/Ekko-AI/ekko-studio"
 
+## GEO (Generative Engine Optimization)
+
+- ID：`entity-113`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：AI搜索营销与搜索引擎技术领域
+- category：面向生成式AI与大模型问答推荐的内容检索优化技术
+- note：生成式引擎优化（Generative Engine Optimization），类比于传统搜索引擎时代的SEO；指通过优化品牌事实数据、知识图谱与结构化语料，使企业在Perplexity、ChatGPT Search、豆包、通义千问等生成式AI搜索回答中获得优先推荐引用与商业转化。
+- 官方来源："https://en.wikipedia.org/wiki/Generative_engine_optimization"
+

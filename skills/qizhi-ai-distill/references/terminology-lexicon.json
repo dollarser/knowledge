@@ -1877,6 +1877,22 @@
         "file": "model-facts.json",
         "entity_id": "entity-112"
       }
+    },
+    {
+      "id": "entity-113",
+      "standard": "GEO (生成式引擎优化 / Generative Engine Optimization)",
+      "misnomers": [
+        "GEO",
+        "S-GEO",
+        "AI SEO"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-113"
+      }
     }
   ]
 }

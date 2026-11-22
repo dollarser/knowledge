@@ -1632,6 +1632,21 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
       "verification_scope": "开源多智能体统一工作台定位与项目确认。"
+    },
+    {
+      "id": "entity-113",
+      "name": "GEO (Generative Engine Optimization)",
+      "research_assertions": {
+        "vendor": "AI搜索营销与搜索引擎技术领域",
+        "category": "面向生成式AI与大模型问答推荐的内容检索优化技术",
+        "note": "生成式引擎优化（Generative Engine Optimization），类比于传统搜索引擎时代的SEO；指通过优化品牌事实数据、知识图谱与结构化语料，使企业在Perplexity、ChatGPT Search、豆包、通义千问等生成式AI搜索回答中获得优先推荐引用与商业转化。"
+      },
+      "official_sources": [
+        "https://en.wikipedia.org/wiki/Generative_engine_optimization"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "生成式AI搜索引擎优化学术与行业规范定义确认。"
     }
   ]
 }
