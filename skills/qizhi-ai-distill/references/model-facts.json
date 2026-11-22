@@ -1529,18 +1529,18 @@
     },
     {
       "id": "entity-106",
-      "name": "Muse from Meta (Meta 个人智能体浏览器扩展)",
+      "name": "Muse (Meta 官方 Personal AI Agent)",
       "research_assertions": {
         "vendor": "Meta",
-        "category": "AI Agent 浏览器侧边栏控制与自动化扩展程序",
-        "note": "Meta推出的个人AI智能体Chrome浏览器扩展；可常驻侧边栏分屏，直接复用当前浏览器登录态与Cookie，支持自然语言网页操控、内容提取与全网比价；口播连读常被ASR听成 Muse F blo、Muse FB 或简单单字 Muse。"
+        "category": "个人自主智能体 (Personal AI Agent) / 多任务长周期执行系统",
+        "note": "Meta推出的个人自主AI智能体（Personal Agent），依托底层的Muse Secure VM隔离虚拟机架构，支持跨App与Web端自主规划并执行日常任务（如比价下单、日程冲突解决、订阅审计、邮件处理等）；在桌面端提供Chrome侧边栏（Side Panel）扩展作为交互入口，可复用浏览器Cookie免登态操控网页；主播连麦时常因其侧边栏入口口播为'谷歌扩展搜Muse'，连读常被ASR听成 Muse F blo、Muse FB。"
       },
       "official_sources": [
-        "https://meta.com/"
+        "https://about.meta.com/"
       ],
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
-      "verification_scope": "官方扩展身份及侧边栏分屏自动化功能事实。"
+      "verification_scope": "Meta官方Personal Agent定位、VM架构及桌面端浏览器伴侣形态事实确认。"
     },
     {
       "id": "entity-107",
@@ -1571,6 +1571,21 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
       "verification_scope": "行业概念与前沿协议规范确认。"
+    },
+    {
+      "id": "entity-109",
+      "name": "TMProxy",
+      "research_assertions": {
+        "vendor": "TMProxy",
+        "category": "海外静态住宅IP与多账号网络代理服务商",
+        "note": "跨境与出海圈常用的海外代理服务商（tmproxy.com），提供静态住宅IP、ISP机房代理与防关联配置；常用于海外AI平台（ChatGPT/Claude）风控防护与社媒运营；直播间连麦中因方言口音或避开敏感词发音，极易被ASR误识为 TMOZ、TM-Proxy 或与'梯子'混同。"
+      },
+      "official_sources": [
+        "https://tmproxy.com/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "代理服务商真实身份与出海防封场景事实确认。"
     }
   ]
 }

@@ -109,9 +109,10 @@
 | Coze (扣子 / 字节跳动 AI Agent 平台) | 扣扣子, 抠子, 扣子企业版, Coze.cn | `entity-103` |
 | 微泡泡 (微信悬浮通知与辅助回复工具) | 微泡, 微信泡泡, 微泡泡app | `entity-104` |
 | Moltbook (小龙虾智能体社区论坛) | Moukbook, Mookbook, 小龙虾论坛, 小龙虾的论坛, 小龙虾社区 | `entity-105` |
-| Muse from Meta (Meta 个人智能体浏览器扩展) | Muse, Muse F blo, Muse FB, Muse扩展, Muse浏览器 | `entity-106` |
+| Muse (Meta 官方 Personal AI Agent) | Muse, Muse F blo, Muse FB, Muse扩展, Muse浏览器 | `entity-106` |
 | DSH (DeepSeek Harness / 深度求索智能体工作台框架) | DSH, DSH插件, DeepSeek Harness | `entity-107` |
 | A2A (Agent-to-Agent / 智能体对智能体交互协议) | A2A, Agent-to-Agent, Agent to Agent, AgentToAgent | `entity-108` |
+| TMProxy (海外静态住宅代理服务商) | TMOZ, TM-Proxy, TM Proxy, TM代理 | `entity-109` |
 
 不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。
 背景解释和延伸建议只进入正文及台账，不回写为参与者原话。

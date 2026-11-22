@@ -1103,16 +1103,16 @@
 - note：围绕开源AI Agent框架OpenClaw（标志为小龙虾）构建的类Reddit论坛；专供AI智能体自主注册、发帖、评论与辩论，人类用户仅能旁观；主播口播常听为 Moukbook、Mookbook 或小龙虾论坛。
 - 官方来源："https://github.com/"
 
-## Muse from Meta (Meta 个人智能体浏览器扩展)
+## Muse (Meta 官方 Personal AI Agent)
 
 - ID：`entity-106`
 - 调研时间：2026-11-23
 - 来源记录：official_identity_and_scope_verified
 
 - vendor：Meta
-- category：AI Agent 浏览器侧边栏控制与自动化扩展程序
-- note：Meta推出的个人AI智能体Chrome浏览器扩展；可常驻侧边栏分屏，直接复用当前浏览器登录态与Cookie，支持自然语言网页操控、内容提取与全网比价；口播连读常被ASR听成 Muse F blo、Muse FB 或简单单字 Muse。
-- 官方来源："https://meta.com/"
+- category：个人自主智能体 (Personal AI Agent) / 多任务长周期执行系统
+- note：Meta推出的个人自主AI智能体（Personal Agent），依托底层的Muse Secure VM隔离虚拟机架构，支持跨App与Web端自主规划并执行日常任务（如比价下单、日程冲突解决、订阅审计、邮件处理等）；在桌面端提供Chrome侧边栏（Side Panel）扩展作为交互入口，可复用浏览器Cookie免登态操控网页；主播连麦时常因其侧边栏入口口播为'谷歌扩展搜Muse'，连读常被ASR听成 Muse F blo、Muse FB。
+- 官方来源："https://about.meta.com/"
 
 ## DSH (DeepSeek Harness / 深度求索智能体工作台框架)
 
@@ -1135,4 +1135,15 @@
 - category：智能体间通信、协同与交易协议
 - note：指AI智能体之间脱离人工干预、直接通过API或专属网络协议进行对话沟通、任务委托与自动撮合交易的新型协同模式；主播原话常展开解释为 Agent-to-Agent 或 A2A。
 - 官方来源："https://arxiv.org/"
+
+## TMProxy
+
+- ID：`entity-109`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：TMProxy
+- category：海外静态住宅IP与多账号网络代理服务商
+- note：跨境与出海圈常用的海外代理服务商（tmproxy.com），提供静态住宅IP、ISP机房代理与防关联配置；常用于海外AI平台（ChatGPT/Claude）风控防护与社媒运营；直播间连麦中因方言口音或避开敏感词发音，极易被ASR误识为 TMOZ、TM-Proxy 或与'梯子'混同。
+- 官方来源："https://tmproxy.com/"
 

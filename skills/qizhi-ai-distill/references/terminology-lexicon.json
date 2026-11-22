@@ -1757,7 +1757,7 @@
     },
     {
       "id": "entity-106",
-      "standard": "Muse from Meta (Meta 个人智能体浏览器扩展)",
+      "standard": "Muse (Meta 官方 Personal AI Agent)",
       "misnomers": [
         "Muse",
         "Muse F blo",
@@ -1804,6 +1804,23 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-108"
+      }
+    },
+    {
+      "id": "entity-109",
+      "standard": "TMProxy (海外静态住宅代理服务商)",
+      "misnomers": [
+        "TMOZ",
+        "TM-Proxy",
+        "TM Proxy",
+        "TM代理"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-109"
       }
     }
   ]
