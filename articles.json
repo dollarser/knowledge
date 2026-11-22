@@ -1539,5 +1539,33 @@
     "date": "2026-11-18",
     "reviewed": true,
     "source": "刀文AI商业2026-11-18跨夜全景直播口述与弹幕；按3,628段ASR逐字稿全息还原商业认知与管理实战"
+  },
+  {
+    "slug": "live-20261118-qizhi-01",
+    "title": "2026-11-18 · 企智AI落地派：14.56小时跨夜大直播——Google Antigravity工程实战、出海静态住宅IP与防封铁律、Meta Muse自主智能体深度剖析、DSH超级个体工作台、Moltbook赛博实验与FDE谈单博弈",
+    "description": "企智AI落地派14.56小时全景跨夜大直播全息提炼：深入复盘Google Antigravity与ChatGPT在实际全栈开发中的工程分工；彻底厘清海外大模型（ChatGPT/Claude）风控机制与以TMProxy为代表的海外静态住宅IP配置铁律；全面剖析Meta官方个人自主智能体（Personal AI Agent）Muse的专有安全沙箱（Muse Secure VM）与Chrome侧边栏免登态操控真相；研讨去人工中介的A2A（Agent-to-Agent）协议与小龙虾开源社区Moltbook纯AI社交的实验局限；分享面向超级个体的开源DSH（DeepSeek Harness）插件工作台；并拆解FDE对接600所学校教育大客户谈单时以高信息密度掌控主导权的实战博弈。",
+    "category": "企智AI落地",
+    "tags": [
+      "企智AI落地",
+      "Google Antigravity",
+      "ChatGPT开发分工",
+      "出海风控防封",
+      "TMProxy",
+      "静态住宅IP",
+      "Meta Muse",
+      "Personal Agent",
+      "Muse Secure VM",
+      "A2A协议",
+      "Moltbook",
+      "小龙虾生态",
+      "DSH",
+      "DeepSeek Harness",
+      "FDE谈单博弈",
+      "教育大客户落地",
+      "一人公司OPC"
+    ],
+    "date": "2026-11-18",
+    "reviewed": true,
+    "source": "企智AI落地派2026-11-18全景跨夜直播口述与弹幕；按5,813段ASR逐字稿全息还原商业认知与实战博弈"
   }
 ]
