@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | GPT-6 Astra | Astra, GPT6 Astra, GPT-6 Astra, 阿斯特拉, GPT Astra | `entity-001` |
 | GPT-6.1 Sol | Soul 6.1, Sol 6.1, GPT-6.1 Sol, GPT6.1 Sol, Sol6.1, Soul6.1, GPT 6.1, GPT-6.1 | `entity-002` |
-| WorkBuddy | Workbody, workbody, Work body, Work Body, work body, 我个巴迪, Work Buddy, WorkBuddy, 沃克巴蒂, 沃克巴的, Moco Body | `entity-003` |
+| WorkBuddy | Workbody, workbody, Work body, Work Body, work body, 我个巴迪, Work Buddy, WorkBuddy, 沃克巴蒂, 沃克巴的, Moco Body, Workbot | `entity-003` |
 | Seedance | Candice, Cense, Cdance, C-dance, C dance, 西单士, CDS, Cinema 2.5, Cinema2.5, Candice2.0, Candice2.5, Cdance2.0, Cdance2.5, CDNS, Cetus 2.5, Cetus2.5, C-dance 2.5, C-dance 3.0, C Dance2.5, C Dance 2.5, C-Dance 2.5, CDance2.5 | `entity-004` |
 | LiblibAI (哩布哩布) | 利普, 荔浦 | `entity-005` |
 | RunningHub | RunningCap, Running Cup, running hub | `entity-006` |
@@ -114,6 +114,7 @@
 | A2A (Agent-to-Agent / 智能体对智能体交互协议) | A2A, Agent-to-Agent, Agent to Agent, AgentToAgent | `entity-108` |
 | TMProxy (海外静态住宅代理服务商) | TMOZ, TM-Proxy, TM Proxy, TM代理 | `entity-109` |
 | MiniMind (轻量级开源大模型教学原型) | MiniM, Mini Mind, Mini-Mind | `entity-110` |
+| Hermes Agent (开源全自主持续进化智能体框架) | HoneyS, Honey S, honeys, Hermes, Hermes-Agent | `entity-111` |
 
 不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。
 背景解释和延伸建议只进入正文及台账，不回写为参与者原话。

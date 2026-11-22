@@ -1158,3 +1158,15 @@
 - note：GitHub上知名的高星开源项目，旨在用极小成本（几兆参数、个人电脑几小时）从零预训练、指令微调构建一个属于自己的极简大语言模型；主播常推荐给想了解LLM底层原理但无卡无算力的初学者。
 - 官方来源："https://github.com/jingyaogong/minimind"
 
+## Hermes Agent
+
+- ID：`entity-111`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：Nous Research
+- category：开源全自主持续进化智能体框架与二次开发底座
+- note：Nous Research官方开源的主打自适应学习机制的AI Agent开发框架，具备持久化记忆自增殖、技能沉淀及微虚拟机/工具沙箱与MCP生态支持，支持本地与端侧部署，常被开发者选作构建垂直业务智能体的二次开发底座；易被口播音近误识为HoneyS或Honey S。
+- 官方来源："https://github.com/NousResearch/hermes-agent"
+- 官方来源："https://nousresearch.com"
+

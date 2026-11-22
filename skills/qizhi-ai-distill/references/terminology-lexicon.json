@@ -63,7 +63,8 @@
         "WorkBuddy",
         "沃克巴蒂",
         "沃克巴的",
-        "Moco Body"
+        "Moco Body",
+        "Workbot"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
@@ -1839,6 +1840,24 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-110"
+      }
+    },
+    {
+      "id": "entity-111",
+      "standard": "Hermes Agent (开源全自主持续进化智能体框架)",
+      "misnomers": [
+        "HoneyS",
+        "Honey S",
+        "honeys",
+        "Hermes",
+        "Hermes-Agent"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-111"
       }
     }
   ]

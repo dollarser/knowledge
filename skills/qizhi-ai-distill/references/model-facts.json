@@ -1601,6 +1601,22 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
       "verification_scope": "开源项目定位与源码库归属事实确认。"
+    },
+    {
+      "id": "entity-111",
+      "name": "Hermes Agent",
+      "research_assertions": {
+        "vendor": "Nous Research",
+        "category": "开源全自主持续进化智能体框架与二次开发底座",
+        "note": "Nous Research官方开源的主打自适应学习机制的AI Agent开发框架，具备持久化记忆自增殖、技能沉淀及微虚拟机/工具沙箱与MCP生态支持，支持本地与端侧部署，常被开发者选作构建垂直业务智能体的二次开发底座；易被口播音近误识为HoneyS或Honey S。"
+      },
+      "official_sources": [
+        "https://github.com/NousResearch/hermes-agent",
+        "https://nousresearch.com"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "Nous Research官方开源自主智能体系统与底座定位确认。"
     }
   ]
 }
