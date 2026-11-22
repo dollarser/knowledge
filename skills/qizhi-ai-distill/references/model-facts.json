@@ -1586,6 +1586,21 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
       "verification_scope": "代理服务商真实身份与出海防封场景事实确认。"
+    },
+    {
+      "id": "entity-110",
+      "name": "MiniMind",
+      "research_assertions": {
+        "vendor": "开源社区 (GitHub / jingyaogong)",
+        "category": "轻量级从零手搓大语言模型开源教学与原型项目",
+        "note": "GitHub上知名的高星开源项目，旨在用极小成本（几兆参数、个人电脑几小时）从零预训练、指令微调构建一个属于自己的极简大语言模型；主播常推荐给想了解LLM底层原理但无卡无算力的初学者。"
+      },
+      "official_sources": [
+        "https://github.com/jingyaogong/minimind"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "开源项目定位与源码库归属事实确认。"
     }
   ]
 }

@@ -56,6 +56,8 @@
         "Workbody",
         "workbody",
         "Work body",
+        "Work Body",
+        "work body",
         "我个巴迪",
         "Work Buddy",
         "WorkBuddy",
@@ -1821,6 +1823,22 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-109"
+      }
+    },
+    {
+      "id": "entity-110",
+      "standard": "MiniMind (轻量级开源大模型教学原型)",
+      "misnomers": [
+        "MiniM",
+        "Mini Mind",
+        "Mini-Mind"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-110"
       }
     }
   ]

@@ -1147,3 +1147,14 @@
 - note：跨境与出海圈常用的海外代理服务商（tmproxy.com），提供静态住宅IP、ISP机房代理与防关联配置；常用于海外AI平台（ChatGPT/Claude）风控防护与社媒运营；直播间连麦中因方言口音或避开敏感词发音，极易被ASR误识为 TMOZ、TM-Proxy 或与'梯子'混同。
 - 官方来源："https://tmproxy.com/"
 
+## MiniMind
+
+- ID：`entity-110`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：开源社区 (GitHub / jingyaogong)
+- category：轻量级从零手搓大语言模型开源教学与原型项目
+- note：GitHub上知名的高星开源项目，旨在用极小成本（几兆参数、个人电脑几小时）从零预训练、指令微调构建一个属于自己的极简大语言模型；主播常推荐给想了解LLM底层原理但无卡无算力的初学者。
+- 官方来源："https://github.com/jingyaogong/minimind"
+
