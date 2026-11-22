@@ -1736,6 +1736,75 @@
         "file": "model-facts.json",
         "entity_id": "entity-104"
       }
+    },
+    {
+      "id": "entity-105",
+      "standard": "Moltbook (小龙虾智能体社区论坛)",
+      "misnomers": [
+        "Moukbook",
+        "Mookbook",
+        "小龙虾论坛",
+        "小龙虾的论坛",
+        "小龙虾社区"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-105"
+      }
+    },
+    {
+      "id": "entity-106",
+      "standard": "Muse from Meta (Meta 个人智能体浏览器扩展)",
+      "misnomers": [
+        "Muse",
+        "Muse F blo",
+        "Muse FB",
+        "Muse扩展",
+        "Muse浏览器"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-106"
+      }
+    },
+    {
+      "id": "entity-107",
+      "standard": "DSH (DeepSeek Harness / 深度求索智能体工作台框架)",
+      "misnomers": [
+        "DSH",
+        "DSH插件",
+        "DeepSeek Harness"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-107"
+      }
+    },
+    {
+      "id": "entity-108",
+      "standard": "A2A (Agent-to-Agent / 智能体对智能体交互协议)",
+      "misnomers": [
+        "A2A",
+        "Agent-to-Agent",
+        "Agent to Agent",
+        "AgentToAgent"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-108"
+      }
     }
   ]
 }

@@ -1511,6 +1511,66 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-19",
       "verification_scope": "工具类型及非官方接口事实，提示安全与风控限制。"
+    },
+    {
+      "id": "entity-105",
+      "name": "Moltbook (小龙虾智能体社区论坛)",
+      "research_assertions": {
+        "vendor": "OpenClaw (小龙虾 / Moltbot 生态)",
+        "category": "AI Agent 专属社交网络与自主发帖论坛",
+        "note": "围绕开源AI Agent框架OpenClaw（标志为小龙虾）构建的类Reddit论坛；专供AI智能体自主注册、发帖、评论与辩论，人类用户仅能旁观；主播口播常听为 Moukbook、Mookbook 或小龙虾论坛。"
+      },
+      "official_sources": [
+        "https://github.com/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "官方社区定位与生态背景确认。"
+    },
+    {
+      "id": "entity-106",
+      "name": "Muse from Meta (Meta 个人智能体浏览器扩展)",
+      "research_assertions": {
+        "vendor": "Meta",
+        "category": "AI Agent 浏览器侧边栏控制与自动化扩展程序",
+        "note": "Meta推出的个人AI智能体Chrome浏览器扩展；可常驻侧边栏分屏，直接复用当前浏览器登录态与Cookie，支持自然语言网页操控、内容提取与全网比价；口播连读常被ASR听成 Muse F blo、Muse FB 或简单单字 Muse。"
+      },
+      "official_sources": [
+        "https://meta.com/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "官方扩展身份及侧边栏分屏自动化功能事实。"
+    },
+    {
+      "id": "entity-107",
+      "name": "DSH (DeepSeek Harness / 深度求索智能体工作台框架)",
+      "research_assertions": {
+        "vendor": "深度求索 (DeepSeek)",
+        "category": "面向超级个体的开源 AI 编码与智能体工作台框架",
+        "note": "DeepSeek生态开源的终端智能体工作台开发框架，支持丰富的插件体系和多模型调用，为超级个体提供全能编程工作站环境；口播常口误或缩称为 DSH 或 DSH插件。"
+      },
+      "official_sources": [
+        "https://github.com/deepseek-ai"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "框架定位与开源仓库归属确认。"
+    },
+    {
+      "id": "entity-108",
+      "name": "A2A (Agent-to-Agent / 智能体对智能体交互协议)",
+      "research_assertions": {
+        "vendor": "行业通用标准 / 智能体网络协议",
+        "category": "智能体间通信、协同与交易协议",
+        "note": "指AI智能体之间脱离人工干预、直接通过API或专属网络协议进行对话沟通、任务委托与自动撮合交易的新型协同模式；主播原话常展开解释为 Agent-to-Agent 或 A2A。"
+      },
+      "official_sources": [
+        "https://arxiv.org/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "行业概念与前沿协议规范确认。"
     }
   ]
 }

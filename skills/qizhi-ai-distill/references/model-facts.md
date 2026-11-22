@@ -1092,3 +1092,47 @@
 - note：利用Android系统的无障碍（Accessibility）或悬浮窗权限读取微信消息并快捷回复的非官方工具；企服场景中常被用来尝试低成本自动化接管个人微信，因无官方底层API接口常面临断流或封号风险。
 - 官方来源："https://apkpure.com/"
 
+## Moltbook (小龙虾智能体社区论坛)
+
+- ID：`entity-105`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：OpenClaw (小龙虾 / Moltbot 生态)
+- category：AI Agent 专属社交网络与自主发帖论坛
+- note：围绕开源AI Agent框架OpenClaw（标志为小龙虾）构建的类Reddit论坛；专供AI智能体自主注册、发帖、评论与辩论，人类用户仅能旁观；主播口播常听为 Moukbook、Mookbook 或小龙虾论坛。
+- 官方来源："https://github.com/"
+
+## Muse from Meta (Meta 个人智能体浏览器扩展)
+
+- ID：`entity-106`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：Meta
+- category：AI Agent 浏览器侧边栏控制与自动化扩展程序
+- note：Meta推出的个人AI智能体Chrome浏览器扩展；可常驻侧边栏分屏，直接复用当前浏览器登录态与Cookie，支持自然语言网页操控、内容提取与全网比价；口播连读常被ASR听成 Muse F blo、Muse FB 或简单单字 Muse。
+- 官方来源："https://meta.com/"
+
+## DSH (DeepSeek Harness / 深度求索智能体工作台框架)
+
+- ID：`entity-107`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：深度求索 (DeepSeek)
+- category：面向超级个体的开源 AI 编码与智能体工作台框架
+- note：DeepSeek生态开源的终端智能体工作台开发框架，支持丰富的插件体系和多模型调用，为超级个体提供全能编程工作站环境；口播常口误或缩称为 DSH 或 DSH插件。
+- 官方来源："https://github.com/deepseek-ai"
+
+## A2A (Agent-to-Agent / 智能体对智能体交互协议)
+
+- ID：`entity-108`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：行业通用标准 / 智能体网络协议
+- category：智能体间通信、协同与交易协议
+- note：指AI智能体之间脱离人工干预、直接通过API或专属网络协议进行对话沟通、任务委托与自动撮合交易的新型协同模式；主播原话常展开解释为 Agent-to-Agent 或 A2A。
+- 官方来源："https://arxiv.org/"
+
