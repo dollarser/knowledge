@@ -1859,6 +1859,24 @@
         "file": "model-facts.json",
         "entity_id": "entity-111"
       }
+    },
+    {
+      "id": "entity-112",
+      "standard": "Ekko Studio (开源多智能体统一工作台)",
+      "misnomers": [
+        "EKKO Studio",
+        "EKKO",
+        "Ekko",
+        "一口 Studio",
+        "一口"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-112"
+      }
     }
   ]
 }

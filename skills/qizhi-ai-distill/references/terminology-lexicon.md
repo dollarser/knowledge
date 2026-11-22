@@ -115,6 +115,7 @@
 | TMProxy (海外静态住宅代理服务商) | TMOZ, TM-Proxy, TM Proxy, TM代理 | `entity-109` |
 | MiniMind (轻量级开源大模型教学原型) | MiniM, Mini Mind, Mini-Mind | `entity-110` |
 | Hermes Agent (开源全自主持续进化智能体框架) | HoneyS, Honey S, honeys, Hermes, Hermes-Agent | `entity-111` |
+| Ekko Studio (开源多智能体统一工作台) | EKKO Studio, EKKO, Ekko, 一口 Studio, 一口 | `entity-112` |
 
 不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。
 背景解释和延伸建议只进入正文及台账，不回写为参与者原话。

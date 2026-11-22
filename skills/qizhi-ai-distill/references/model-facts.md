@@ -1170,3 +1170,14 @@
 - 官方来源："https://github.com/NousResearch/hermes-agent"
 - 官方来源："https://nousresearch.com"
 
+## Ekko Studio
+
+- ID：`entity-112`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：Ekko AI 开源社区 (GitHub / Ekko-AI)
+- category：本地优先开源多智能体统一工作台与可视化控制面板
+- note：本地优先的开源多智能体统一工作台（Multi-Agent AI Workspace），提供单屏控制面板无缝接入Claude Code、Codex、Hermes Agent等多种智能体运行时，支持多智能体协同对话、文件系统直接操作与可视化审核门禁；易被口播拼读误识为一口Studio或EKKO。
+- 官方来源："https://github.com/Ekko-AI/ekko-studio"
+
