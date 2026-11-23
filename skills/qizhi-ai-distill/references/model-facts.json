@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-23",
   "provenance": {
     "origin": "Existing official research, confirmed by user in this chat; migrated without new factual verification.",
     "source_documents": [
@@ -72,6 +72,20 @@
       "source_attachment_status": "pending_original_research_links",
       "last_research_at": "2026-11-03T05:35:00+08:00",
       "comparison_status": "Inherited positioning/superlatives are research wording, not a new benchmark verification."
+    },
+    {
+      "id": "entity-116",
+      "name": "Stable Diffusion",
+      "research_assertions": {
+        "vendor": "Stability AI",
+        "category": "图像生成模型系列",
+        "note": "Stability AI 的项目仓库包含 Stable Diffusion 2.x 文生图模型。SD 或 SD 2.0 也可能是其他产品的口播，需逐处确认。"
+      },
+      "official_sources": [
+        "https://github.com/Stability-AI/stablediffusion"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23"
     }
   ],
   "other_entities": [
@@ -96,15 +110,16 @@
       "id": "entity-004",
       "name": "Seedance",
       "research_assertions": {
-        "vendor": "ByteDance",
-        "category": "视频生成多模态大模型",
-        "note": "字节跳动自研核心视频生成模型，即梦AI底层"
+        "vendor": "ByteDance Seed",
+        "category": "视频生成模型系列",
+        "note": "官方发布包括 Seedance 2.0 和 2.5。此来源仅确认产品与所列版本，不确认直播中 SD 的指向或开放权重。"
       },
       "official_sources": [
-        "https://docs.volcengine.com/docs/ark/seedance-2-5?lang=zh"
+        "https://seed.bytedance.com/en/models",
+        "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
       ],
-      "source_attachment_status": "official_name_source_attached_existing_assertions_not_rewritten",
-      "last_research_at": "2026-11-10",
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
       "comparison_status": "Inherited positioning/superlatives are research wording, not a new benchmark verification.",
       "verification_scope": "本次仅补官方名称/版本来源，不新增或整体认证既有规格、性能、促销与定价。"
     },
@@ -151,13 +166,16 @@
       "id": "entity-008",
       "name": "DeepSeek Harness (DSH)",
       "research_assertions": {
-        "vendor": "DeepSeek Ecosystem",
-        "category": "Agent编排与轨迹运行框架",
-        "note": "针对DeepSeek模型的Harness编排与可观测轨迹套件"
+        "vendor": "DeepSeek",
+        "category": "智能体工具与运行框架",
+        "note": "官方入口为 DeepSeek Harness。历史项目 dsh-superagent-prototype 见 entity-065。回源时按当期上下文区分项目，当前官网不证明早期口述所指。"
       },
-      "official_sources": [],
-      "source_attachment_status": "pending_original_research_links",
-      "last_research_at": "2026-11-03T05:35:00+08:00",
+      "official_sources": [
+        "https://www.deepseek.com/harness/en/",
+        "https://github.com/deepseek-ai/deepseek-harness"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
       "comparison_status": "Inherited positioning/superlatives are research wording, not a new benchmark verification."
     },
     {
@@ -682,9 +700,10 @@
         "note": "腾讯在微信内测的 AI 助手入口，支持直达服务、搜索聚合与智能问答。"
       },
       "official_sources": [],
-      "source_attachment_status": "pending_original_research_links",
+      "source_attachment_status": "direct_product_source_pending",
       "last_research_at": "2026-11-06T19:47:00+08:00",
-      "comparison_status": "Verified product beta feature."
+      "comparison_status": "原调研表述待直接证据核验。",
+      "verification_scope": "当前链接不足以核证具体身份、功能或架构；保留原调研线索，待直接来源与原场语境双重核验。"
     },
     {
       "id": "entity-048",
@@ -808,9 +827,10 @@
       "official_sources": [
         "https://weixin.qq.com/"
       ],
-      "source_attachment_status": "attached_canonical_url",
+      "source_attachment_status": "direct_product_source_pending",
       "last_research_at": "2026-11-09T12:00:00+08:00",
-      "comparison_status": "Verified WeChat native AI ecosystem agent."
+      "comparison_status": "原调研表述待直接证据核验。",
+      "verification_scope": "当前链接不足以核证具体身份、功能或架构；保留原调研线索，待直接来源与原场语境双重核验。"
     },
     {
       "id": "entity-056",
@@ -846,15 +866,15 @@
       "id": "entity-058",
       "name": "GEO (Generative Engine Optimization / 生成式引擎优化)",
       "research_assertions": {
-        "vendor": "AI 搜索与数字营销前沿学术界及行业实践",
-        "category": "生成式 AI 搜索引擎优化与品牌知识召回技术",
-        "note": "面向生成式 AI 搜索引擎（如豆包、Kimi、Perplexity、SearchGPT、文小言等）的新兴优化策略。通过对语料源注水、高权重知识库嵌入、结构化公关内容分发与品牌长尾词覆盖，提高企业在 AI 问答推荐中的被引用率与上榜率。在直播交流中常被 ASR 误转写为 GU、GEU 或 GO。"
+        "vendor": "Aggarwal 等",
+        "category": "生成式回答可见性优化",
+        "note": "原论文研究如何提升内容在生成式回答中的可见性。具体平台排序机制、推荐或转化效果须另有证据。"
       },
       "official_sources": [
         "https://arxiv.org/abs/2311.09735"
       ],
-      "source_attachment_status": "attached_canonical_url",
-      "last_research_at": "2026-11-09T20:10:00+08:00",
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
       "comparison_status": "Verified generative engine optimization paradigm."
     },
     {
@@ -1449,6 +1469,29 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-11",
       "verification_scope": "产品身份及基本用途；不证明含混口述对应关系、历史价格或经营效果。"
+    },
+    {
+      "id": "entity-106",
+      "name": "Muse（浏览器扩展口播线索，身份待核）",
+      "research_assertions": {
+        "category": "听写线索",
+        "note": "口述提到浏览器扩展或侧边栏。尚缺可对应的产品直达页，归属、架构与功能待核。"
+      },
+      "official_sources": [],
+      "source_attachment_status": "direct_product_source_pending",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "当前链接不足以核证具体身份、功能或架构；保留原调研线索，待直接来源与原场语境双重核验。",
+      "comparison_status": "原调研表述待直接证据核验。"
     }
-  ]
+  ],
+  "merged_entity_ids": {
+    "entity-107": "entity-008",
+    "entity-111": "entity-038",
+    "entity-113": "entity-058",
+    "entity-114": "entity-004",
+    "entity-115": "entity-003"
+  },
+  "historical_id_notes": {
+    "entity-114": "该 ID 曾在 e6b289f 表示 Stable Diffusion，从 39c4f61 起用于 Seedance。查旧记录时按提交版本和原语境判定；Stable Diffusion 的现行 ID 为 entity-116。"
+  }
 }

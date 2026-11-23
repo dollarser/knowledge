@@ -45,6 +45,17 @@
 - category：旗舰代码与智能体大模型
 - note：智谱 AI 于 2026 年秋季发布的旗舰大模型，强化学习后训练驱动，具备顶级 Terminal 编码、安全渗透能力与 1M 上下文
 
+## Stable Diffusion
+
+- ID：`entity-116`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：Stability AI
+- category：图像生成模型系列
+- note：Stability AI 的项目仓库包含 Stable Diffusion 2.x 文生图模型。SD 或 SD 2.0 也可能是其他产品的口播，需逐处确认。
+- 官方来源："https://github.com/Stability-AI/stablediffusion"
+
 ## WorkBuddy
 
 - ID：`entity-003`
@@ -60,13 +71,14 @@
 ## Seedance
 
 - ID：`entity-004`
-- 调研时间：2026-11-10
-- 来源记录：official_name_source_attached_existing_assertions_not_rewritten
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
 
-- vendor：ByteDance
-- category：视频生成多模态大模型
-- note：字节跳动自研核心视频生成模型，即梦AI底层
-- 官方来源："https://docs.volcengine.com/docs/ark/seedance-2-5?lang=zh"
+- vendor：ByteDance Seed
+- category：视频生成模型系列
+- note：官方发布包括 Seedance 2.0 和 2.5。此来源仅确认产品与所列版本，不确认直播中 SD 的指向或开放权重。
+- 官方来源："https://seed.bytedance.com/en/models"
+- 官方来源："https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
 
 ## LiblibAI (哩布哩布)
 
@@ -101,12 +113,14 @@
 ## DeepSeek Harness (DSH)
 
 - ID：`entity-008`
-- 调研时间：2026-11-03T05:35:00+08:00
-- 来源记录：pending_original_research_links
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
 
-- vendor：DeepSeek Ecosystem
-- category：Agent编排与轨迹运行框架
-- note：针对DeepSeek模型的Harness编排与可观测轨迹套件
+- vendor：DeepSeek
+- category：智能体工具与运行框架
+- note：官方入口为 DeepSeek Harness。历史项目 dsh-superagent-prototype 见 entity-065。回源时按当期上下文区分项目，当前官网不证明早期口述所指。
+- 官方来源："https://www.deepseek.com/harness/en/"
+- 官方来源："https://github.com/deepseek-ai/deepseek-harness"
 
 ## LangGraph
 
@@ -490,7 +504,7 @@
 
 - ID：`entity-047`
 - 调研时间：2026-11-06T19:47:00+08:00
-- 来源记录：pending_original_research_links
+- 来源记录：direct_product_source_pending
 
 - vendor：Tencent (腾讯微信)
 - category：微信内置原生 AI 搜索与服务分发助手
@@ -581,7 +595,7 @@
 
 - ID：`entity-055`
 - 调研时间：2026-11-09T12:00:00+08:00
-- 来源记录：attached_canonical_url
+- 来源记录：direct_product_source_pending
 
 - vendor：Tencent (腾讯微信团队)
 - category：微信生态原生端侧 AI 助手与生活服务交易基础设施
@@ -613,12 +627,12 @@
 ## GEO (Generative Engine Optimization / 生成式引擎优化)
 
 - ID：`entity-058`
-- 调研时间：2026-11-09T20:10:00+08:00
-- 来源记录：attached_canonical_url
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
 
-- vendor：AI 搜索与数字营销前沿学术界及行业实践
-- category：生成式 AI 搜索引擎优化与品牌知识召回技术
-- note：面向生成式 AI 搜索引擎（如豆包、Kimi、Perplexity、SearchGPT、文小言等）的新兴优化策略。通过对语料源注水、高权重知识库嵌入、结构化公关内容分发与品牌长尾词覆盖，提高企业在 AI 问答推荐中的被引用率与上榜率。在直播交流中常被 ASR 误转写为 GU、GEU 或 GO。
+- vendor：Aggarwal 等
+- category：生成式回答可见性优化
+- note：原论文研究如何提升内容在生成式回答中的可见性。具体平台排序机制、推荐或转化效果须另有证据。
 - 官方来源："https://arxiv.org/abs/2311.09735"
 
 ## OpenTory (塔瑞 / 工业老旧系统极简智能体)
@@ -1046,4 +1060,23 @@
 - category：AI应用检索服务
 - note：官方提供语义、向量及全文等检索能力；直播中名称不清的20美元服务不能据此自动认作Pinecone。
 - 官方来源："https://docs.pinecone.io/guides/get-started/overview"
+
+## Muse（浏览器扩展口播线索，身份待核）
+
+- ID：`entity-106`
+- 调研时间：2026-11-23
+- 来源记录：direct_product_source_pending
+
+- category：听写线索
+- note：口述提到浏览器扩展或侧边栏。尚缺可对应的产品直达页，归属、架构与功能待核。
+
+## 已合并实体 ID
+
+- `entity-107` → `entity-008`
+- `entity-111` → `entity-038`
+- `entity-113` → `entity-058`
+- `entity-114` → `entity-004`
+- `entity-115` → `entity-003`
+
+- `entity-114` 的历史记录：该 ID 曾在 e6b289f 表示 Stable Diffusion，从 39c4f61 起用于 Seedance。查旧记录时按提交版本和原语境判定；Stable Diffusion 的现行 ID 为 entity-116。
 
