@@ -35,6 +35,17 @@ def views():
         for source in e.get('official_sources', []):
             text += ['- 官方来源：' + json.dumps(source, ensure_ascii=False)]
         text += ['']
+    merged_ids = facts.get('merged_entity_ids', {})
+    if merged_ids:
+        text += ['## 已合并实体 ID', '']
+        for old, canonical in merged_ids.items():
+            if old in ids or canonical not in ids:
+                raise ValueError(f'Invalid entity redirect: {old} -> {canonical}')
+            text += [f'- `{old}` → `{canonical}`']
+        text += ['']
+        for old, note in facts.get('historical_id_notes', {}).items():
+            text += [f'- `{old}` 的历史记录：{note}']
+        text += ['']
     for field in ['legacy_research_notes', 'prior_research_excerpt']:
         if facts.get(field):
             text += ['## 迁移调研记录：' + field, '',
@@ -50,6 +61,10 @@ def views():
         if ref['file'] != 'model-facts.json' or ref['entity_id'] not in ids:
             raise ValueError('Unknown fact reference: ' + e['id'])
         terms += ['| ' + cell(e['standard']) + ' | ' + cell(', '.join(e['misnomers'])) + ' | `' + ref['entity_id'] + '` |']
+    if lexicon.get('ambiguity_notes'):
+        terms += ['', '## 容易混淆的口播', '']
+        for token, note in lexicon['ambiguity_notes'].items():
+            terms += [f'- **{token}**：{note}']
     terms += ['', '不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。', '背景解释和延伸建议只进入正文及台账，不回写为参与者原话。', '']
     return {'references/model-facts.md': ('\n'.join(text) + '\n').encode(),
             'references/terminology-lexicon.md': '\n'.join(terms).encode()}

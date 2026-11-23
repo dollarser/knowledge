@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": "3.0.0",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-23",
   "usage_policy": {
     "mode": "candidate_only",
     "automatic_replacement": false,
@@ -54,10 +54,7 @@
       "standard": "WorkBuddy",
       "misnomers": [
         "Workbody",
-        "workbody",
         "Work body",
-        "Work Body",
-        "work body",
         "我个巴迪",
         "Work Buddy",
         "WorkBuddy",
@@ -95,11 +92,16 @@
         "Cetus 2.5",
         "Cetus2.5",
         "C-dance 2.5",
-        "C-dance 3.0",
         "C Dance2.5",
         "C Dance 2.5",
-        "C-Dance 2.5",
-        "CDance2.5"
+        "SD",
+        "SD2.0",
+        "SD 2.0",
+        "SD2.5",
+        "SD 2.5",
+        "Seedance",
+        "Seedance 2.0",
+        "Seedance 2.5"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
@@ -167,7 +169,9 @@
       "misnomers": [
         "DSH",
         "DeepSeek Cardenas",
-        "DeepSeek HANIS"
+        "DeepSeek HANIS",
+        "DSH插件",
+        "DeepSeek Harness"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
@@ -673,7 +677,10 @@
         "Harmless",
         "Hormis Agent",
         "Hermes",
-        "hermes"
+        "HoneyS",
+        "Honey S",
+        "Hermes-Agent",
+        "哈密斯"
       ],
       "context_required": true,
       "verification_status": "verified",
@@ -824,7 +831,7 @@
         "小V"
       ],
       "context_required": true,
-      "verification_status": "verified",
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
       "auto_apply": false,
       "facts_ref": {
         "file": "model-facts.json",
@@ -974,7 +981,7 @@
         "小V"
       ],
       "context_required": true,
-      "verification_status": "verified",
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
       "auto_apply": false,
       "facts_ref": {
         "file": "model-facts.json",
@@ -1028,7 +1035,10 @@
         "G U",
         "GO",
         "生成式引擎优化",
-        "AI搜索优化"
+        "AI搜索优化",
+        "GEO",
+        "S-GEO",
+        "AI SEO"
       ],
       "context_required": true,
       "verification_status": "verified",
@@ -1760,7 +1770,7 @@
     },
     {
       "id": "entity-106",
-      "standard": "Muse (Meta 官方 Personal AI Agent)",
+      "standard": "Muse（浏览器扩展口播线索，身份待核）",
       "misnomers": [
         "Muse",
         "Muse F blo",
@@ -1774,22 +1784,6 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-106"
-      }
-    },
-    {
-      "id": "entity-107",
-      "standard": "DSH (DeepSeek Harness / 深度求索智能体工作台框架)",
-      "misnomers": [
-        "DSH",
-        "DSH插件",
-        "DeepSeek Harness"
-      ],
-      "context_required": true,
-      "verification_status": "candidate_requires_per_occurrence_confirmation",
-      "auto_apply": false,
-      "facts_ref": {
-        "file": "model-facts.json",
-        "entity_id": "entity-107"
       }
     },
     {
@@ -1843,25 +1837,6 @@
       }
     },
     {
-      "id": "entity-111",
-      "standard": "Hermes Agent (开源全自主持续进化智能体框架)",
-      "misnomers": [
-        "HoneyS",
-        "Honey S",
-        "honeys",
-        "Hermes",
-        "Hermes-Agent",
-        "哈密斯"
-      ],
-      "context_required": true,
-      "verification_status": "candidate_requires_per_occurrence_confirmation",
-      "auto_apply": false,
-      "facts_ref": {
-        "file": "model-facts.json",
-        "entity_id": "entity-111"
-      }
-    },
-    {
       "id": "entity-112",
       "standard": "Ekko Studio (开源多智能体统一工作台)",
       "misnomers": [
@@ -1880,63 +1855,28 @@
       }
     },
     {
-      "id": "entity-113",
-      "standard": "GEO (生成式引擎优化 / Generative Engine Optimization)",
+      "id": "entity-116",
+      "standard": "Stable Diffusion",
       "misnomers": [
-        "GEO",
-        "S-GEO",
-        "AI SEO",
-        "GEU"
-      ],
-      "context_required": true,
-      "verification_status": "candidate_requires_per_occurrence_confirmation",
-      "auto_apply": false,
-      "facts_ref": {
-        "file": "model-facts.json",
-        "entity_id": "entity-113"
-      }
-    },
-    {
-      "id": "entity-114",
-      "standard": "Seedance (字节跳动 AI 视频与漫剧大模型系列)",
-      "misnomers": [
+        "Stable Diffusion",
         "SD",
         "SD2.0",
-        "SD 2.0",
-        "SD2.5",
-        "SD 2.5",
-        "SD3.0",
-        "SD 3.0",
-        "Seedance",
-        "Seedance 2.0",
-        "Seedance 2.5",
-        "Seedance 3.0"
+        "SD 2.0"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
       "auto_apply": false,
       "facts_ref": {
         "file": "model-facts.json",
-        "entity_id": "entity-114"
-      }
-    },
-    {
-      "id": "entity-115",
-      "standard": "WorkBuddy (腾讯全场景职场AI智能体工作台)",
-      "misnomers": [
-        "workbody",
-        "Work Body",
-        "work body",
-        "WorkBody",
-        "Workbody"
-      ],
-      "context_required": true,
-      "verification_status": "candidate_requires_per_occurrence_confirmation",
-      "auto_apply": false,
-      "facts_ref": {
-        "file": "model-facts.json",
-        "entity_id": "entity-115"
+        "entity_id": "entity-116"
       }
     }
-  ]
+  ],
+  "ambiguity_notes": {
+    "SD / SD 2.0": "Seedance 与 Stable Diffusion 都是候选。分镜、漫剧等用途单独不足以判定具体工具。",
+    "龙链": "分别核对是否在讲 LangChain 应用框架，或 LangSmith 追踪、评测。",
+    "Muse": "Muse Code、Muse Spark 和未确认的浏览器扩展分别核对，不能用同音把它们并成一个产品。",
+    "小 V / 小微": "核微信产品入口与具体语境，勿把小微企业、商户或其他助手改成产品名称。",
+    "Hermes / Harness": "Hermes Agent、Hermes 模型与作为通用架构的 Harness 有别。只有明确 DeepSeek 项目语境才考虑 DeepSeek Harness。"
+  }
 }

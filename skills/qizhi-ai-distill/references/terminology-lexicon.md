@@ -8,12 +8,12 @@
 | --- | --- | --- |
 | GPT-6 Astra | Astra, GPT6 Astra, GPT-6 Astra, 阿斯特拉, GPT Astra | `entity-001` |
 | GPT-6.1 Sol | Soul 6.1, Sol 6.1, GPT-6.1 Sol, GPT6.1 Sol, Sol6.1, Soul6.1, GPT 6.1, GPT-6.1 | `entity-002` |
-| WorkBuddy | Workbody, workbody, Work body, Work Body, work body, 我个巴迪, Work Buddy, WorkBuddy, 沃克巴蒂, 沃克巴的, Moco Body, Workbot | `entity-003` |
-| Seedance | Candice, Cense, Cdance, C-dance, C dance, 西单士, CDS, Cinema 2.5, Cinema2.5, Candice2.0, Candice2.5, Cdance2.0, Cdance2.5, CDNS, Cetus 2.5, Cetus2.5, C-dance 2.5, C-dance 3.0, C Dance2.5, C Dance 2.5, C-Dance 2.5, CDance2.5 | `entity-004` |
+| WorkBuddy | Workbody, Work body, 我个巴迪, Work Buddy, WorkBuddy, 沃克巴蒂, 沃克巴的, Moco Body, Workbot | `entity-003` |
+| Seedance | Candice, Cense, Cdance, C-dance, C dance, 西单士, CDS, Cinema 2.5, Cinema2.5, Candice2.0, Candice2.5, Cdance2.0, Cdance2.5, CDNS, Cetus 2.5, Cetus2.5, C-dance 2.5, C Dance2.5, C Dance 2.5, SD, SD2.0, SD 2.0, SD2.5, SD 2.5, Seedance, Seedance 2.0, Seedance 2.5 | `entity-004` |
 | LiblibAI (哩布哩布) | 利普, 荔浦 | `entity-005` |
 | RunningHub | RunningCap, Running Cup, running hub | `entity-006` |
 | MiniMax H3 | minimax h3, Minimax H3, mini H3, Mini H3, H3视频模型, H3, h3 | `entity-007` |
-| DeepSeek Harness (DSH) | DSH, DeepSeek Cardenas, DeepSeek HANIS | `entity-008` |
+| DeepSeek Harness (DSH) | DSH, DeepSeek Cardenas, DeepSeek HANIS, DSH插件, DeepSeek Harness | `entity-008` |
 | LangGraph | long graph, LongGraph, 浪图, Naggraph, naggraph | `entity-009` |
 | Dola | Dolla | `entity-011` |
 | Claude Code | Cloud Code, CloudCode, cloud code | `entity-012` |
@@ -42,7 +42,7 @@
 | Harness² | HoneyScript, Honest Tool, Harnes Square, 哈密斯平方, Harness Square, Harness2 | `entity-035` |
 | Qwen 3.8 / Qwen 3.5 | 千问3点8, 千问三点八, 千问3点5, 千问三点五 | `entity-036` |
 | LangChain | long chain, LongChain, longchain, 龙链 | `entity-037` |
-| Hermes Agent | Harmless, Hormis Agent, Hermes, hermes | `entity-038` |
+| Hermes Agent | Harmless, Hormis Agent, Hermes, HoneyS, Honey S, Hermes-Agent, 哈密斯 | `entity-038` |
 | GrillMe | Grill, GrillMe, Breal, BrealMe, J-R-I-L-L, Gorilla Me, grow me | `entity-039` |
 | Tongyi Wanx (通义万相) | 万象, 阿里万象, 通义万象, Wanx | `entity-040` |
 | RS-485 | RJ485, rj485, RJ-485 | `entity-041` |
@@ -62,7 +62,7 @@
 | 微信 AI 小V (WeChat AI Xiaov) | AI小微, 微信小微, AI 小微, 微信小V, AI小V, 小V | `entity-055` |
 | ima.copilot (腾讯 ima 知识库) | IMA, ima, 爱玛, 艾玛, IMA知识库, 腾讯ima, ima.copilot | `entity-056` |
 | RSI (Recursive Self-Improvement / 递归自我递进学习) | RPL, RSI, 自我递进, 物理AI自我迭代, 自我迭代学习 | `entity-057` |
-| GEO (Generative Engine Optimization / 生成式引擎优化) | GU, GEU, G U, GO, 生成式引擎优化, AI搜索优化 | `entity-058` |
+| GEO (Generative Engine Optimization / 生成式引擎优化) | GU, GEU, G U, GO, 生成式引擎优化, AI搜索优化, GEO, S-GEO, AI SEO | `entity-058` |
 | OpenTory (塔瑞 / 工业老旧系统极简智能体) | 塔瑞, 泰瑞, Open Tory, OpenTory, 工控智能体 | `entity-059` |
 | SillyTavern (酒馆 WebUI / 角色扮演交互前端) | 酒馆, 酒馆WebUI, 酒管, 酒官, Silly Tavern | `entity-060` |
 | New-API / Sub-API (大模型中转聚合管理系统) | 六API, 三八lo, SAP R, new API, New-API, Sub-API | `entity-061` |
@@ -109,16 +109,20 @@
 | Coze (扣子 / 字节跳动 AI Agent 平台) | 扣扣子, 抠子, 扣子企业版, Coze.cn | `entity-103` |
 | 微泡泡 (微信悬浮通知与辅助回复工具) | 微泡, 微信泡泡, 微泡泡app | `entity-104` |
 | Moltbook (小龙虾智能体社区论坛) | Moukbook, Mookbook, 小龙虾论坛, 小龙虾的论坛, 小龙虾社区 | `entity-105` |
-| Muse (Meta 官方 Personal AI Agent) | Muse, Muse F blo, Muse FB, Muse扩展, Muse浏览器 | `entity-106` |
-| DSH (DeepSeek Harness / 深度求索智能体工作台框架) | DSH, DSH插件, DeepSeek Harness | `entity-107` |
+| Muse（浏览器扩展口播线索，身份待核） | Muse, Muse F blo, Muse FB, Muse扩展, Muse浏览器 | `entity-106` |
 | A2A (Agent-to-Agent / 智能体对智能体交互协议) | A2A, Agent-to-Agent, Agent to Agent, AgentToAgent | `entity-108` |
 | TMProxy (海外静态住宅代理服务商) | TMOZ, TM-Proxy, TM Proxy, TM代理 | `entity-109` |
 | MiniMind (轻量级开源大模型教学原型) | MiniM, Mini Mind, Mini-Mind | `entity-110` |
-| Hermes Agent (开源全自主持续进化智能体框架) | HoneyS, Honey S, honeys, Hermes, Hermes-Agent, 哈密斯 | `entity-111` |
 | Ekko Studio (开源多智能体统一工作台) | EKKO Studio, EKKO, Ekko, 一口 Studio, 一口 | `entity-112` |
-| GEO (生成式引擎优化 / Generative Engine Optimization) | GEO, S-GEO, AI SEO, GEU | `entity-113` |
-| Seedance (字节跳动 AI 视频与漫剧大模型系列) | SD, SD2.0, SD 2.0, SD2.5, SD 2.5, SD3.0, SD 3.0, Seedance, Seedance 2.0, Seedance 2.5, Seedance 3.0 | `entity-114` |
-| WorkBuddy (腾讯全场景职场AI智能体工作台) | workbody, Work Body, work body, WorkBody, Workbody | `entity-115` |
+| Stable Diffusion | Stable Diffusion, SD, SD2.0, SD 2.0 | `entity-116` |
+
+## 容易混淆的口播
+
+- **SD / SD 2.0**：Seedance 与 Stable Diffusion 都是候选。分镜、漫剧等用途单独不足以判定具体工具。
+- **龙链**：分别核对是否在讲 LangChain 应用框架，或 LangSmith 追踪、评测。
+- **Muse**：Muse Code、Muse Spark 和未确认的浏览器扩展分别核对，不能用同音把它们并成一个产品。
+- **小 V / 小微**：核微信产品入口与具体语境，勿把小微企业、商户或其他助手改成产品名称。
+- **Hermes / Harness**：Hermes Agent、Hermes 模型与作为通用架构的 Harness 有别。只有明确 DeepSeek 项目语境才考虑 DeepSeek Harness。
 
 不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。
 背景解释和延伸建议只进入正文及台账，不回写为参与者原话。

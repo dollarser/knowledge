@@ -45,6 +45,17 @@
 - category：旗舰代码与智能体大模型
 - note：智谱 AI 于 2026 年秋季发布的旗舰大模型，强化学习后训练驱动，具备顶级 Terminal 编码、安全渗透能力与 1M 上下文
 
+## Stable Diffusion
+
+- ID：`entity-116`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：Stability AI
+- category：图像生成模型系列
+- note：Stability AI 的项目仓库包含 Stable Diffusion 2.x 文生图模型。SD 或 SD 2.0 也可能是其他产品的口播，需逐处确认。
+- 官方来源："https://github.com/Stability-AI/stablediffusion"
+
 ## WorkBuddy
 
 - ID：`entity-003`
@@ -60,13 +71,14 @@
 ## Seedance
 
 - ID：`entity-004`
-- 调研时间：2026-11-10
-- 来源记录：official_name_source_attached_existing_assertions_not_rewritten
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
 
-- vendor：ByteDance
-- category：视频生成多模态大模型
-- note：字节跳动自研核心视频生成模型，即梦AI底层
-- 官方来源："https://docs.volcengine.com/docs/ark/seedance-2-5?lang=zh"
+- vendor：ByteDance Seed
+- category：视频生成模型系列
+- note：官方发布包括 Seedance 2.0 和 2.5。此来源仅确认产品与所列版本，不确认直播中 SD 的指向或开放权重。
+- 官方来源："https://seed.bytedance.com/en/models"
+- 官方来源："https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
 
 ## LiblibAI (哩布哩布)
 
@@ -101,12 +113,14 @@
 ## DeepSeek Harness (DSH)
 
 - ID：`entity-008`
-- 调研时间：2026-11-03T05:35:00+08:00
-- 来源记录：pending_original_research_links
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
 
-- vendor：DeepSeek Ecosystem
-- category：Agent编排与轨迹运行框架
-- note：针对DeepSeek模型的Harness编排与可观测轨迹套件
+- vendor：DeepSeek
+- category：智能体工具与运行框架
+- note：官方入口为 DeepSeek Harness。历史项目 dsh-superagent-prototype 见 entity-065。回源时按当期上下文区分项目，当前官网不证明早期口述所指。
+- 官方来源："https://www.deepseek.com/harness/en/"
+- 官方来源："https://github.com/deepseek-ai/deepseek-harness"
 
 ## LangGraph
 
@@ -480,7 +494,7 @@
 
 - ID：`entity-047`
 - 调研时间：2026-11-06T19:47:00+08:00
-- 来源记录：pending_original_research_links
+- 来源记录：direct_product_source_pending
 
 - vendor：Tencent (腾讯微信)
 - category：微信内置原生 AI 搜索与服务分发助手
@@ -571,7 +585,7 @@
 
 - ID：`entity-055`
 - 调研时间：2026-11-09T12:00:00+08:00
-- 来源记录：attached_canonical_url
+- 来源记录：direct_product_source_pending
 
 - vendor：Tencent (腾讯微信团队)
 - category：微信生态原生端侧 AI 助手与生活服务交易基础设施
@@ -603,12 +617,12 @@
 ## GEO (Generative Engine Optimization / 生成式引擎优化)
 
 - ID：`entity-058`
-- 调研时间：2026-11-09T20:10:00+08:00
-- 来源记录：attached_canonical_url
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
 
-- vendor：AI 搜索与数字营销前沿学术界及行业实践
-- category：生成式 AI 搜索引擎优化与品牌知识召回技术
-- note：面向生成式 AI 搜索引擎（如豆包、Kimi、Perplexity、SearchGPT、文小言等）的新兴优化策略。通过对语料源注水、高权重知识库嵌入、结构化公关内容分发与品牌长尾词覆盖，提高企业在 AI 问答推荐中的被引用率与上榜率。在直播交流中常被 ASR 误转写为 GU、GEU 或 GO。
+- vendor：Aggarwal 等
+- category：生成式回答可见性优化
+- note：原论文研究如何提升内容在生成式回答中的可见性。具体平台排序机制、推荐或转化效果须另有证据。
 - 官方来源："https://arxiv.org/abs/2311.09735"
 
 ## OpenTory (塔瑞 / 工业老旧系统极简智能体)
@@ -1103,27 +1117,14 @@
 - note：围绕开源AI Agent框架OpenClaw（标志为小龙虾）构建的类Reddit论坛；专供AI智能体自主注册、发帖、评论与辩论，人类用户仅能旁观；主播口播常听为 Moukbook、Mookbook 或小龙虾论坛。
 - 官方来源："https://github.com/"
 
-## Muse (Meta 官方 Personal AI Agent)
+## Muse（浏览器扩展口播线索，身份待核）
 
 - ID：`entity-106`
 - 调研时间：2026-11-23
-- 来源记录：official_identity_and_scope_verified
+- 来源记录：direct_product_source_pending
 
-- vendor：Meta
-- category：个人自主智能体 (Personal AI Agent) / 多任务长周期执行系统
-- note：Meta推出的个人自主AI智能体（Personal Agent），依托底层的Muse Secure VM隔离虚拟机架构，支持跨App与Web端自主规划并执行日常任务（如比价下单、日程冲突解决、订阅审计、邮件处理等）；在桌面端提供Chrome侧边栏（Side Panel）扩展作为交互入口，可复用浏览器Cookie免登态操控网页；主播连麦时常因其侧边栏入口口播为'谷歌扩展搜Muse'，连读常被ASR听成 Muse F blo、Muse FB。
-- 官方来源："https://about.meta.com/"
-
-## DSH (DeepSeek Harness / 深度求索智能体工作台框架)
-
-- ID：`entity-107`
-- 调研时间：2026-11-23
-- 来源记录：official_identity_and_scope_verified
-
-- vendor：深度求索 (DeepSeek)
-- category：面向超级个体的开源 AI 编码与智能体工作台框架
-- note：DeepSeek生态开源的终端智能体工作台开发框架，支持丰富的插件体系和多模型调用，为超级个体提供全能编程工作站环境；口播常口误或缩称为 DSH 或 DSH插件。
-- 官方来源："https://github.com/deepseek-ai"
+- category：听写线索
+- note：口述提到浏览器扩展或侧边栏。尚缺可对应的产品直达页，归属、架构与功能待核。
 
 ## A2A (Agent-to-Agent / 智能体对智能体交互协议)
 
@@ -1158,18 +1159,6 @@
 - note：GitHub上知名的高星开源项目，旨在用极小成本（几兆参数、个人电脑几小时）从零预训练、指令微调构建一个属于自己的极简大语言模型；主播常推荐给想了解LLM底层原理但无卡无算力的初学者。
 - 官方来源："https://github.com/jingyaogong/minimind"
 
-## Hermes Agent
-
-- ID：`entity-111`
-- 调研时间：2026-11-23
-- 来源记录：official_identity_and_scope_verified
-
-- vendor：Nous Research
-- category：开源全自主持续进化智能体框架与二次开发底座
-- note：Nous Research官方开源的主打自适应学习机制的AI Agent开发框架，具备持久化记忆自增殖、技能沉淀及微虚拟机/工具沙箱与MCP生态支持，支持本地与端侧部署，常被开发者选作构建垂直业务智能体的二次开发底座；易被口播音近误识为HoneyS或Honey S。
-- 官方来源："https://github.com/NousResearch/hermes-agent"
-- 官方来源："https://nousresearch.com"
-
 ## Ekko Studio
 
 - ID：`entity-112`
@@ -1181,38 +1170,13 @@
 - note：本地优先的开源多智能体统一工作台（Multi-Agent AI Workspace），提供单屏控制面板无缝接入Claude Code、Codex、Hermes Agent等多种智能体运行时，支持多智能体协同对话、文件系统直接操作与可视化审核门禁；易被口播拼读误识为一口Studio或EKKO。
 - 官方来源："https://github.com/Ekko-AI/ekko-studio"
 
-## GEO (Generative Engine Optimization)
+## 已合并实体 ID
 
-- ID：`entity-113`
-- 调研时间：2026-11-23
-- 来源记录：official_identity_and_scope_verified
+- `entity-107` → `entity-008`
+- `entity-111` → `entity-038`
+- `entity-113` → `entity-058`
+- `entity-114` → `entity-004`
+- `entity-115` → `entity-003`
 
-- vendor：AI搜索营销与搜索引擎技术领域
-- category：面向生成式AI与大模型问答推荐的内容检索优化技术
-- note：生成式引擎优化（Generative Engine Optimization），类比于传统搜索引擎时代的SEO；指通过优化品牌事实数据、知识图谱与结构化语料，使企业在Perplexity、ChatGPT Search、豆包、通义千问等生成式AI搜索回答中获得优先推荐引用与商业转化。
-- 官方来源："https://en.wikipedia.org/wiki/Generative_engine_optimization"
-
-## Seedance (字节跳动 AI 视频/漫剧大模型系列，简称 SD)
-
-- ID：`entity-114`
-- 调研时间：2026-11-23
-- 来源记录：official_identity_and_scope_verified
-
-- vendor：字节跳动 (ByteDance) / 即梦 AI
-- category：AI 视频生成与多模态动态漫剧大模型系列
-- note：字节跳动自主研发的 AI 视频生成大模型系列（即梦 AI 视频底层），是红果短剧与抖音生态中 AI 漫剧（动态漫）工业化生产的核心底座；支持长时多镜头叙事与角色一致性控制；业内创作者常简称为 SD，并根据版本演进常口播为 SD 2.0、SD 2.5 或即将发布的 3.0 版本。校订时应结合上下文弹性识别，切忌死锁在单一版本号，同时须结合场景（漫剧视频 vs 静态文生图）与开源文生图模型 Stable Diffusion 作出区分。
-- 官方来源："https://dreamina.cn"
-- 官方来源："https://bytedance.com"
-
-## WorkBuddy (腾讯全场景职场AI智能体桌面工作台)
-
-- ID：`entity-115`
-- 调研时间：2026-11-23
-- 来源记录：official_identity_and_scope_verified
-
-- vendor：腾讯 (Tencent)
-- category：全场景职场 AI 智能体 (AI Agent) 桌面工作台与生产力平台
-- note：腾讯推出的全场景职场 AI 智能体工作台，由腾讯云代码助手 CodeBuddy 团队孵化升级；支持本地文件夹与多智能体并行操作，能直接交付报表、文档、PPT及业务代码；企业端多用于搭建员工AI工作基座与第三方API连接；口播中常被ASR误转录为 workbody、Work Body、work body。
-- 官方来源："https://workbuddy.cn"
-- 官方来源："https://workbuddy.ai"
+- `entity-114` 的历史记录：该 ID 曾在 e6b289f 表示 Stable Diffusion，从 39c4f61 起用于 Seedance。查旧记录时按提交版本和原语境判定；Stable Diffusion 的现行 ID 为 entity-116。
 
