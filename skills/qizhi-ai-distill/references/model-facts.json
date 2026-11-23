@@ -1647,6 +1647,22 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
       "verification_scope": "生成式AI搜索引擎优化学术与行业规范定义确认。"
+    },
+    {
+      "id": "entity-114",
+      "name": "Stable Diffusion (SD / SD 2.0)",
+      "research_assertions": {
+        "vendor": "Stability AI / 开源社区",
+        "category": "开源潜在扩散文生图大模型与视觉工业化生成工具",
+        "note": "开源领域标杆级的文生图扩散模型，支持本地化部署与轻量化微调；常被一人公司与电商团队用于短剧分镜生成、工业场景图绘制与极低成本慢剧引流带货素材制作；直播中常口播简称为SD、SD2.0。"
+      },
+      "official_sources": [
+        "https://github.com/Stability-AI/stablediffusion",
+        "https://stability.ai"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "开源潜在扩散模型架构与版本归属确认。"
     }
   ]
 }

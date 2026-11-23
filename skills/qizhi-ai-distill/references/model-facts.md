@@ -1192,3 +1192,15 @@
 - note：生成式引擎优化（Generative Engine Optimization），类比于传统搜索引擎时代的SEO；指通过优化品牌事实数据、知识图谱与结构化语料，使企业在Perplexity、ChatGPT Search、豆包、通义千问等生成式AI搜索回答中获得优先推荐引用与商业转化。
 - 官方来源："https://en.wikipedia.org/wiki/Generative_engine_optimization"
 
+## Stable Diffusion (SD / SD 2.0)
+
+- ID：`entity-114`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：Stability AI / 开源社区
+- category：开源潜在扩散文生图大模型与视觉工业化生成工具
+- note：开源领域标杆级的文生图扩散模型，支持本地化部署与轻量化微调；常被一人公司与电商团队用于短剧分镜生成、工业场景图绘制与极低成本慢剧引流带货素材制作；直播中常口播简称为SD、SD2.0。
+- 官方来源："https://github.com/Stability-AI/stablediffusion"
+- 官方来源："https://stability.ai"
+

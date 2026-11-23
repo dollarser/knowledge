@@ -1884,7 +1884,8 @@
       "misnomers": [
         "GEO",
         "S-GEO",
-        "AI SEO"
+        "AI SEO",
+        "GEU"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
@@ -1892,6 +1893,23 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-113"
+      }
+    },
+    {
+      "id": "entity-114",
+      "standard": "Stable Diffusion (开源扩散文生图大模型)",
+      "misnomers": [
+        "SD2.0",
+        "SD 2.0",
+        "SD",
+        "SD模型"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-114"
       }
     }
   ]
