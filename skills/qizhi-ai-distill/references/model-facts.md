@@ -1204,3 +1204,15 @@
 - 官方来源："https://github.com/Stability-AI/stablediffusion"
 - 官方来源："https://stability.ai"
 
+## WorkBuddy (腾讯全场景职场AI智能体桌面工作台)
+
+- ID：`entity-115`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_scope_verified
+
+- vendor：腾讯 (Tencent)
+- category：全场景职场 AI 智能体 (AI Agent) 桌面工作台与生产力平台
+- note：腾讯推出的全场景职场 AI 智能体工作台，由腾讯云代码助手 CodeBuddy 团队孵化升级；支持本地文件夹与多智能体并行操作，能直接交付报表、文档、PPT及业务代码；企业端多用于搭建员工AI工作基座与第三方API连接；口播中常被ASR误转录为 workbody、Work Body、work body。
+- 官方来源："https://workbuddy.cn"
+- 官方来源："https://workbuddy.ai"
+

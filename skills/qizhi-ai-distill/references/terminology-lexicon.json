@@ -1850,7 +1850,8 @@
         "Honey S",
         "honeys",
         "Hermes",
-        "Hermes-Agent"
+        "Hermes-Agent",
+        "哈密斯"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",
@@ -1910,6 +1911,24 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-114"
+      }
+    },
+    {
+      "id": "entity-115",
+      "standard": "WorkBuddy (腾讯全场景职场AI智能体工作台)",
+      "misnomers": [
+        "workbody",
+        "Work Body",
+        "work body",
+        "WorkBody",
+        "Workbody"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-115"
       }
     }
   ]

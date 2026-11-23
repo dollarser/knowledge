@@ -1663,6 +1663,22 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
       "verification_scope": "开源潜在扩散模型架构与版本归属确认。"
+    },
+    {
+      "id": "entity-115",
+      "name": "WorkBuddy (腾讯全场景职场AI智能体桌面工作台)",
+      "research_assertions": {
+        "vendor": "腾讯 (Tencent)",
+        "category": "全场景职场 AI 智能体 (AI Agent) 桌面工作台与生产力平台",
+        "note": "腾讯推出的全场景职场 AI 智能体工作台，由腾讯云代码助手 CodeBuddy 团队孵化升级；支持本地文件夹与多智能体并行操作，能直接交付报表、文档、PPT及业务代码；企业端多用于搭建员工AI工作基座与第三方API连接；口播中常被ASR误转录为 workbody、Work Body、work body。"
+      },
+      "official_sources": [
+        "https://workbuddy.cn",
+        "https://workbuddy.ai"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "腾讯官方WorkBuddy产品归属与桌面AI Agent工作台架构确认。"
     }
   ]
 }
