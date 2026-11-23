@@ -15,7 +15,6 @@
 | MiniMax H3 | minimax h3, Minimax H3, mini H3, Mini H3, H3视频模型, H3, h3 | `entity-007` |
 | DeepSeek Harness (DSH) | DSH, DeepSeek Cardenas, DeepSeek HANIS, DSH插件, DeepSeek Harness | `entity-008` |
 | LangGraph | long graph, LongGraph, 浪图, Naggraph, naggraph | `entity-009` |
-| xAI Grok (GrokBot) | Grokbot, GrokBot, Grok bot | `entity-010` |
 | Dola | Dolla | `entity-011` |
 | Claude Code | Cloud Code, CloudCode, cloud code | `entity-012` |
 | Claude API | Cloud API | `entity-013` |
@@ -59,7 +58,7 @@
 | REA (Reverse Engineer Anything) | REA, R E A, rea, Reverse Engineer Anything | `entity-051` |
 | Meta Muse (Muse Code / Muse Spark) | Muse, Muse Code, Muse Spark, Meta Muse, 慕斯, mate Muse | `entity-052` |
 | TeleAgent (中国电信星辰智能体) | 泰勒agent, 泰勒Agent, 泰勒智能体, 新成智能体, 电信智新成智能体, 电信新成, TeleAgent, Teleagent, 星辰智能体 | `entity-053` |
-| xAI Grok / Grokbot | Googlebot, GroupBot, Grokbot, GrokBot, Grok bot, 郭克bot, 格罗克bot, Grok | `entity-054` |
+| Grok / Grok Bot | GroupBot, Grokbot, GrokBot, Grok bot, 郭克bot, 格罗克bot, Grok | `entity-054` |
 | 微信 AI 小V (WeChat AI Xiaov) | AI小微, 微信小微, AI 小微, 微信小V, AI小V, 小V | `entity-055` |
 | ima.copilot (腾讯 ima 知识库) | IMA, ima, 爱玛, 艾玛, IMA知识库, 腾讯ima, ima.copilot | `entity-056` |
 | RSI (Recursive Self-Improvement / 递归自我递进学习) | RPL, RSI, 自我递进, 物理AI自我迭代, 自我迭代学习 | `entity-057` |
@@ -106,6 +105,10 @@
 | Pinecone | Pinecone, pinecone | `entity-098` |
 | Muse（浏览器扩展口播线索，身份待核） | Muse, Muse F blo, Muse FB, Muse扩展, Muse浏览器 | `entity-106` |
 | Stable Diffusion | Stable Diffusion, SD, SD2.0, SD 2.0 | `entity-116` |
+| FDE (Forward Deployed Engineer) | FDE, FDI, FD1, FDA, FD, 现场开发工程师, 现场交付工程师 | `entity-099` |
+| Coze（扣子） | 扣扣子, 抠子, 扣子企业版, Coze.cn | `entity-103` |
+| A2A（Agent2Agent Protocol） | A2A, Agent-to-Agent, Agent to Agent, AgentToAgent | `entity-108` |
+| MiniMind | MiniM, Mini Mind, Mini-Mind | `entity-110` |
 
 ## 容易混淆的口播
 
@@ -114,6 +117,8 @@
 - **Muse**：Muse Code、Muse Spark 和未确认的浏览器扩展分别核对，不能用同音把它们并成一个产品。
 - **小 V / 小微**：核微信产品入口与具体语境，勿把小微企业、商户或其他助手改成产品名称。
 - **Hermes / Harness**：Hermes Agent、Hermes 模型与作为通用架构的 Harness 有别。只有明确 DeepSeek 项目语境才考虑 DeepSeek Harness。
+- **FDE / FDU**：核对是现场部署岗位，还是 IBM 的交付团队称呼，各用对应实体。
+- **Grok Bot / Googlebot**：Grok Bot 与 Googlebot 是不同对象，含混口播须依上下文核对。
 
 不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。
 背景解释和延伸建议只进入正文及台账，不回写为参与者原话。

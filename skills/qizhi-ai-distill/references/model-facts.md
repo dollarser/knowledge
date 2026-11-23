@@ -132,16 +132,6 @@
 - category：多Agent图状态编排框架
 - note：LangChain官方开发的多智能体图状态工作流框架
 
-## xAI Grok (GrokBot)
-
-- ID：`entity-010`
-- 调研时间：2026-11-03T05:35:00+08:00
-- 来源记录：pending_original_research_links
-
-- vendor：xAI
-- category：大模型与智能检索助理
-- note：马斯克旗下xAI大模型与社交机器人
-
 ## Dola
 
 - ID：`entity-011`
@@ -579,17 +569,16 @@
 - note：中国电信人工智能研究院依托自研「星辰」语义与多模态大模型（TeleChat）构建的智能体平台（TeleAgent）。支持政企大客户、高校开发者基于标准底座进行工作流与微服务二次开发，可接入本地机房算力及第三方模型。连麦中被 ASR 高频谐音误转写为「泰勒agent」或把「星辰」误听为「新成智能体/电信智新成」。
 - 官方来源："https://teleai.chinatelecom.cn/"
 
-## xAI Grok / Grokbot
+## Grok / Grok Bot
 
 - ID：`entity-054`
-- 调研时间：2026-11-09T12:00:00+08:00
-- 来源记录：attached_canonical_url
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_bounded_purpose_checked
 
-- vendor：xAI (Elon Musk)
-- category：xAI 官方大模型与多端自主智能体生态
-- note：马斯克旗下 xAI 推出的大语言模型家族（Grok 2 / Grok 3）及其在 X/Twitter 平台和移动端的 Bot 智能体应用。具备低延迟实时语音通话交互、远程穿透调度宿主机本地任务、多智能体协同等能力；国内支持通过苹果 App Store 与支付宝订阅充值。在 ASR 语音识别中因发音相似高频被严重误转写为「Googlebot（谷歌爬虫）」或「GroupBot」。
-- 官方来源："https://x.ai/"
-- 官方来源："https://x.com/i/grok"
+- vendor：xAI
+- category：AI 助手及 Bot 入口
+- note：Grok 官方页面列出网页、移动端、X 和 Grok Bot 入口。具体功能按平台和版本核查。
+- 官方来源："https://x.ai/grok"
 
 ## 微信 AI 小V (WeChat AI Xiaov)
 
@@ -1070,6 +1059,50 @@
 - category：听写线索
 - note：口述提到浏览器扩展或侧边栏。尚缺可对应的产品直达页，归属、架构与功能待核。
 
+## FDE (Forward Deployed Engineer)
+
+- ID：`entity-099`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_bounded_purpose_checked
+
+- vendor：行业岗位称呼
+- category：现场部署工程师
+- note：在客户现场或与客户团队紧密协作，把软件和数据能力落到具体工作中。IBM FDU 是另一条交付组织实体。
+- 官方来源："https://www.palantir.com/careers/students-and-early-talent/"
+
+## Coze（扣子）
+
+- ID：`entity-103`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_bounded_purpose_checked
+
+- vendor：Coze
+- category：AI 应用与办公平台
+- note：此处记录 coze.cn 对应的扣子产品。具体功能和接入方式按产品版本核查。
+- 官方来源："https://www.coze.cn/open/docs/guides/welcome"
+
+## A2A（Agent2Agent Protocol）
+
+- ID：`entity-108`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_bounded_purpose_checked
+
+- vendor：A2A 项目
+- category：智能体互操作协议
+- note：供不同系统的智能体交换信息和委派任务。泛称 Agent-to-Agent 不足以确认使用了正式协议。
+- 官方来源："https://a2a-protocol.org/latest/"
+
+## MiniMind
+
+- ID：`entity-110`
+- 调研时间：2026-11-23
+- 来源记录：official_identity_and_bounded_purpose_checked
+
+- vendor：jingyaogong
+- category：开源大语言模型教学项目
+- note：展示小型语言模型从头训练、微调与推理的实践。训练时间取决于硬件、配置和目标。
+- 官方来源："https://github.com/jingyaogong/minimind"
+
 ## 已合并实体 ID
 
 - `entity-107` → `entity-008`
@@ -1077,6 +1110,7 @@
 - `entity-113` → `entity-058`
 - `entity-114` → `entity-004`
 - `entity-115` → `entity-003`
+- `entity-010` → `entity-054`
 
 - `entity-114` 的历史记录：该 ID 曾在 e6b289f 表示 Stable Diffusion，从 39c4f61 起用于 Seedance。查旧记录时按提交版本和原语境判定；Stable Diffusion 的现行 ID 为 entity-116。
 

@@ -192,19 +192,6 @@
       "comparison_status": "Inherited positioning/superlatives are research wording, not a new benchmark verification."
     },
     {
-      "id": "entity-010",
-      "name": "xAI Grok (GrokBot)",
-      "research_assertions": {
-        "vendor": "xAI",
-        "category": "大模型与智能检索助理",
-        "note": "马斯克旗下xAI大模型与社交机器人"
-      },
-      "official_sources": [],
-      "source_attachment_status": "pending_original_research_links",
-      "last_research_at": "2026-11-03T05:35:00+08:00",
-      "comparison_status": "Inherited positioning/superlatives are research wording, not a new benchmark verification."
-    },
-    {
       "id": "entity-011",
       "name": "Dola",
       "research_assertions": {
@@ -802,19 +789,18 @@
     },
     {
       "id": "entity-054",
-      "name": "xAI Grok / Grokbot",
+      "name": "Grok / Grok Bot",
       "research_assertions": {
-        "vendor": "xAI (Elon Musk)",
-        "category": "xAI 官方大模型与多端自主智能体生态",
-        "note": "马斯克旗下 xAI 推出的大语言模型家族（Grok 2 / Grok 3）及其在 X/Twitter 平台和移动端的 Bot 智能体应用。具备低延迟实时语音通话交互、远程穿透调度宿主机本地任务、多智能体协同等能力；国内支持通过苹果 App Store 与支付宝订阅充值。在 ASR 语音识别中因发音相似高频被严重误转写为「Googlebot（谷歌爬虫）」或「GroupBot」。"
+        "vendor": "xAI",
+        "category": "AI 助手及 Bot 入口",
+        "note": "Grok 官方页面列出网页、移动端、X 和 Grok Bot 入口。具体功能按平台和版本核查。"
       },
       "official_sources": [
-        "https://x.ai/",
-        "https://x.com/i/grok"
+        "https://x.ai/grok"
       ],
-      "source_attachment_status": "attached_canonical_url",
-      "last_research_at": "2026-11-09T12:00:00+08:00",
-      "comparison_status": "Verified multimodal assistant and agent ecosystem."
+      "source_attachment_status": "official_identity_and_bounded_purpose_checked",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "核对名称和基本用途。口述所指须逐处结合语境确认。"
     },
     {
       "id": "entity-055",
@@ -1482,6 +1468,66 @@
       "last_research_at": "2026-11-23",
       "verification_scope": "当前链接不足以核证具体身份、功能或架构；保留原调研线索，待直接来源与原场语境双重核验。",
       "comparison_status": "原调研表述待直接证据核验。"
+    },
+    {
+      "id": "entity-099",
+      "name": "FDE (Forward Deployed Engineer)",
+      "research_assertions": {
+        "vendor": "行业岗位称呼",
+        "category": "现场部署工程师",
+        "note": "在客户现场或与客户团队紧密协作，把软件和数据能力落到具体工作中。IBM FDU 是另一条交付组织实体。"
+      },
+      "official_sources": [
+        "https://www.palantir.com/careers/students-and-early-talent/"
+      ],
+      "source_attachment_status": "official_identity_and_bounded_purpose_checked",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "核对名称和基本用途。口述所指须逐处结合语境确认。"
+    },
+    {
+      "id": "entity-103",
+      "name": "Coze（扣子）",
+      "research_assertions": {
+        "vendor": "Coze",
+        "category": "AI 应用与办公平台",
+        "note": "此处记录 coze.cn 对应的扣子产品。具体功能和接入方式按产品版本核查。"
+      },
+      "official_sources": [
+        "https://www.coze.cn/open/docs/guides/welcome"
+      ],
+      "source_attachment_status": "official_identity_and_bounded_purpose_checked",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "核对名称和基本用途。口述所指须逐处结合语境确认。"
+    },
+    {
+      "id": "entity-108",
+      "name": "A2A（Agent2Agent Protocol）",
+      "research_assertions": {
+        "vendor": "A2A 项目",
+        "category": "智能体互操作协议",
+        "note": "供不同系统的智能体交换信息和委派任务。泛称 Agent-to-Agent 不足以确认使用了正式协议。"
+      },
+      "official_sources": [
+        "https://a2a-protocol.org/latest/"
+      ],
+      "source_attachment_status": "official_identity_and_bounded_purpose_checked",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "核对名称和基本用途。口述所指须逐处结合语境确认。"
+    },
+    {
+      "id": "entity-110",
+      "name": "MiniMind",
+      "research_assertions": {
+        "vendor": "jingyaogong",
+        "category": "开源大语言模型教学项目",
+        "note": "展示小型语言模型从头训练、微调与推理的实践。训练时间取决于硬件、配置和目标。"
+      },
+      "official_sources": [
+        "https://github.com/jingyaogong/minimind"
+      ],
+      "source_attachment_status": "official_identity_and_bounded_purpose_checked",
+      "last_research_at": "2026-11-23",
+      "verification_scope": "核对名称和基本用途。口述所指须逐处结合语境确认。"
     }
   ],
   "merged_entity_ids": {
@@ -1489,7 +1535,8 @@
     "entity-111": "entity-038",
     "entity-113": "entity-058",
     "entity-114": "entity-004",
-    "entity-115": "entity-003"
+    "entity-115": "entity-003",
+    "entity-010": "entity-054"
   },
   "historical_id_notes": {
     "entity-114": "该 ID 曾在 e6b289f 表示 Stable Diffusion，从 39c4f61 起用于 Seedance。查旧记录时按提交版本和原语境判定；Stable Diffusion 的现行 ID 为 entity-116。"

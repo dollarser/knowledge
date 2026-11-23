@@ -200,22 +200,6 @@
       }
     },
     {
-      "id": "entity-010",
-      "standard": "xAI Grok (GrokBot)",
-      "misnomers": [
-        "Grokbot",
-        "GrokBot",
-        "Grok bot"
-      ],
-      "context_required": true,
-      "verification_status": "candidate_requires_per_occurrence_confirmation",
-      "auto_apply": false,
-      "facts_ref": {
-        "file": "model-facts.json",
-        "entity_id": "entity-010"
-      }
-    },
-    {
       "id": "entity-011",
       "standard": "Dola",
       "misnomers": [
@@ -966,9 +950,8 @@
     },
     {
       "id": "entity-054",
-      "standard": "xAI Grok / Grokbot",
+      "standard": "Grok / Grok Bot",
       "misnomers": [
-        "Googlebot",
         "GroupBot",
         "Grokbot",
         "GrokBot",
@@ -978,7 +961,7 @@
         "Grok"
       ],
       "context_required": true,
-      "verification_status": "verified",
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
       "auto_apply": false,
       "facts_ref": {
         "file": "model-facts.json",
@@ -1705,6 +1688,76 @@
         "file": "model-facts.json",
         "entity_id": "entity-116"
       }
+    },
+    {
+      "id": "entity-099",
+      "standard": "FDE (Forward Deployed Engineer)",
+      "misnomers": [
+        "FDE",
+        "FDI",
+        "FD1",
+        "FDA",
+        "FD",
+        "现场开发工程师",
+        "现场交付工程师"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-099"
+      }
+    },
+    {
+      "id": "entity-103",
+      "standard": "Coze（扣子）",
+      "misnomers": [
+        "扣扣子",
+        "抠子",
+        "扣子企业版",
+        "Coze.cn"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-103"
+      }
+    },
+    {
+      "id": "entity-108",
+      "standard": "A2A（Agent2Agent Protocol）",
+      "misnomers": [
+        "A2A",
+        "Agent-to-Agent",
+        "Agent to Agent",
+        "AgentToAgent"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-108"
+      }
+    },
+    {
+      "id": "entity-110",
+      "standard": "MiniMind",
+      "misnomers": [
+        "MiniM",
+        "Mini Mind",
+        "Mini-Mind"
+      ],
+      "context_required": true,
+      "verification_status": "candidate_requires_per_occurrence_confirmation",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-110"
+      }
     }
   ],
   "ambiguity_notes": {
@@ -1712,6 +1765,8 @@
     "龙链": "分别核对是否在讲 LangChain 应用框架，或 LangSmith 追踪、评测。",
     "Muse": "Muse Code、Muse Spark 和未确认的浏览器扩展分别核对，不能用同音把它们并成一个产品。",
     "小 V / 小微": "核微信产品入口与具体语境，勿把小微企业、商户或其他助手改成产品名称。",
-    "Hermes / Harness": "Hermes Agent、Hermes 模型与作为通用架构的 Harness 有别。只有明确 DeepSeek 项目语境才考虑 DeepSeek Harness。"
+    "Hermes / Harness": "Hermes Agent、Hermes 模型与作为通用架构的 Harness 有别。只有明确 DeepSeek 项目语境才考虑 DeepSeek Harness。",
+    "FDE / FDU": "核对是现场部署岗位，还是 IBM 的交付团队称呼，各用对应实体。",
+    "Grok Bot / Googlebot": "Grok Bot 与 Googlebot 是不同对象，含混口播须依上下文核对。"
   }
 }
