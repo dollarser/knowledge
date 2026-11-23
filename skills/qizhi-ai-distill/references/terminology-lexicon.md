@@ -117,7 +117,7 @@
 | Hermes Agent (开源全自主持续进化智能体框架) | HoneyS, Honey S, honeys, Hermes, Hermes-Agent, 哈密斯 | `entity-111` |
 | Ekko Studio (开源多智能体统一工作台) | EKKO Studio, EKKO, Ekko, 一口 Studio, 一口 | `entity-112` |
 | GEO (生成式引擎优化 / Generative Engine Optimization) | GEO, S-GEO, AI SEO, GEU | `entity-113` |
-| Stable Diffusion (开源扩散文生图大模型) | SD2.0, SD 2.0, SD, SD模型 | `entity-114` |
+| Seedance 2.0 (字节跳动 AI 漫剧与视频生成大模型) | SD2.0, SD 2.0, SD, Seedance, Seedance 2.0, 慢剧 | `entity-114` |
 | WorkBuddy (腾讯全场景职场AI智能体工作台) | workbody, Work Body, work body, WorkBody, Workbody | `entity-115` |
 
 不得仅因不熟悉新型号就改成旧型号；也不得仅因已知产品存在就强配同音词。数字、版本和通用英文单词尤其需要当场证据。

@@ -1898,12 +1898,14 @@
     },
     {
       "id": "entity-114",
-      "standard": "Stable Diffusion (开源扩散文生图大模型)",
+      "standard": "Seedance 2.0 (字节跳动 AI 漫剧与视频生成大模型)",
       "misnomers": [
         "SD2.0",
         "SD 2.0",
         "SD",
-        "SD模型"
+        "Seedance",
+        "Seedance 2.0",
+        "慢剧"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",

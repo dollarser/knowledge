@@ -1650,19 +1650,19 @@
     },
     {
       "id": "entity-114",
-      "name": "Stable Diffusion (SD / SD 2.0)",
+      "name": "Seedance 2.0 (SD 2.0 / 字节跳动 AI 漫剧与视频生成大模型)",
       "research_assertions": {
-        "vendor": "Stability AI / 开源社区",
-        "category": "开源潜在扩散文生图大模型与视觉工业化生成工具",
-        "note": "开源领域标杆级的文生图扩散模型，支持本地化部署与轻量化微调；常被一人公司与电商团队用于短剧分镜生成、工业场景图绘制与极低成本慢剧引流带货素材制作；直播中常口播简称为SD、SD2.0。"
+        "vendor": "字节跳动 (ByteDance) / 即梦 AI",
+        "category": "AI 视频生成与多模态动态漫剧大模型",
+        "note": "字节跳动自主研发的 AI 视频生成大模型，被深度整合进“即梦 AI”平台并作为红果短剧与抖音生态中 AI 漫剧（动态漫）工业化生产的核心底座；支持长时多镜头叙事与角色一致性控制；常被创作者用于以极低成本批量制作 7 分钟 AI 漫剧引流直播间带货与小说推文；在直播中常被口播简称为 SD、SD 2.0，且其关联的“漫剧”常被 ASR 误识为“慢剧”。"
       },
       "official_sources": [
-        "https://github.com/Stability-AI/stablediffusion",
-        "https://stability.ai"
+        "https://dreamina.cn",
+        "https://bytedance.com"
       ],
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
-      "verification_scope": "开源潜在扩散模型架构与版本归属确认。"
+      "verification_scope": "字节跳动官方Seedance模型产品归属及抖音/即梦AI漫剧生态确认。"
     },
     {
       "id": "entity-115",
