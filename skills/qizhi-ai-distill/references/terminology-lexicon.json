@@ -1898,14 +1898,19 @@
     },
     {
       "id": "entity-114",
-      "standard": "Seedance 2.0 (字节跳动 AI 漫剧与视频生成大模型)",
+      "standard": "Seedance (字节跳动 AI 视频与漫剧大模型系列)",
       "misnomers": [
+        "SD",
         "SD2.0",
         "SD 2.0",
-        "SD",
+        "SD2.5",
+        "SD 2.5",
+        "SD3.0",
+        "SD 3.0",
         "Seedance",
         "Seedance 2.0",
-        "慢剧"
+        "Seedance 2.5",
+        "Seedance 3.0"
       ],
       "context_required": true,
       "verification_status": "candidate_requires_per_occurrence_confirmation",

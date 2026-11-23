@@ -1192,15 +1192,15 @@
 - note：生成式引擎优化（Generative Engine Optimization），类比于传统搜索引擎时代的SEO；指通过优化品牌事实数据、知识图谱与结构化语料，使企业在Perplexity、ChatGPT Search、豆包、通义千问等生成式AI搜索回答中获得优先推荐引用与商业转化。
 - 官方来源："https://en.wikipedia.org/wiki/Generative_engine_optimization"
 
-## Seedance 2.0 (SD 2.0 / 字节跳动 AI 漫剧与视频生成大模型)
+## Seedance (字节跳动 AI 视频/漫剧大模型系列，简称 SD)
 
 - ID：`entity-114`
 - 调研时间：2026-11-23
 - 来源记录：official_identity_and_scope_verified
 
 - vendor：字节跳动 (ByteDance) / 即梦 AI
-- category：AI 视频生成与多模态动态漫剧大模型
-- note：字节跳动自主研发的 AI 视频生成大模型，被深度整合进“即梦 AI”平台并作为红果短剧与抖音生态中 AI 漫剧（动态漫）工业化生产的核心底座；支持长时多镜头叙事与角色一致性控制；常被创作者用于以极低成本批量制作 7 分钟 AI 漫剧引流直播间带货与小说推文；在直播中常被口播简称为 SD、SD 2.0，且其关联的“漫剧”常被 ASR 误识为“慢剧”。
+- category：AI 视频生成与多模态动态漫剧大模型系列
+- note：字节跳动自主研发的 AI 视频生成大模型系列（即梦 AI 视频底层），是红果短剧与抖音生态中 AI 漫剧（动态漫）工业化生产的核心底座；支持长时多镜头叙事与角色一致性控制；业内创作者常简称为 SD，并根据版本演进常口播为 SD 2.0、SD 2.5 或即将发布的 3.0 版本。校订时应结合上下文弹性识别，切忌死锁在单一版本号，同时须结合场景（漫剧视频 vs 静态文生图）与开源文生图模型 Stable Diffusion 作出区分。
 - 官方来源："https://dreamina.cn"
 - 官方来源："https://bytedance.com"
 
