@@ -28,7 +28,7 @@ CHANNELS = {
         'hero_title': '把AI落地讨论里的洞见，<br>留下来，接着用。',
         'hero_lead': '不讲空洞概念，只记录企业自动化、垂直Agent、私有化部署与获客交付的真实算账与踩坑经验。',
         'aside_title': '重在工程闭环与客户交付。',
-        'aside_desc': '按每场连麦与技术讨论整理文档。留下真实案例、报价区间、提示词工作流与客户谈判底牌。',
+        'aside_desc': '',
         'qr_img': 'assets/hilex.me_qizhi.png',
         'qr_title': '手机扫码直达专栏',
         'qr_sub': '微信 / 手机浏览器扫码<br>直达 hilex.me/qizhi'
@@ -250,10 +250,10 @@ def main():
         qr_html = ''
         if cid == 'qizhi' and cinfo.get('qr_img'):
             qr_html = f'''
-            <div class="channel-qr-card" style="margin-top:16px;display:flex;align-items:center;gap:14px;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
-              <img src="{BASE}{cinfo['qr_img']}" alt="企智AI落地专栏二维码" width="82" height="82" style="display:block;border-radius:4px;flex-shrink:0;background:#fff;padding:2px;border:1px solid var(--line);">
-              <div style="font-size:12px;color:var(--muted);line-height:1.45;">
-                <strong style="color:var(--ink);font-size:13px;display:block;margin-bottom:3px;">{cinfo['qr_title']}</strong>
+            <div class="channel-qr-card" style="margin-top:14px;display:flex;align-items:center;gap:18px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+              <img src="{BASE}{cinfo['qr_img']}" alt="企智AI落地专栏二维码" width="140" height="140" style="display:block;border-radius:6px;flex-shrink:0;background:#fff;padding:4px;border:1px solid var(--line);">
+              <div style="font-size:13px;color:var(--muted);line-height:1.6;">
+                <strong style="color:var(--ink);font-size:15px;display:block;margin-bottom:6px;">{cinfo['qr_title']}</strong>
                 <span>{cinfo['qr_sub']}</span>
               </div>
             </div>
