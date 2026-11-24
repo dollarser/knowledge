@@ -355,6 +355,11 @@ def main():
     global_reading_body = f'''<section class="index-page reading-page"><a class="back" href="{BASE}">← 返回知识库主页</a><h1>专题阅读总览</h1><p class="lead">按问题找经验，直达对应专栏深度研报。</p><div class="reading-jumps" style="margin:20px 0 30px;">{"".join(global_jumps)}</div>{"".join(global_reading_sections)}</section>{platform()}'''
     write("reading/index.html", shell("专题阅读总览", "按获客运营、收费交付、工具提效、职场博弈与单店算账查找完整直播知识。", global_reading_body, "reading/"))
 
+    # Legacy redirects
+    frag_redirect = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url={BASE}qizhi/notes/live-20261110-01/"><link rel="canonical" href="{SITE_URL}qizhi/notes/live-20261110-01/"><title>正在重定向...</title></head><body><p>正在前往：<a href="{BASE}qizhi/notes/live-20261110-01/">2026-11-10 · 企智AI落地派 · 第1场直播</a></p></body></html>'''
+    write("qizhi/notes/live-20261110-fragment/index.html", frag_redirect)
+    write("notes/live-20261110-fragment/index.html", frag_redirect)
+
     # 5. 404 & Sitemap
     write('404.html', shell('页面未找到', '请回到知识库查找笔记。', f'<section class="article"><h1>这篇笔记还没有找到</h1><p><a class="cta" href="{BASE}">回到知识库首页</a></p></section>'))
     
