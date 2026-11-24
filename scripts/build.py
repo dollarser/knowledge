@@ -28,7 +28,10 @@ CHANNELS = {
         'hero_title': '把AI落地讨论里的洞见，<br>留下来，接着用。',
         'hero_lead': '不讲空洞概念，只记录企业自动化、垂直Agent、私有化部署与获客交付的真实算账与踩坑经验。',
         'aside_title': '重在工程闭环与客户交付。',
-        'aside_desc': '按每场连麦与技术讨论整理文档。留下真实案例、报价区间、提示词工作流与客户谈判底牌。'
+        'aside_desc': '按每场连麦与技术讨论整理文档。留下真实案例、报价区间、提示词工作流与客户谈判底牌。',
+        'qr_img': 'assets/hilex.me_qizhi.png',
+        'qr_title': '手机扫码直达专栏',
+        'qr_sub': '微信 / 手机浏览器扫码<br>直达 hilex.me/qizhi'
     },
     'laozeng': {
         'id': 'laozeng',
@@ -243,8 +246,19 @@ def main():
             old_redirect_html = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url={e(redirect_target)}"><link rel="canonical" href="{SITE_URL}{art_path}"><title>正在重定向至专属直播间专栏...</title></head><body><p>正在前往专属专栏地址：<a href="{e(redirect_target)}">{e(a['title'])}</a></p></body></html>'''
             write(f"notes/{a['slug']}/index.html", old_redirect_html)
 
-        # Channel Home Page
-        c_hero = f'''<section class="hero"><div><span class="eyebrow">{cinfo['eyebrow']}</span><h1>{cinfo['hero_title']}</h1><p class="intro">{cinfo['hero_lead']}</p></div><div class="aside"><strong>{cinfo['aside_title']}</strong>{cinfo['aside_desc']}</div></section>'''
+        # Channel Home Page (QR code only displayed for qizhi channel)
+        qr_html = ''
+        if cid == 'qizhi' and cinfo.get('qr_img'):
+            qr_html = f'''
+            <div class="channel-qr-card" style="margin-top:16px;display:flex;align-items:center;gap:14px;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+              <img src="{BASE}{cinfo['qr_img']}" alt="企智AI落地专栏二维码" width="82" height="82" style="display:block;border-radius:4px;flex-shrink:0;background:#fff;padding:2px;border:1px solid var(--line);">
+              <div style="font-size:12px;color:var(--muted);line-height:1.45;">
+                <strong style="color:var(--ink);font-size:13px;display:block;margin-bottom:3px;">{cinfo['qr_title']}</strong>
+                <span>{cinfo['qr_sub']}</span>
+              </div>
+            </div>
+            '''
+        c_hero = f'''<section class="hero"><div><span class="eyebrow">{cinfo['eyebrow']}</span><h1>{cinfo['hero_title']}</h1><p class="intro">{cinfo['hero_lead']}</p></div><div class="aside"><strong>{cinfo['aside_title']}</strong>{cinfo['aside_desc']}{qr_html}</div></section>'''
         c_toolbar = f'''<section aria-label="{cinfo['name']}笔记"><div class="toolbar"><div class="filters"><span style="font-weight:700;font-size:14px;color:var(--ink);">{cinfo['icon']} {cinfo['name']} ({len(c_arts)} 篇)</span></div><label><span class="meta">搜索专栏笔记 </span><input id="search" type="search" placeholder="搜索本专栏标题、标签或内容" aria-label="搜索专栏笔记"></label></div><div class="section-label"><span>{cinfo['eyebrow']}</span><div style="display:inline-flex;align-items:center;gap:14px;"><span id="count" aria-live="polite">{len(c_arts)} 篇笔记</span><div class="view-toggle-wrap" role="group" aria-label="排版视图"><button type="button" id="btn-view-card" class="view-btn active" aria-pressed="true" title="卡片视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg> 卡片</button><button type="button" id="btn-view-list" class="view-btn" aria-pressed="false" title="列表视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg> 列表</button></div></div></div><div class="grid">{''.join(c_cards)}</div><p class="empty" id="empty" hidden>本专栏未找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
         write(f"{cid}/index.html", shell(f"{cinfo['name']} · 专栏首页", cinfo['desc'], f"{c_hero}{c_toolbar}", f"{cid}/", search=True, channel=cid))
 
