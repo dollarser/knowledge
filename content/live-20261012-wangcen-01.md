@@ -194,23 +194,10 @@ flowchart TD
 
 ### 1. 王岑消费项目投行穿透速算公式
 
-```mermaid
-classDiagram
-    class FranchiseeModel {
-        +Float 终端加盟销售额
-        +Float 品牌供货系数 (0.30 - 0.35)
-        +Float 供应链净利率 (0.10 - 0.15)
-        +calculateHeadquarterRevenue()
-        +calculateNetProfit()
-    }
-
-    class SoloStoreModel {
-        +Float 月租金上限 (<= 3000)
-        +Int 日均服务人次 (5 - 6)
-        +Float 单客单价 (80)
-        +calculateMonthlyCashflow()
-    }
-```
+| 模型类型 | 核心指标与参数 | 测算关注点 |
+| --- | --- | --- |
+| **加盟总部模型** | 品牌供货系数 `0.30 - 0.35`；供应链净利率 `0.10 - 0.15` | 由终端加盟销售额反推总部真实营收与净利润 |
+| **单人单店模型** | 月租金上限 `<= 3000` 元；日均服务 `5 - 6` 人次；单客单价 `80` 元 | 测算月度现金流与房租安全红线 |
 
 $$\text{总部真实营收} = \text{加盟商终端流水} \times (30\% \sim 35\%)$$
 

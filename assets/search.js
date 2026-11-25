@@ -53,3 +53,35 @@ filters.forEach(button => button.addEventListener('click', () => {
   filters.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
   update();
 }));
+
+const globalInput = document.querySelector('#global-search');
+const indexEntries = [...document.querySelectorAll('[data-index-entry]')];
+const indexFolds = [...document.querySelectorAll('.index-channel-fold')];
+
+function updateGlobal() {
+  if (!globalInput || indexEntries.length === 0) return;
+  const q = globalInput.value.trim().toLocaleLowerCase();
+  let total = 0;
+  for (const entry of indexEntries) {
+    const match = !q || entry.dataset.search.includes(q);
+    entry.hidden = !match;
+    if (match) total++;
+  }
+  for (const fold of indexFolds) {
+    const visible = fold.querySelectorAll('[data-index-entry]:not([hidden])').length;
+    fold.hidden = visible === 0;
+    if (q && visible > 0) fold.open = true;
+  }
+  const countEl = document.querySelector('#global-count');
+  if (countEl) countEl.textContent = q ? `匹配 ${total} 篇笔记` : `共 ${indexEntries.length} 篇笔记`;
+  const emptyEl = document.querySelector('#global-empty');
+  if (emptyEl) emptyEl.hidden = total > 0;
+}
+
+if (globalInput) {
+  const params = new URLSearchParams(location.search);
+  const initialQ = params.get('q');
+  if (initialQ) globalInput.value = initialQ;
+  globalInput.addEventListener('input', updateGlobal);
+  updateGlobal();
+}

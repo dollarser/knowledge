@@ -123,7 +123,7 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
         '''
         footer_links = f'''<a href="{BASE}index/">全站索引</a> · <a href="{BASE}reading/">全部专题</a> · <a href="https://blog.sunlingzhang.com/">作者博客</a> · <a href="https://github.com/dollarser/knowledge/issues">反馈与纠错</a>'''
 
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · 知识笔记</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{canonical}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23172c38'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='65' fill='%23fffefa'%3E知%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="{BASE}assets/site.css?v=20261108"></head><body><header><nav class="wrap" aria-label="主导航">{brand_html}<div class="links">{links_html}</div></nav></header><main class="wrap">{body}</main><footer class="wrap">持续积累，保留依据。AI 辅助整理，发布前校订。 · {footer_links}</footer>{f'<script src="{BASE}assets/search.js?v=20261108" defer></script>' if search else ''}{'<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"neutral",securityLevel:"loose",flowchart:{htmlLabels:true,curve:"basis"}});</script>' if has_mermaid else ''}</body></html>'''
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · 知识笔记</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{canonical}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23172c38'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='65' fill='%23fffefa'%3E知%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="{BASE}assets/site.css?v=20261125"></head><body><header><nav class="wrap" aria-label="主导航">{brand_html}<div class="links">{links_html}</div></nav></header><main class="wrap">{body}</main><footer class="wrap">持续积累，保留依据。AI 辅助整理，发布前校订。 · {footer_links}</footer>{f'<script src="{BASE}assets/search.js?v=20261125" defer></script>' if search else ''}{'<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"neutral",securityLevel:"loose",flowchart:{htmlLabels:true,curve:"basis"}});</script>' if has_mermaid else ''}</body></html>'''
 
 def render_article_prose(source_path: Path, channel_id: str = None):
     source_text = source_path.read_text(encoding='utf-8')
@@ -142,6 +142,19 @@ def render_article_prose(source_path: Path, channel_id: str = None):
     prose = re.sub(r'<pre><code class="language-mermaid">(.*?)</code></pre>', lambda m: f'<pre class="mermaid">{html.unescape(m.group(1)).strip()}</pre>', prose, flags=re.S)
     has_mermaid = '<pre class="mermaid">' in prose
     return prose, has_mermaid
+
+def channel_qr_card(cinfo):
+    if not cinfo.get('qr_img'):
+        return ''
+    return f'''
+            <div class="channel-qr-card" style="margin-top:14px;display:flex;align-items:center;gap:18px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+              <img src="{BASE}{cinfo['qr_img']}" alt="{e(cinfo['name'])}专栏二维码" width="140" height="140" style="display:block;border-radius:6px;flex-shrink:0;background:#fff;padding:4px;border:1px solid var(--line);">
+              <div style="font-size:13px;color:var(--muted);line-height:1.6;">
+                <strong style="color:var(--ink);font-size:15px;display:block;margin-bottom:6px;">{cinfo['qr_title']}</strong>
+                <span>{cinfo['qr_sub']}</span>
+              </div>
+            </div>
+            '''
 
 def build_channel_reading(channel_id: str, channel_articles, all_articles_map, reading_data):
     c = CHANNELS[channel_id]
@@ -191,8 +204,10 @@ def build_channel_reading(channel_id: str, channel_articles, all_articles_map, r
             if cases:
                 followups = f'<section class="reading-section" id="case-followups"><h2>同一案例的前后讨论跟踪</h2>{"".join(cases)}</section>'
 
-    jumps_html = f'<div class="reading-jumps" style="margin:20px 0 30px;">{"".join(jumps)}</div>'
-    body = f'''<section class="index-page reading-page"><a class="back" href="{BASE}{channel_id}/">← 返回{c["name"]}专栏首页</a><p class="eyebrow">{c["eyebrow"]}</p><h1>{c["name"]} · 专题阅读</h1><p class="lead">{c["desc"]}</p>{jumps_html}{"".join(sections)}{followups}</section>{platform()}'''
+    qr_html = f'<div class="reading-header-qr">{channel_qr_card(c)}</div>' if channel_id == 'qizhi' and c.get('qr_img') else ''
+    jumps_html = f'<div class="reading-jumps" style="margin:24px 0 30px;">{"".join(jumps)}</div>'
+    header_html = f'''<div class="reading-header"><div class="reading-header-main"><p class="eyebrow">{c["eyebrow"]}</p><h1>{c["name"]} · 专题阅读</h1><p class="lead">{c["desc"]}</p></div>{qr_html}</div>'''
+    body = f'''<section class="index-page reading-page"><a class="back" href="{BASE}{channel_id}/">← 返回{c["name"]}专栏首页</a>{header_html}{jumps_html}{"".join(sections)}{followups}</section>{platform()}'''
     write(f'{channel_id}/reading/index.html', shell(f'{c["name"]}专题阅读', c["desc"], body, f'{channel_id}/reading/', channel=channel_id))
 
 def main():
@@ -247,19 +262,9 @@ def main():
             write(f"notes/{a['slug']}/index.html", old_redirect_html)
 
         # Channel Home Page (QR code only displayed for qizhi channel)
-        qr_html = ''
-        if cid == 'qizhi' and cinfo.get('qr_img'):
-            qr_html = f'''
-            <div class="channel-qr-card" style="margin-top:14px;display:flex;align-items:center;gap:18px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
-              <img src="{BASE}{cinfo['qr_img']}" alt="企智AI落地专栏二维码" width="140" height="140" style="display:block;border-radius:6px;flex-shrink:0;background:#fff;padding:4px;border:1px solid var(--line);">
-              <div style="font-size:13px;color:var(--muted);line-height:1.6;">
-                <strong style="color:var(--ink);font-size:15px;display:block;margin-bottom:6px;">{cinfo['qr_title']}</strong>
-                <span>{cinfo['qr_sub']}</span>
-              </div>
-            </div>
-            '''
+        qr_html = channel_qr_card(cinfo) if cid == 'qizhi' else ''
         c_hero = f'''<section class="hero"><div><span class="eyebrow">{cinfo['eyebrow']}</span><h1>{cinfo['hero_title']}</h1><p class="intro">{cinfo['hero_lead']}</p></div><div class="aside"><strong>{cinfo['aside_title']}</strong>{cinfo['aside_desc']}{qr_html}</div></section>'''
-        c_toolbar = f'''<section aria-label="{cinfo['name']}笔记"><div class="toolbar"><div class="filters"><span style="font-weight:700;font-size:14px;color:var(--ink);">{cinfo['icon']} {cinfo['name']} ({len(c_arts)} 篇)</span></div><label><span class="meta">搜索专栏笔记 </span><input id="search" type="search" placeholder="搜索本专栏标题、标签或内容" aria-label="搜索专栏笔记"></label></div><div class="section-label"><span>{cinfo['eyebrow']}</span><div style="display:inline-flex;align-items:center;gap:14px;"><span id="count" aria-live="polite">{len(c_arts)} 篇笔记</span><div class="view-toggle-wrap" role="group" aria-label="排版视图"><button type="button" id="btn-view-card" class="view-btn active" aria-pressed="true" title="卡片视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg> 卡片</button><button type="button" id="btn-view-list" class="view-btn" aria-pressed="false" title="列表视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg> 列表</button></div></div></div><div class="grid">{''.join(c_cards)}</div><p class="empty" id="empty" hidden>本专栏未找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
+        c_toolbar = f'''<section aria-label="{cinfo['name']}笔记"><div class="toolbar"><div class="filters"><span class="channel-stat-title">{cinfo['icon']} {cinfo['name']} ({len(c_arts)} 篇)</span></div><label><span class="meta">搜索专栏笔记 </span><input id="search" type="search" placeholder="搜索本专栏标题、标签或内容" aria-label="搜索专栏笔记"></label></div><div class="section-label"><span>{cinfo['eyebrow']}</span><div style="display:inline-flex;align-items:center;gap:14px;"><span id="count" class="channel-count-badge" aria-live="polite">{len(c_arts)} 篇笔记</span><div class="view-toggle-wrap" role="group" aria-label="排版视图"><button type="button" id="btn-view-card" class="view-btn active" aria-pressed="true" title="卡片视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg> 卡片</button><button type="button" id="btn-view-list" class="view-btn" aria-pressed="false" title="列表视图"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg> 列表</button></div></div></div><div class="grid">{''.join(c_cards)}</div><p class="empty" id="empty" hidden>本专栏未找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
         write(f"{cid}/index.html", shell(f"{cinfo['name']} · 专栏首页", cinfo['desc'], f"{c_hero}{c_toolbar}", f"{cid}/", search=True, channel=cid))
 
         # Channel Index Page (Redirect to Channel Home)
@@ -296,13 +301,13 @@ def main():
         <div style="background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px;margin-bottom:20px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
             <h3 style="margin:0;font-size:19px;color:var(--ink);">{cinfo['icon']} {cinfo['name']} · 最新笔记</h3>
-            <a href="{BASE}{cid}/" style="font-size:13px;color:var(--accent);font-weight:600;">查看全部 {len(c_arts)} 篇 →</a>
+            <a href="{BASE}{cid}/" style="font-size:15px;color:var(--accent);font-weight:650;">查看全部 {len(c_arts)} 篇 →</a>
           </div>
           <ul style="padding-left:20px;margin:0;line-height:2;">{recent_li}</ul>
         </div>
         ''')
 
-    hub_hero = f'''<section class="hero"><div><span class="eyebrow">KNOWLEDGE REPOSITORY · MULTI-CHANNEL</span><h1>把讨论里的洞见，<br>留下来，接着用。</h1><p class="intro">按照不同的主播与实战领域，严格设立四个完全独立的知识专栏。独立地址归档，专注各自的商业与技术底层。</p></div><div class="aside"><strong>专栏独立归集，杜绝混合混乱。</strong>每个直播间专栏拥有专属网址、专属索引与专题体系，满足垂直深度的学习检索需求。</div></section>'''
+    hub_hero = f'''<section class="hero"><div><span class="eyebrow">KNOWLEDGE REPOSITORY · MULTI-CHANNEL</span><h1>把讨论里的洞见，<br>留下来，接着用。</h1><p class="intro">按照不同的主播与实战领域，严格设立四个完全独立的知识专栏。独立地址归档，专注各自的商业与技术底层。</p><form action="{BASE}index/" method="get" style="margin-top:22px;display:flex;gap:10px;max-width:460px;flex-wrap:wrap;"><input type="search" name="q" placeholder="全站搜索 109 篇知识（标题、标签、摘要）" aria-label="全站搜索知识" style="flex:1;min-width:220px;"><button type="submit" class="cta" style="border:none;border-radius:5px;padding:10px 18px;font-size:14px;">全站搜索</button></form></div><div class="aside"><strong>专栏独立归集，杜绝混合混乱。</strong>每个直播间专栏拥有专属网址、专属索引与专题体系，满足垂直深度的学习检索需求。</div></section>'''
     hub_body = f'''
     {hub_hero}
     <section aria-label="直播间知识专栏">
@@ -319,7 +324,7 @@ def main():
     channel_index_blocks = []
     for cid, cinfo in CHANNELS.items():
         c_arts = channel_articles_map[cid]
-        c_links = ''.join(f'''<article class="index-entry"><h2><a href="{BASE}{cid}/notes/{a['slug']}/">{e(a['title'])}</a></h2><p>{e(a['description'])}</p><div style="margin-top:4px;"><span class="meta">{e(a['date'])}</span></div></article>''' for a in c_arts)
+        c_links = ''.join(f'''<article class="index-entry" data-index-entry data-search="{e((a['title'] + ' ' + a['description'] + ' ' + a['category'] + ' ' + ' '.join(a.get('tags', []))).lower())}"><div style="margin-bottom:4px;"><span class="meta">{e(a['date'])}</span></div><h2><a href="{BASE}{cid}/notes/{a['slug']}/">{e(a['title'])}</a></h2><p>{e(a['description'])}</p><div class="tags" style="margin-top:8px;">{''.join(f'<span class="pill">{e(t)}</span>' for t in a.get('tags', []))}</div></article>''' for a in c_arts)
         channel_index_blocks.append(f'''
         <details class="index-channel-fold" open style="margin-top:20px;border:1px solid var(--line);border-radius:8px;background:var(--card);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
           <summary style="cursor:pointer;padding:20px 24px;list-style:none;display:flex;justify-content:space-between;align-items:center;">
@@ -334,8 +339,8 @@ def main():
         </details>
         ''')
 
-    global_index_body = f'''<section class="index-page"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;"><h1>全部知识索引</h1><div class="index-toggle-all" style="display:flex;gap:10px;"><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=true)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部展开</button><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=false)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部折叠</button></div></div><p class="lead" style="color:var(--muted);margin-bottom:26px;">全站共收录 4 大独立专栏、{len(articles)} 篇完整研报。点击各专栏可折叠查看，点击标题直接直达对应专栏地址。</p>{''.join(channel_index_blocks)}</section>{platform()}'''
-    write("index/index.html", shell("全部知识索引", "所有已发布知识文档的链接与简短摘要。", global_index_body, "index/"))
+    global_index_body = f'''<section class="index-page"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;"><h1>全部知识索引</h1><div class="index-toggle-all" style="display:flex;gap:10px;"><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=true)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部展开</button><button type="button" onclick="document.querySelectorAll('.index-channel-fold').forEach(d=>d.open=false)" style="padding:5px 14px;font-size:13px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink);">全部折叠</button></div></div><p class="lead" style="color:var(--muted);margin-bottom:18px;">全站共收录 4 大独立专栏、{len(articles)} 篇完整研报。点击各专栏可折叠查看，点击标题直接直达对应专栏地址。</p><div class="toolbar" style="margin-bottom:18px;"><label style="display:flex;align-items:center;gap:10px;flex:1;min-width:240px;"><span class="meta" style="white-space:nowrap;">全站搜索</span><input id="global-search" type="search" placeholder="跨专栏搜索标题、标签或摘要" aria-label="全站搜索" style="flex:1;max-width:420px;"></label><span id="global-count" class="channel-count-badge" aria-live="polite">共 {len(articles)} 篇笔记</span></div>{''.join(channel_index_blocks)}<p class="empty" id="global-empty" hidden>全站未找到匹配的笔记，试试其他关键词。</p></section>{platform()}'''
+    write("index/index.html", shell("全部知识索引", "所有已发布知识文档的链接与简短摘要。", global_index_body, "index/", search=True))
 
     # 4. Global Reading Page (/knowledge/reading/)
     global_reading_sections = []
