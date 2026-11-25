@@ -7,7 +7,9 @@ import shutil
 from pathlib import Path
 
 import markdown
+from markdown.extensions import Extension
 from markdown.extensions.toc import slugify_unicode
+from markdown.treeprocessors import Treeprocessor
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'dist'
@@ -125,6 +127,39 @@ def shell(title, description, body, rel_path='', search=False, has_mermaid=False
 
     return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · 知识笔记</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{canonical}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23172c38'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='65' fill='%23fffefa'%3E知%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="{BASE}assets/site.css?v=20261125"></head><body><header><nav class="wrap" aria-label="主导航">{brand_html}<div class="links">{links_html}</div></nav></header><main class="wrap">{body}</main><footer class="wrap">持续积累，保留依据。AI 辅助整理，发布前校订。 · {footer_links}</footer>{f'<script src="{BASE}assets/search.js?v=20261125" defer></script>' if search else ''}{'<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"neutral",securityLevel:"loose",flowchart:{htmlLabels:true,curve:"basis"}});</script>' if has_mermaid else ''}</body></html>'''
 
+# Match editorial numbering only. Numbers in titles such as “29.8万元”
+# or “第一单” are part of the heading text.
+SECTION_PREFIX = re.compile(
+    r'^\s*(?:[一二三四五六七八九十百零]+[、.．：:]|'
+    r'[（(][一二三四五六七八九十百零\d]+[）)]|'
+    r'\d+(?:[.．]\d+)*[、.．)）](?=\D|$)|\d+(?:[.．]\d+)+\s+|'
+    r'(?:第?[一二三四五六七八九十百零\d]+[卷章节篇]|卷[一二三四五六七八九十百零\d]+)'
+    r'\s*[：:·、])\s*'
+)
+
+class SectionNumbering(Treeprocessor):
+    def run(self, root):
+        sections = []
+        for heading in root.iter():
+            if heading.tag not in ('h2', 'h3', 'h4', 'h5', 'h6'):
+                continue
+            level = int(heading.tag[1])
+            number = 1
+            while sections and sections[-1][0] >= level:
+                previous_level, previous_number = sections.pop()
+                if previous_level == level:
+                    number = previous_number + 1
+            sections.append((level, number))
+            label = '.'.join(str(item[1]) for item in sections)
+            if len(sections) == 1:
+                label += '.'
+            heading.text = f"{label} {SECTION_PREFIX.sub('', heading.text or '', count=1)}"
+
+class SectionNumberingExtension(Extension):
+    def extendMarkdown(self, md):
+        # The TOC extension assigns IDs first. Keeping them preserves deep links.
+        md.treeprocessors.register(SectionNumbering(md), 'section_numbering', 4)
+
 def render_article_prose(source_path: Path, channel_id: str = None):
     source_text = source_path.read_text(encoding='utf-8')
     assert not any(x in source_text for x in ['/Users/', '127.0.0.1', 'localhost:', 'speaker_id', 'transcription.raw', 'sk-proj-']), f'Private artifact in {source_path.name}'
@@ -136,7 +171,7 @@ def render_article_prose(source_path: Path, channel_id: str = None):
     source_text = re.sub(r'\A# [^\n]+\n', '', source_text, count=1)
     source_text = re.sub(r'([^\n\s])\n([-*] |\d+\. )', r'\1\n\n\2', source_text)
     
-    md = markdown.Markdown(extensions=['tables', 'fenced_code', 'toc'], extension_configs={'toc': {'slugify': slugify_unicode, 'toc_depth': '2'}})
+    md = markdown.Markdown(extensions=['tables', 'fenced_code', 'toc', SectionNumberingExtension()], extension_configs={'toc': {'slugify': slugify_unicode, 'toc_depth': '2'}})
     prose = md.convert(source_text)
     prose = re.sub(r'(<table>.*?</table>)', r'<div class="table-scroll">\1</div>', prose, flags=re.S)
     prose = re.sub(r'<pre><code class="language-mermaid">(.*?)</code></pre>', lambda m: f'<pre class="mermaid">{html.unescape(m.group(1)).strip()}</pre>', prose, flags=re.S)
