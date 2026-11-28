@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-29",
   "provenance": {
     "origin": "Existing official research, confirmed by user in this chat; migrated without new factual verification.",
     "source_documents": [
@@ -1619,6 +1619,81 @@
       "source_attachment_status": "official_identity_and_scope_verified",
       "last_research_at": "2026-11-23",
       "verification_scope": "开源多智能体统一工作台定位与项目确认。"
+    },
+    {
+      "id": "entity-117",
+      "name": "即梦",
+      "research_assertions": {
+        "vendor": "字节跳动 (ByteDance)",
+        "category": "AI绘画与AI视频生成平台",
+        "note": "字节跳动旗下即梦 AI（海外版为 Dreamina / 集成于 CapCut），中文理解与对白视频表现较强；ASR 极易同音误听为“极梦”。"
+      },
+      "official_sources": [
+        "https://jimeng.jianying.com/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-29",
+      "verification_scope": "联网检索核实品牌归属、产品定位与常见 ASR 同音误听。"
+    },
+    {
+      "id": "entity-118",
+      "name": "MiniMax H3",
+      "research_assertions": {
+        "vendor": "MiniMax (稀宇科技 / 海螺AI)",
+        "category": "全模态视频生成大模型",
+        "note": "MiniMax 推出的新一代全模态视频生成与编辑模型（Hailuo 3 / 海螺视频 3.0），支持原生立体声视听同步与多模态参考输入；口播常简称为“H3”。"
+      },
+      "official_sources": [
+        "https://hailuoai.video/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-29",
+      "verification_scope": "联网检索核实品牌归属、产品定位与常见 ASR 同音误听。"
+    },
+    {
+      "id": "entity-119",
+      "name": "MAGI-2",
+      "research_assertions": {
+        "vendor": "Sand.ai",
+        "category": "多模态视频生成大模型",
+        "note": "Sand.ai 推出的多模态视频生成模型，支持 1080p 原生音视频同步生成与多参考控制，但高并发下对算力消耗较大。"
+      },
+      "official_sources": [
+        "https://sand.ai/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-29",
+      "verification_scope": "联网检索核实品牌归属、产品定位与常见 ASR 同音误听。"
+    },
+    {
+      "id": "entity-120",
+      "name": "ChatCut",
+      "research_assertions": {
+        "vendor": "ChatCut",
+        "category": "自然语言驱动 AI 视频剪辑工具",
+        "note": "支持通过文本转录稿与自然语言指令直接剪辑口播/广告视频的 AI 剪辑工具，常被口播提及用于批量素材初剪。"
+      },
+      "official_sources": [
+        "https://chatcut.io/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-29",
+      "verification_scope": "联网检索核实品牌归属、产品定位与常见 ASR 同音误听。"
+    },
+    {
+      "id": "entity-121",
+      "name": "WorkBuddy",
+      "research_assertions": {
+        "vendor": "腾讯 (Tencent)",
+        "category": "桌面级 AI Agent 工作台",
+        "note": "腾讯推出的全能桌面级 AI Agent 与办公协同工作台，支持多智能体拆解执行办公任务；企业内常被拿来与自建云端工作台对比。"
+      },
+      "official_sources": [
+        "https://workbuddy.ai/"
+      ],
+      "source_attachment_status": "official_identity_and_scope_verified",
+      "last_research_at": "2026-11-29",
+      "verification_scope": "联网检索核实品牌归属、产品定位与常见 ASR 同音误听。"
     }
   ],
   "merged_entity_ids": {

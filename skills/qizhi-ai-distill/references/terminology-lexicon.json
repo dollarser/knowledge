@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": "3.0.0",
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-29",
   "usage_policy": {
     "mode": "candidate_only",
     "automatic_replacement": false,
@@ -1869,6 +1869,86 @@
       "facts_ref": {
         "file": "model-facts.json",
         "entity_id": "entity-116"
+      }
+    },
+    {
+      "id": "entity-117",
+      "standard": "即梦",
+      "misnomers": [
+        "极梦",
+        "吉梦",
+        "即梦AI",
+        "Dreamina"
+      ],
+      "context_required": true,
+      "verification_status": "verified_entity",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-117"
+      }
+    },
+    {
+      "id": "entity-118",
+      "standard": "MiniMax H3",
+      "misnomers": [
+        "H3",
+        "海螺H3",
+        "海螺3.0",
+        "Hailuo 3"
+      ],
+      "context_required": true,
+      "verification_status": "verified_entity",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-118"
+      }
+    },
+    {
+      "id": "entity-119",
+      "standard": "MAGI-2",
+      "misnomers": [
+        "Magi2",
+        "MAGI2",
+        "马吉2"
+      ],
+      "context_required": true,
+      "verification_status": "verified_entity",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-119"
+      }
+    },
+    {
+      "id": "entity-120",
+      "standard": "ChatCut",
+      "misnomers": [
+        "Chatcut",
+        "chat cut"
+      ],
+      "context_required": true,
+      "verification_status": "verified_entity",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-120"
+      }
+    },
+    {
+      "id": "entity-121",
+      "standard": "WorkBuddy",
+      "misnomers": [
+        "workbuddy",
+        "Work Buddy"
+      ],
+      "context_required": true,
+      "verification_status": "verified_entity",
+      "auto_apply": false,
+      "facts_ref": {
+        "file": "model-facts.json",
+        "entity_id": "entity-121"
       }
     }
   ],
